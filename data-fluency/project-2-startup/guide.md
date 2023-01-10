@@ -108,7 +108,7 @@ Con el problema definido, ahora es momento de “preparar la cancha”. En nuest
 
 Lo primero que debemos hacer es acceder a [la base de datos](https://docs.google.com/spreadsheets/d/1545E5lVl6qsqoCS9pXb3Wb-ZHsm3RXGxNqyNds1DpqE/edit?usp=sharing) y hacer una revisión general de los datos con los que contamos: la cantidad de filas, la cantidad de columnas (o variables) y qué representa cada una.
 
-![dataset](http://drive.google.com/uc?export=view&id=1N4lqt8vi_RcYniwFHfb-sC5IsLEwPq8H)
+![dataset](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/startup-img01.png)
 
 El dataset cuenta con 330 filas, en donde cada fila representa un cliente único.
 
@@ -156,7 +156,7 @@ Como vimos en el Proyecto 1, las tablas dinámicas (**pivot table**) son muy út
 
 Una parte importante del análisis de datos es revisar que cada columna contenga datos correctos y que hagan sentido en el contexto del proyecto. Para eso vamos a comenzar revisando la columna “Estado Cliente” para corroborar las posibles categorías que utilizamos para clasificar a los clientes. Si hacemos una tabla dinámica con esa variable, vemos que hay un guión bajo en algunos términos, lo que hace que parezca que tenemos 4 categorías en lugar de solo “Churned” y “Active”.
 
-![tabla-dinamica](http://drive.google.com/uc?export=view&id=1AWICfuDaB91f20KKoUFln7hzzPOt-lBa)
+![tabla-dinamica](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/procesa-01.jpeg)
 
 Este es un error muy común en algunos datasets, posiblemente originado por errores de tipeo o por categorías que no fueron actualizadas. Necesitamos limpiar esos casos y eliminar el guión para que solo queden las dos categorías “Active” y “Churned”. Una opción es revisar celda por celda y eliminar manualmente el guión cuando corresponda. Pero si la base de datos es muy grande puede tomar mucho tiempo.
 
@@ -164,7 +164,7 @@ Una forma más eficiente de corregir este error es utilizando la función SUBSTI
 
 > 👀 Cuando utilizamos la fórmula IMPORTRANGE para traer los datos de la tabla original, cada vez que queremos incluir una nueva columna, la incluimos al final. O usamos la fórmula IMPORTRANGE de forma dividida, primero importamos las columnas A, B y C, dejamos algunas columnas para realizar las operaciones de ajuste y volvemos a incluir en una nueva columna la función importrange para incluir el resto de las columnas (D:AC).
 
-La fórmula SUBSTITUTE, según [la documentación oficial de google](https://www.google.com/url?q=https://support.google.com/docs/answer/3094215?hl%3Den&sa=D&source=editors&ust=1667920948524926&usg=AOvVaw2M8YPQ06EIuD36my7yli8F), se ocupa de la siguiente forma:
+La fórmula SUBSTITUTE, según [la documentación oficial de google](https://support.google.com/docs/answer/3094215?hl%3Den), se ocupa de la siguiente forma:
 
 ```SQL
 
@@ -184,11 +184,11 @@ Los argumentos de esta fórmula son:
 
 Nuestra fórmula debería verse así:
 
-![substitute](http://drive.google.com/uc?export=view&id=1eWW85sSxMA6PUl6fHUmrpJmIajtVlhqj)
+![substitute](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/procesa-02.png)
 
 Luego podemos aplicar esta fórmula a toda la columna C y tendremos una nueva columna “Estado Cliente Corregido” unificado, sin variaciones de captura.
 
-Ahora que tenemos la columna “Estado Cliente Corregido” correcta, podemos seguir arreglando el dataset para que muestre los datos como los necesitamos. Por ejemplo, nos gustaría que en vez de mostrar el nombre y el apellido del cliente por separado, estos se muestren en una sola columna “Nombre y Apellido”. Para esto podemos ocupar la función [CONCATENATE](https://www.google.com/url?q=https://support.google.com/docs/answer/3094123?hl%3Den&sa=D&source=editors&ust=1667920948527768&usg=AOvVaw3qMiWxIMO8OzIWiJiHpoc6) que justamente, concatena dos o más textos en uno solo.
+Ahora que tenemos la columna “Estado Cliente Corregido” correcta, podemos seguir arreglando el dataset para que muestre los datos como los necesitamos. Por ejemplo, nos gustaría que en vez de mostrar el nombre y el apellido del cliente por separado, estos se muestren en una sola columna “Nombre y Apellido”. Para esto podemos ocupar la función [CONCATENATE](https://support.google.com/docs/answer/3094123?hl%3Den) que justamente, concatena dos o más textos en uno solo.
 
 ```SQL
 
@@ -198,13 +198,13 @@ Ahora que tenemos la columna “Estado Cliente Corregido” correcta, podemos se
 
 Importante notar que debemos concatenar, además, un espacio en blanco para que los nombres queden separados, es por eso que agregamos la cadena “ ” a la fórmula.
 
-![concatenate](http://drive.google.com/uc?export=view&id=1ZZ5QlHxS33W5k8EhV-2WyNHNo40Ed9wC)
+![concatenate](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/procesa-03.png)
 
 Al aplicar la fórmula en toda la columna te habrás dado cuenta de que algunos nombres cuentan con caracteres de espacio innecesarios.
 
-![trim](http://drive.google.com/uc?export=view&id=1YRGGQeha3kFTQ-J2H6pKUs2YeU_yody0)
+![trim](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/procesa-04.png)
 
-Afortunadamente, Google Sheets cuenta con una fórmula que elimina automáticamente los espacios innecesarios en cadenas de texto. Esta función es [TRIM](https://www.google.com/url?q=https://support.google.com/docs/answer/3094140?hl%3Den&sa=D&source=editors&ust=1667920948529234&usg=AOvVaw2aXkN01S_hi6ppUHoobelS). Puedes ocupar esta fórmula en una nueva columna o, mejor aún, encadenar las dos fórmulas CONCATENATE y TRIM en una sola para que el resultado de CONCATENATE pase luego por TRIM y elimine los espacios adicionales.
+Afortunadamente, Google Sheets cuenta con una fórmula que elimina automáticamente los espacios innecesarios en cadenas de texto. Esta función es [TRIM](https://support.google.com/docs/answer/3094140?hl%3Den). Puedes ocupar esta fórmula en una nueva columna o, mejor aún, encadenar las dos fórmulas CONCATENATE y TRIM en una sola para que el resultado de CONCATENATE pase luego por TRIM y elimine los espacios adicionales.
 
 ```SQL
 
@@ -214,15 +214,15 @@ Afortunadamente, Google Sheets cuenta con una fórmula que elimina automáticame
 
 La base de datos con las 2 nuevas columnas se vería así:
 
-![resultado](http://drive.google.com/uc?export=view&id=16PtSgGCo3_4KBxlszsPIt-blLOTvn0jP)
+![resultado](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/procesa-05.png)
 
-Ahora que todo está arreglado, podemos continuar con nuestro análisis. Si te interesan las fórmulas de manipulación de texto te recomendamos revisar otras funciones muy útiles como [PROPER](https://www.google.com/url?q=https://support.google.com/docs/answer/3094133?hl%3Den&sa=D&source=editors&ust=1667920948530357&usg=AOvVaw0mq99ctGXe0bAIh50VVeW1) (para poner mayúsculas solo en las primeras letras), [UPPER](https://www.google.com/url?q=https://support.google.com/docs/answer/3094219?hl%3Den&sa=D&source=editors&ust=1667920948530787&usg=AOvVaw0plU_rCvDZZPUlN7YUGFGp) y [LOWER](https://www.google.com/url?q=https://support.google.com/docs/answer/3094083?hl%3Den&sa=D&source=editors&ust=1667920948531262&usg=AOvVaw0AGBF9QDE1NlSGLxFk6I36) (para poner todas en mayúsculas o minúsculas respectivamente), y [LEFT](https://www.google.com/url?q=https://support.google.com/docs/answer/3094079?hl%3Den&sa=D&source=editors&ust=1667920948531657&usg=AOvVaw0qnHgoH-VILWFdQlG62SLN) y [RIGHT](https://www.google.com/url?q=https://support.google.com/docs/answer/3094087?hl%3Den&sa=D&source=editors&ust=1667920948532073&usg=AOvVaw1VH7Kvy-a79yb7fTTo2apv) (para cortar la sección izquierda o derecha de una cadena de texto, respectivamente).
+Ahora que todo está arreglado, podemos continuar con nuestro análisis. Si te interesan las fórmulas de manipulación de texto te recomendamos revisar otras funciones muy útiles como [PROPER](https://support.google.com/docs/answer/3094133?hl%3Den) (para poner mayúsculas solo en las primeras letras), [UPPER](https://support.google.com/docs/answer/3094219?hl%3Den) y [LOWER](https://support.google.com/docs/answer/3094083?hl%3Den) (para poner todas en mayúsculas o minúsculas respectivamente), y [LEFT](https://support.google.com/docs/answer/3094079?hl%3Den) y [RIGHT](https://support.google.com/docs/answer/3094087?hl%3Den) (para cortar la sección izquierda o derecha de una cadena de texto, respectivamente).
 
 > 👩‍💻 Recuerda que uno de nuestros principios es la Apropiación del aprendizaje. Cuando te encuentres con un bloqueo en tu proyecto, siempre puedes recurrir al vasto conocimiento almacenado en internet (y ordenado por Google 😎) o a tus compañeras en Slack. Además, te invitamos a compartir tus aprendizajes e intereses con el resto de la comunidad. Por ejemplo, ¿Qué otras funciones de manipulación de texto consideras útiles y no se mencionaron en este ejercicio?
 
 ## Paso 4: Analiza
 
-Si investigaste lo que es un análisis por cohorte por tu cuenta, o leíste [el artículo](https://www.google.com/url?q=https://es.modyo.com/blog/el-analisis-de-cohortes-como-entender-los-habitos-del-cliente&sa=D&source=editors&ust=1667920948533359&usg=AOvVaw1dHRXfhUh9YnLO47k0QLe2) de la sección de recursos recomendados, habrás notado que los análisis por cohorte agrupan a los clientes según un criterio, por ejemplo por fecha de ingreso, en donde cada fila representa un rango de tiempo.
+Si investigaste lo que es un análisis por cohorte por tu cuenta, o leíste [el artículo](https://es.modyo.com/blog/el-analisis-de-cohortes-como-entender-los-habitos-del-cliente) de la sección de recursos recomendados, habrás notado que los análisis por cohorte agrupan a los clientes según un criterio, por ejemplo por fecha de ingreso, en donde cada fila representa un rango de tiempo.
 
 En nuestro spreadsheet debemos replicar una estructura similar. Para esto vamos a crear una tabla dinámica cuyas filas sean las fechas de mes de registro, y que en cada fila el valor sea la cantidad de clientes que ingresaron en esa fecha.
 
@@ -230,7 +230,7 @@ En nuestro spreadsheet debemos replicar una estructura similar. Para esto vamos 
 
 Comienza con una tabla similar a esta:
 
-![inicio](http://drive.google.com/uc?export=view&id=1WZBgXwC_OmxhtY6YcSevpGM3LOjrSWCK)
+![inicio](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-01.png)
 
 🤓 **Análisis** 🤓
 
@@ -244,13 +244,13 @@ Para contar la cantidad de clientes que pagan el servicio mes a mes de forma act
 
 En una tabla dinámica podemos ir agregando columnas al añadir más valores.
 
-![columnas](http://drive.google.com/uc?export=view&id=1Rq06zIeGRqimBi5AZa0eFFaqiOMaynr1)
+![columnas](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-02.png)
 
 > ⚠️ En este caso queremos que la tabla dinámica sume los valores de los clientes que cumplen con el criterio de cliente activo por mes, por lo que resumimos la información (summarize by) SUM y no COUNTA como en el caso de la primera columna, en donde si queríamos contar la cantidad de clientes en cada fecha.
 
 Después de sumar los 24 valores (😮‍💨) deberías haber llegado a algo similar a esto:
 
-![resultado](http://drive.google.com/uc?export=view&id=1_p6dtrUOBn3KgHpkFF0D8ZnMVfPZgz51)
+![resultado](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-03.png)
 
 🤓 **Análisis** 🤓
 
@@ -272,11 +272,11 @@ Ahora vamos a pensar en cómo podemos organizar los datos para comparar los coho
 
 Si queremos comparar 🍎 con 🍎 y 🍐 con 🍐 tenemos que alinear el primer mes de cada cohorte. Dicho gráficamente, tenemos que mover cada inicio de cohorte a la primera columna de la tabla:
 
-![mover-filas](http://drive.google.com/uc?export=view&id=1qwrjEuK52qDaf5Q6KltxBNY-ImJ3MqoE)
+![mover-filas](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-04.png)
 
 En donde cada inicio de cohorte sigue su mes de registro (podemos verlo por los nombres de los encabezados de las columnas), a una tabla en donde el inicio de cada cohorte esté en la primera columna y los encabezados no sean las fechas, sino que el mes con el número que corresponda. Algo como:
 
-![analiza-06](http://drive.google.com/uc?export=view&id=1yiLGYtTC0C0TKoPjmLbXwJ2qu78NBtrE)
+![analiza-06](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-06.png)
 
 Si te fijaste bien, te diste cuenta de que hay que mover cada fila individualmente al inicio de la tabla 😩. No te preocupes, Google Sheets nos da algunas opciones para hacerlo más rápido. Conócelas y elige la que prefieras.
 
@@ -286,9 +286,9 @@ Antes de comenzar, crea una tabla vacía conservando las primeras dos columnas: 
 
 > 👀 Si se te pegó toda la tabla dinámica puedes ocupar Edit > Pegado Especial > Solo Valores.
 
-![analiza-07](http://drive.google.com/uc?export=view&id=1N41KTmta5h8W-YYywz51ltF3qWyvT0vC)
+![analiza-07](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-07.png)
 
-Para usar la fórmula [INDEX](https://www.google.com/url?q=https://support.google.com/docs/answer/3098242?hl%3Den&sa=D&source=editors&ust=1667920948541151&usg=AOvVaw1U3KsI8EmaXZ8tdCAGSQY6), primero entendamos los argumentos de la fórmula. Los argumentos son:
+Para usar la fórmula [INDEX](https://support.google.com/docs/answer/3098242?hl%3Den), primero entendamos los argumentos de la fórmula. Los argumentos son:
 
 - **reference**: rango de datos donde buscaremos la información
 
@@ -300,15 +300,15 @@ Por ejemplo, una fórmula =INDEX(datos, 2, 5) te retornará el valor de la quint
 
 Para que podamos arrastrar la fórmula de forma automatizada, incluiremos una columna con el rango de meses que tenemos en nuestra base de datos.
 
-![analiza-08](http://drive.google.com/uc?export=view&id=1KU186WWSlHH3CeRnsMg33HZF7iwefvUh)
+![analiza-08](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-08.png)
 
-En la fórmula seleccionaremos como referencia el rango de datos considerando desde la primera celda que contiene la información deseada hasta la última celda con datos de retención de clientes (B2:Z25). Como vamos a arrastrar la fórmula tenemos que “bloquear” la celda de término con un signo $ en la letra y el número, ya que, de otra forma, el rango completo se iría moviendo y no tendría sentido. Preparamos este [video](https://www.google.com/url?q=https://www.loom.com/share/e0542f98ce28415e92b372060ae23b72&sa=D&source=editors&ust=1667933238242818&usg=AOvVaw0d8wV6ZYM-aeAl0s6ECczF) sobre cómo usar la fórmula del índice y el signo $ para bloquear la columna o fila.
+En la fórmula seleccionaremos como referencia el rango de datos considerando desde la primera celda que contiene la información deseada hasta la última celda con datos de retención de clientes (B2:Z25). Como vamos a arrastrar la fórmula tenemos que “bloquear” la celda de término con un signo $ en la letra y el número, ya que, de otra forma, el rango completo se iría moviendo y no tendría sentido. Preparamos este [video](https://www.loom.com/share/e0542f98ce28415e92b372060ae23b72) sobre cómo usar la fórmula del índice y el signo $ para bloquear la columna o fila.
 
 Para indicar el número de línea usaremos el número 1, porque nuestra fórmula siempre traerá la información de la primera línea (por eso no bloqueamos la primera parte del rango de referencia). Para la columna utilizaremos la nueva columna que creamos (Rango Meses). Aquí también ocuparemos un signo $ en la letra para que cuando nos movamos hacia la derecha la fórmula llame correctamente siempre a esa columna.
 
 La fórmula queda así:
 
-```
+```SQL
 
 =INDEX(C2:$Z$25,1,$A31)
 
@@ -318,9 +318,9 @@ Donde C2:Z25 es el rango donde están tus datos de la tabla dinámica y A31 es l
 
 Ahora, puede arrastrar la fórmula hacia abajo y hacia un lado, de modo que tenga su tabla lista para los siguientes pasos, como se muestra en la siguiente imagen:
 
-![analiza-09](http://drive.google.com/uc?export=view&id=1QGKdrEXeoyW1i4Xn7XQM_-Pw5Otcr_Mc)
+![analiza-09](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-09.jpeg)
 
-> 👀 Si obtuviste algunos errores en la tabla, ¡no te preocupes! En tu proyecto anterior ya aprendiste a cómo manejar errores en spreadsheet 😏 recuerda usar SI.ERROR (o [IFERROR](https://www.google.com/url?q=https://support.google.com/docs/answer/3093304?hl%3Den&sa=D&source=editors&ust=1667933238243903&usg=AOvVaw0ohSywJX3TuzNGXhsWr3-a)).
+> 👀 Si obtuviste algunos errores en la tabla, ¡no te preocupes! En tu proyecto anterior ya aprendiste a cómo manejar errores en spreadsheet 😏 recuerda usar SI.ERROR (o [IFERROR](https://support.google.com/docs/answer/3093304?hl%3Den)).
 
 #### Opción 2: Ocupar la función Query
 
@@ -328,7 +328,7 @@ Ahora, puede arrastrar la fórmula hacia abajo y hacia un lado, de modo que teng
 
 Como en la opción 1, primero crea una tabla vacía conservando las primeras dos columnas (de la fecha de inicio del cohorte y la cantidad de clientes). Puedes copiar y pegar. Y nombra los encabezados de las columnas como Mes 1, Mes 2, etc...
 
-Ahora ocuparemos la función [QUERY](https://www.google.com/url?q=https://support.google.com/docs/answer/3093343?hl%3Den&sa=D&source=editors&ust=1667933238244957&usg=AOvVaw17AzDPGCPrcphBdqapfu-y) para llamar a cada fila individualmente.
+Ahora ocuparemos la función [QUERY](https://support.google.com/docs/answer/3093343?hl%3Den) para llamar a cada fila individualmente.
 
 Si te sitúas en la primera celda vacía del primer cohort puedes llamar a todos los datos de la pestaña donde está tu tabla dinámica. Algo como:
 
@@ -340,7 +340,7 @@ Si te sitúas en la primera celda vacía del primer cohort puedes llamar a todos
 
 Recuerda que el SELECT seguido de un * pide todos los datos del rango, por lo que esto traerá todos datos y los copiará en tu tabla. Debería quedar algo igual a tu tabla dinámica
 
-![analiza-10](http://drive.google.com/uc?export=view&id=11xfHup-icFOPpl90eB5gae2romZskyaX)
+![analiza-10](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-10.png)
 
 Pero queremos tratar cada fila individualmente, por lo que podemos limitar nuestra QUERY para que nos retorne solo la primera fila.
 
@@ -350,13 +350,13 @@ Pero queremos tratar cada fila individualmente, por lo que podemos limitar nuest
 
 ```
 
-![analiza-11](http://drive.google.com/uc?export=view&id=1UExjISwv_7fpaBTWfM5gn3RgdSSxpC7r)
+![analiza-11](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-11.png)
 
 Si fijas la fila del segundo valor del rango (con un signo peso) y luego bajas la fórmula volverás a tu tabla inicial como la de tu tabla dinámica. Solo que esta vez puedes controlar cada fila independientemente.
 
 Si cambias el rango de tu QUERY y lo vas "moviendo hacia la derecha" de forma de que tu primera columna de tu rango siempre sea la columna donde hay un valor (y no cero) puedes ir trasladando los resultados hacia la primera columna. Aquí te muestro como están las fórmulas de esa primera columna para mi caso:
 
-![analiza-12](http://drive.google.com/uc?export=view&id=1_dyp5c8uqgcQf5AKO77KsFE_cUkE5Mci)
+![analiza-12](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-12.png)
 
 > 👩‍💻 Si no entendiste del todo la fórmula, ¡no te preocupes! Este tipo de conceptos se demoran en decantar. Te recomendamos mirar otros ejemplos en tu spreadsheet y seguir el mismo camino hasta encontrar patrones.
 
@@ -364,7 +364,7 @@ Si cambias el rango de tu QUERY y lo vas "moviendo hacia la derecha" de forma de
 
 Sea como sea, lograste llegar a una tabla que te muestra la cantidad de clientes que estaban pagando en cada mes para cada cohorte (o fecha de inscripción).
 
-![analiza-13](http://drive.google.com/uc?export=view&id=11-s9t-fGD7M4dRTJIKO5a06oTd3-hRRC)
+![analiza-13](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-13.png)
 
 🤓 **Análisis** 🤓
 
@@ -382,7 +382,7 @@ De buenas a primeras te darás cuenta de que no es fácil extraer información r
 
 Para calcular el porcentaje en cada celda debemos dividir el número que aparece en la celda de cada mes, por el total de clientes de ese cohort. Por ejemplo, en el primer cohort tenemos 11 usuarios nuevos. El primer mes todavía quedan 11, eso representa el 100% de los usuarios (11/11*100%=100%). Para el mes 3 quedan 10 usuarios, eso representa el 91% del total (10/11*100 = 90,9*100 ~ 91%). Google Sheet nuevamente nos facilita este proceso, podemos ocupar una fórmula que divida el número de cada celda por el total de los usuarios de su fila y luego formatear como porcentaje gracias a la opción del menú.
 
-![analiza-14](http://drive.google.com/uc?export=view&id=1e4Ri5UeGuaifRApG5vFhpXRlHDdkmXkC)
+![analiza-14](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-14.png)
 
 > 👀 Al arrastrar la fórmula es muy importante que fijes (con un signo $) el denominador de la división, ya que siempre vas a estar dividiendo por el mismo número en cada cohort.
 
@@ -390,11 +390,11 @@ Una vez que tengas los porcentajes calculados es una buena idea formatear el col
 
 Elegimos “Escala de Colores” y seleccionamos los colores rojo, verde y amarillo, así como los porcentajes 0, 50 y 100 como lo muestra la imagen.
 
-![analiza-15](http://drive.google.com/uc?export=view&id=1si0JoG5MHnb0tUX2YRO9Mvut-b4OGCZG)
+![analiza-15](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-15.jpeg)
 
 Tu resultado final se debería ver más o menos así:
 
-![analiza-16](http://drive.google.com/uc?export=view&id=1BMv6TAh6IJhhkg0Hi6Zhj_Q_J43WWByd)
+![analiza-16](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-16.png)
 
 🤓 **Análisis** 🤓
 
@@ -410,7 +410,7 @@ Este análisis por cohorte muestra el porcentaje de clientes retenidos, lo que f
 
 - El punto más crítico fue en el mes 20 y 21 con un 51% ¿Qué otros insights puedes notar? ¿Por qué crees que sucede? Anota todas las observaciones para agregarlas a tu informe.
 
-Si el concepto de cohorte aún no está claro, mira esta [explicación](https://www.google.com/url?q=https://www.loom.com/share/ab7b1707d23d40d7aaf9e55b1521d3e2&sa=D&source=editors&ust=1667933238249795&usg=AOvVaw3RChKc6iQgdK1hdlmry4sF).
+Si el concepto de cohorte aún no está claro, mira esta [explicación](https://www.loom.com/share/ab7b1707d23d40d7aaf9e55b1521d3e2).
 
 ¡Felicitaciones! Lograste hacer tu primer análisis por cohortes. Como vimos al comienzo, este tipo de análisis nos permite mirar a nuestros clientes agrupándolos por su comportamiento (en este caso por su fecha de inicio de suscripción).
 
@@ -420,19 +420,19 @@ Ahora te desafiamos a que realices un análisis similar pero ahora tomando en cu
 
 ### 4.4 Visualizar la tendencia de la retención
 
-Otra herramienta que puede utilizar para analizar estos datos es una [línea de tendencia](https://www.google.com/url?q=https://support.microsoft.com/es-es/office/elegir-la-mejor-l%25C3%25ADnea-de-tendencia-para-los-datos-1bb3c9e7-0280-45b5-9ab0-d0c93161daa8&sa=D&source=editors&ust=1667933238250568&usg=AOvVaw3diSRQNjjt2kUf1ylx54sd).
+Otra herramienta que puede utilizar para analizar estos datos es una [línea de tendencia](https://support.microsoft.com/es-es/office/elegir-la-mejor-l%C3%ADnea-de-tendencia-para-los-datos-1bb3c9e7-0280-45b5-9ab0-d0c93161daa8).
 
 Para esto, calcularemos la retención promedio por mes e incluimos un gráfico de dispersión con una línea de tendencia lineal. Nuestras variables para construir el gráfico serán los meses y la retención media.
 
-![analiza-16](http://drive.google.com/uc?export=view&id=1J2RKzPyHTewJaoGzQiYDWaS9xkWSmJ44)
+![analiza-17](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/analiza-17.jpeg)
 
-🤓 Aquí tienes toda la información sobre cómo construir e interpretar [este gráfico](https://www.google.com/url?q=https://www.loom.com/share/e456c569d0554799b747ec41bf782a0c&sa=D&source=editors&ust=1667933238251151&usg=AOvVaw3iJOhU8aJxIQsyKx1AX3TM).
+🤓 Aquí tienes toda la información sobre cómo construir e interpretar [este gráfico](https://www.loom.com/share/e456c569d0554799b747ec41bf782a0c).
 
 ## Paso 5: Comparte
 
 Ya realizamos todo el análisis necesario, ahora falta organizar la información. Muchas analistas de datos se caen en este paso. Son muy buenas calculando indicadores, generando gráficos y creando tablas, pero no son capaces de transmitir los hallazgos más importantes al resto de la organización.
 
-Para organizar nuestra información vamos a utilizar [Google Slides](https://www.google.com/url?q=https://support.google.com/docs/answer/2763168?hl%3Des%26co%3DGENIE.Platform%253DDesktopith-google-slides--cms-21359&sa=D&source=editors&ust=1667933238252059&usg=AOvVaw1Wtyj4ydOOACT_4xwypj0R), una herramienta de presentación similar a Microsoft Power Point.
+Para organizar nuestra información vamos a utilizar Google Slides, una herramienta de presentación similar a Microsoft Power Point.
 
 ### 5.1 Recomendaciones de la estructura
 
@@ -466,7 +466,7 @@ Felizmente, hay muchos recursos que nos pueden ayudar a tener una presentación 
 
 #### Ocupa una plantilla
 
-Hay muchas páginas de internet que ofrecen presentaciones pre-hechas con diseños predeterminados. Te recomendamos mirar [Slides Carnival](https://www.google.com/url?q=https://www.slidescarnival.com/&sa=D&source=editors&ust=1667933238255082&usg=AOvVaw1Yvah6zyqxKXqJt_Venm8A) y [Slides Go](https://www.google.com/url?q=https://slidesgo.com/&sa=D&source=editors&ust=1667933238255407&usg=AOvVaw25A-PH5DPRYGD-0JZ4ERL0).
+Hay muchas páginas de internet que ofrecen presentaciones pre-hechas con diseños predeterminados. Te recomendamos mirar [Slides Carnival](https://www.slidescarnival.com/) y [Slides Go](https://slidesgo.com/).
 
 > ⚠ ¡Cuidado! Escoge una plantilla con diseño minimalista, simple y elegante. Las plantillas con muchos colores, imágenes y adornos se ven poco profesionales y distraen la atención de lo relevante.
 
@@ -474,15 +474,15 @@ Hay muchas páginas de internet que ofrecen presentaciones pre-hechas con diseñ
 
 La paleta de colores es una herramienta que ocupan los diseñadores gráficos para darle consistencia a sus diseños. Es importante tener una variedad de colores que se complementen entre sí y que sean agradables a la vista, pero sin buscar exagerar o incluir demasiados colores.
 
-Hay páginas como [Color Hunt](https://www.google.com/url?q=https://colorhunt.co/&sa=D&source=editors&ust=1667933238256221&usg=AOvVaw1_Wzd7svxPHXhrkkS9c08F) o [Coolors](https://www.google.com/url?q=https://coolors.co/&sa=D&source=editors&ust=1667933238256512&usg=AOvVaw2OxVQk9eqZ2H-GvS3dxmkc) que facilitan el proceso de elección de una paleta de colores. Puedes utilizar la paleta de colores que viene en la plantilla que elegiste o, si prefieres, cambiarla por alguna que te guste de las páginas anteriores.
+Hay páginas como [Color Hunt](https://colorhunt.co/) o [Coolors](https://coolors.co/) que facilitan el proceso de elección de una paleta de colores. Puedes utilizar la paleta de colores que viene en la plantilla que elegiste o, si prefieres, cambiarla por alguna que te guste de las páginas anteriores.
 
-En cuanto a la tipografía, la recomendación es la misma: menos es más. Intenta emplear tipografías sin muchos adornos (se les llaman Sans Serif) que vienen incluidas en Google Slides por defecto como Roboto, Open Sans, Helvetica o Arial. Escoge una y utiliza la misma durante toda la presentación. Puedes emplear otra tipografía para los títulos si lo deseas, pero es crucial que sea una tipografía que juegue bien con la que escogiste. Si quieres recorrer este camino te recomiendo que uses [esta herramienta](https://www.google.com/url?q=https://www.fontpair.co/&sa=D&source=editors&ust=1667933238257024&usg=AOvVaw0oQD6yySeqK07wfogOyvsL).
+En cuanto a la tipografía, la recomendación es la misma: menos es más. Intenta emplear tipografías sin muchos adornos (se les llaman Sans Serif) que vienen incluidas en Google Slides por defecto como Roboto, Open Sans, Helvetica o Arial. Escoge una y utiliza la misma durante toda la presentación. Puedes emplear otra tipografía para los títulos si lo deseas, pero es crucial que sea una tipografía que juegue bien con la que escogiste. Si quieres recorrer este camino te recomiendo que uses [esta herramienta](https://www.fontpair.co/).
 
 #### Imágenes vs íconos
 
 Intenta utilizar imágenes solo en slides que creas que agregan valor, no como un adorno. Muchas veces es mejor idea utilizar un ícono que una imagen. Recuerda, menos es más.
 
-Para elegir íconos de buena calidad puedes ocupar [el complemento de Google Slides de Flaticon](https://www.google.com/url?q=https://workspace.google.com/marketplace/app/icons_for_slides_docs/381578326502&sa=D&source=editors&ust=1667933238257842&usg=AOvVaw3K8pzuvMDIF08c6-cD3Mtr) que te permite crear íconos directamente en tus dispositivas o descargarlos directamente de [su página](https://www.google.com/url?q=https://www.flaticon.com/&sa=D&source=editors&ust=1667933238258096&usg=AOvVaw0nQE9sTwXlH-MubkJXd7D7).
+Para elegir íconos de buena calidad puedes ocupar [el complemento de Google Slides de Flaticon](https://workspace.google.com/marketplace/app/icons_for_slides_docs/381578326502) que te permite crear íconos directamente en tus dispositivas o descargarlos directamente de [su página](https://www.flaticon.com/).
 
 ## Paso 6: Actúa
 
@@ -500,7 +500,7 @@ En este proyecto hicimos un análisis mes a mes del comportamiento de los client
 
 Para realizar el análisis de cohorts trimestral, la estructura de tu tabla de análisis debería verse como la siguiente imágen:
 
-<img src="http://drive.google.com/uc?export=view&id=1TIIc1bzfoXQsC0v7Rz9HnKiD-AO3BqIj" alt="estructura-cohort-tri" width="600"/>
+<img src="https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/hacker-edition-01-.png" alt="estructura-cohort-tri" width="600"/>
 
   > Figura: Estructura de análisis de cohorts trimestral
 
@@ -508,7 +508,7 @@ Para crear la estructura previa puedes seguir los siguientes pasos:
 
 1. Copia las columnas Nombre Cliente, Apellido Cliente, Estado Cliente, Mes Registro y Mes de Abandono (Churn) a una nueva hoja.
 
-2. Procesar el dataset para que tenga dos columnas adicionales: trimestre (T1 si es el primero, T2 si es el segundo, y así en adelante) y el año de ese trimestre. Para lograr esto vamos a ocupar las [IF](https://www.google.com/url?q=https://support.google.com/docs/answer/3093364?hl%3Den&sa=D&source=editors&ust=1667933238259860&usg=AOvVaw00gdWtB2nJFK6gxu5gXsCI) y [MONTH](https://www.google.com/url?q=https://support.google.com/docs/answer/3093052?hl%3Den&sa=D&source=editors&ust=1667933238260198&usg=AOvVaw2B0nyoPY1Hbfk48Faj6Lfo) para clasificar a los clientes en trimestres.
+2. Procesar el dataset para que tenga dos columnas adicionales: trimestre (T1 si es el primero, T2 si es el segundo, y así en adelante) y el año de ese trimestre. Para lograr esto vamos a ocupar las [IF](https://support.google.com/docs/answer/3093364?hl%3Den) y [MONTH](https://support.google.com/docs/answer/3093052?hl%3Den) para clasificar a los clientes en trimestres.
 
   Para usar la fórmula IF, primero entendamos los argumentos de la fórmula. Los argumentos son:
 
@@ -520,13 +520,13 @@ Para crear la estructura previa puedes seguir los siguientes pasos:
 
   La fórmula MONTH() devuelve el número que representa el mes de una variable de fecha.
 
-  👀 A veces las celdas de fecha no están en formato fecha, aun cuando parezca que si lo son. Para asegurarnos, podemos ocupar la fórmula [TO_DATE()](https://www.google.com/url?q=https://support.google.com/docs/answer/3094239?hl%3Den&sa=D&source=editors&ust=1667933238261319&usg=AOvVaw3zu-7b2W9czH5YeppeFB3H) para transformar la variable y confirmar que la variable está en formato de fecha.
+  > 👀 A veces las celdas de fecha no están en formato fecha, aun cuando parezca que si lo son. Para asegurarnos, podemos ocupar la fórmula [TO_DATE()](https://support.google.com/docs/answer/3094239?hl%3Den) para transformar la variable y confirmar que la variable está en formato de fecha.
 
   Ahora que entendemos las tres fórmulas, podemos ocuparlas para calcular el trimestre de ingreso de cada cliente. Por ejemplo, nuestro primer cliente George García se registró el 01/2019. Con la fórmula MONTH() podemos extraer el mes (1) y luego ocupar la función IF para verificar si este mes corresponde al primer, segundo, tercer o cuatro trimestre.
 
   Nuestra fórmula debería verse así:
 
-  ```
+  ```SQL
   =IF(MONTH(F2)<=3,"T1",IF(MONTH(F2)<=6,"T2", IF(MONTH(F2)<=9,"T3",IF(MONTH(F2)<=12,"T4",""))))
 
   ```
@@ -540,29 +540,29 @@ Para crear la estructura previa puedes seguir los siguientes pasos:
 
   > 👩‍💻 La fórmula IFS cumple una función similar a la encadenación de funciones IF. Te recomendamos probarla, ya que, en casos como estos donde tienes muchas condiciones, es una fórmula más limpia y simple de utilizar.
 
-  Ya tenemos el trimestre, pero este puede corresponde a cualquiera de los dos años del dataset. Por lo que se vuelve necesario crear una nueva columna que contenga el año del trimestre. Para esto puedes usar la fórmula [YEAR()](https://www.google.com/url?q=https://support.google.com/docs/answer/3093061?hl%3Den&sa=D&source=editors&ust=1667933238262013&usg=AOvVaw1pieqQ46q3IIyfgxPcldGs).
+  Ya tenemos el trimestre, pero este puede corresponde a cualquiera de los dos años del dataset. Por lo que se vuelve necesario crear una nueva columna que contenga el año del trimestre. Para esto puedes usar la fórmula [YEAR()](https://support.google.com/docs/answer/3093061?hl%3Den).
 
   Su base de datos al final debería verse así:
 
-  ![hacker-edition-01](http://drive.google.com/uc?export=view&id=1iopFSj0s_9qX39uchOtxAasTEJP5ZkjN)
+  ![hacker-edition-01](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/hacker-edition-01.png)
 
-3. Aplicaremos el proceso del paso 2 pero está vez con la columna "Mes de Abandono (Churn). ¿Qué hacer con los registros en blanco? Un posible tratamiento es ponerle un TRIMESTRE posterior al último que tienes como registro, por ejemplo si tienes "2020-T4"como último trimestre de registro, podrías llenar los valores vacíos con "2021-T1".
+Aplicaremos el proceso del paso 2 pero está vez con la columna "Mes de Abandono (Churn). ¿Qué hacer con los registros en blanco? Un posible tratamiento es ponerle un TRIMESTRE posterior al último que tienes como registro, por ejemplo si tienes "2020-T4"como último trimestre de registro, podrías llenar los valores vacíos con "2021-T1".
 
-3. Calcular las cabeceras de las columnas de medición de deserción
+Luego, alcularemos las cabeceras de las columnas de medición de deserción
 
-  ![hacker-edition-01](http://drive.google.com/uc?export=view&id=1KqbTpZGNFbCpH9q59ffyZfOqfsiCT0jv)
+  ![hacker-edition-01](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/hacker-edition-02-.png)
 
   Para generar estos datos puedes hacer una concatenación de funciones como sigue:
   
-  ```
+  ```SQL
   =TRANSPOSE(UNIQUE([COLUMNA QUE CONTIENE TRIMESTRE DE REGISTRO]))
   ```
 
-   La función UNIQUE(), te permite obtener los valores únicos de toda la columna y finalmente la función TRANSPOSE() se utiliza para pasar los datos que están a nivel fila a nivel de columnas.
+La función UNIQUE(), te permite obtener los valores únicos de toda la columna y finalmente la función TRANSPOSE() se utiliza para pasar los datos que están a nivel fila a nivel de columnas.
 
-4. Ahora toca llenar los datos con 1 cuando el usuario estuvo activo y vació el trimestre que abandonó.
+Ahora toca llenar los datos con 1 cuando el usuario estuvo activo y vació el trimestre que abandonó.
 
-  <img src="http://drive.google.com/uc?export=view&id=1AZ4UTlR9x4qugxFF_EkLafElZ0yFtYFs" alt="estructura-cohort-tri" width="600"/>
+  <img src="https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-2-startup/images/hacker-edition-03-.png" alt="estructura-cohort-tri" width="600"/>
 
   Para que el valor de la celda C1 de la imagen previa sea 1 necesitamos validar dos condiciones
   
@@ -583,18 +583,16 @@ Con tu tabla creada, puedes elegir la fórmula INDEX o QUERY para organizar sus 
 
 A continuación te dejamos algunos videos y artículos adicionales que pueden servirte si deseas profundizar más en los temas que trabajarás en este proyecto.
 
-- [What is critical thinking?](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DHnJ1bqXUnIM&sa=D&source=editors&ust=1667933238264531&usg=AOvVaw2bhnNOQvbErtWld58P_rjP)
+- [What is critical thinking?](https://www.youtube.com/watch?v%3DHnJ1bqXUnIM)
 
-- [¿Qué es el pensamiento crítico y cómo desarrollarlo?](https://www.google.com/url?q=https://www.youtube.com/watch?v%3D92u6ibginyk&sa=D&source=editors&ust=1667933238264924&usg=AOvVaw3lcCqGN4PQSXB1vOVdQGCC)
+- [¿Qué es el pensamiento crítico y cómo desarrollarlo?](https://www.youtube.com/watch?v%3D92u6ibginyk)
 
-- [Critical thinking skills](https://www.google.com/url?q=https://www.skillsyouneed.com/learn/critical-thinking.html&sa=D&source=editors&ust=1667933238265272&usg=AOvVaw11i9lgkmfxkkvCvhZcAAe2)
+- [Critical thinking skills](https://www.skillsyouneed.com/learn/critical-thinking.html)
 
-- [Critical thinking definition, skills and examples](https://www.google.com/url?q=https://www.thoughtco.com/critical-thinking-definition-with-examples-2063745&sa=D&source=editors&ust=1667933238265641&usg=AOvVaw2fAyhdRxLGa5fHFrSSCaXB)
+- [Critical thinking definition, skills and examples](https://www.thoughtco.com/critical-thinking-definition-with-examples-2063745)
 
-- [5 consejos para mejorar tu pensamiento crítico](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DYO4pwpaH8Fo&sa=D&source=editors&ust=1667933238265976&usg=AOvVaw3_YaaZYeTuIS0vC0psYquP)
+- [5 consejos para mejorar tu pensamiento crítico](https://www.youtube.com/watch?v%3DYO4pwpaH8Fo)
 
-- [What are critical thinking skills and how are they used?](https://www.google.com/url?q=https://uk.indeed.com/career-advice/career-development/critical-thinking-skills&sa=D&source=editors&ust=1667933238266350&usg=AOvVaw1vnrqhWvQN2nk2MEgc6BNf)
+- [What are critical thinking skills and how are they used?](https://uk.indeed.com/career-advice/career-development/critical-thinking-skills)
 
-- [What self-awareness really is and how to cultivate it](https://www.google.com/url?q=https://drive.google.com/file/d/1YyNX5m8O50D4fGGOq8oxzkptFLBGixdM/view&sa=D&source=editors&ust=1667933238266713&usg=AOvVaw0jVKF3IOXto2R4qHBGBnJb)
-
-- [Solitude and leadership](https://www.google.com/url?q=https://theamericanscholar.org/solitude-and-leadership/%23.XzL0_xMza3V&sa=D&source=editors&ust=1667933238267130&usg=AOvVaw34B5eL8tLkiL21wLGT0hcH)
+- [What self-awareness really is and how to cultivate it](https://drive.google.com/file/d/1YyNX5m8O50D4fGGOq8oxzkptFLBGixdM/view)
