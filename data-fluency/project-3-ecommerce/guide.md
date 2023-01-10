@@ -4,16 +4,12 @@
 
 En este proyecto simularás ser parte del equipo de una consultora estratégica enfocada en Business Intelligence. Utilizando datos históricos de una empresa de ventas al por mayor deberás generar un análisis completo que incluya:
   
-
-  
-
--   **Pre-procesamiento de los datos**: revisar la calidad de la base de datos, eliminar datos duplicados que no tengan sentido, encontrar datos faltantes, reemplazarlos o eliminarlos, y buscar datos que no correspondan (por ejemplo, números negativos en columnas que generalmente son números positivos). Recuerda que el preprocesamiento de los datos es un paso fundamental y básico de todo análisis de datos.
--   **Análisis exploratorio**: a través de tablas dinámicas, fórmulas y gráficos deberás hacerte una idea de la salud financiera del negocio.
--   **Segmentación de clientes**: finalmente, tendrás que hacer una segmentación de los clientes basándote en tres características: Recencia, Frecuencia y Monto. Es un análisis integral que te permitirá hacer recomendaciones a UK Merch para que aprovechen de mejor manera sus recursos.
+- **Pre-procesamiento de los datos**: revisar la calidad de la base de datos, eliminar datos duplicados que no tengan sentido, encontrar datos faltantes, reemplazarlos o eliminarlos, y buscar datos que no correspondan (por ejemplo, números negativos en columnas que generalmente son números positivos). Recuerda que el preprocesamiento de los datos es un paso fundamental y básico de todo análisis de datos.
+- **Análisis exploratorio**: a través de tablas dinámicas, fórmulas y gráficos deberás hacerte una idea de la salud financiera del negocio.
+- **Segmentación de clientes**: finalmente, tendrás que hacer una segmentación de los clientes basándote en tres características: Recencia, Frecuencia y Monto. Es un análisis integral que te permitirá hacer recomendaciones a UK Merch para que aprovechen de mejor manera sus recursos.
   
 > Recuerda que las empresas capaces de utilizar los datos de los clientes para comprender mejor cómo piensan, sienten y toman decisiones de compra, tienen una ventaja.
   
-
 ## Lifeskills
 
 Llegamos al último proyecto oficial de este programa y con ello también a la última habilidad para la vida en la que te proponemos enfocarte, que es **la comunicación efectiva, más específicamente, data storytelling**.
@@ -26,11 +22,11 @@ Así como en los proyectos anteriores, uno de tus entregables será un video pre
 
 Para desarrollarla, durante este proyecto te invitamos a aprovechar de la mejor manera los siguientes recursos:
 
--   El taller práctico-reflexivo en vivo que tendremos el segundo jueves de este proyecto.
+- El taller práctico-reflexivo en vivo que tendremos el segundo jueves de este proyecto.
 
--   El video de presentación de este proyecto.
+- El video de presentación de este proyecto.
 
--   Recursos adicionales a tu disposición, como en esta guía, donde encontrarás algunos artículos y videos acerca de pensamiento crítico, para que puedas profundizar en el tema.
+- Recursos adicionales a tu disposición, como en esta guía, donde encontrarás algunos artículos y videos acerca de pensamiento crítico, para que puedas profundizar en el tema.
 
 Ahora sí, ¿lista para comenzar? Continúa leyendo esta guía paso a paso, que será tu hoja de ruta para el desarrollo de este proyecto.
 
@@ -57,7 +53,6 @@ Ahora que tenemos claro el objetivo de nuestro análisis, debemos salir a buscar
 Por ahora comencemos por importar la base de datos a tu hoja de cálculo y entender la estructura de la misma y sus campos relevantes. Fíjate que el dataset cuenta con un diccionario que describe el tipo de dato de cada columna. Revisa bien el diccionario y asegúrate de dominar lo que significa cada variable.
 
 > ⚠️ **Importante**: Muchas veces al importar fuentes de datos externas a Google Sheets se generan errores de transformación. Por ejemplo, un campo de fecha o de número no es leído como tal, sino que como texto. Esto puede perjudicar nuestro análisis, ya que las fórmulas que utilizamos muchas veces dependen de que las celdas estén formateadas correctamente. El origen de muchos de estos errores es la diferencia de unidades, formatos y separadores en distintas regiones. Estas diferencias confunden a Google Sheets. Por ejemplo, en Estados Unidos las fechas se escriben en formato MM/DD/AAAA y los separadores de miles son comas y no puntos (1,000,000 vs 1.000.000). Si tuviste problemas al importar el dataset te recomendamos cambiar la configuración regional a Estados Unidos (o viceversa). Para esto debes ir a Archivo -> Configuración, hacer el cambio y refrescar la página.
-
 
 ![image11](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image11.png)
 
@@ -227,11 +222,11 @@ Viendo este nuevo gráfico, ¿el éxito de noviembre se debe a que unos pocos cl
 
 ¡Hasta el momento has generado tablas y gráficos muy útiles! Ellos te han permitido entender de mejor manera como se comportaron las ventas del negocio el año pasado. Pero hay muchas otras métricas que puedes revisar, ¡anímate a complementar tu reporte! Algunas ideas:
 
--   Analizar el monto total de venta por mes
--   Tabular los clientes que más compras han realizado
--   Graficar los clientes que más han gastado
--   Analizar cómo se comporta el monto mes a mes en clientes UK y no-UK
--   Lo mismo pero también para la cantidad de productos
+- Analizar el monto total de venta por mes
+- Tabular los clientes que más compras han realizado
+- Graficar los clientes que más han gastado
+- Analizar cómo se comporta el monto mes a mes en clientes UK y no-UK
+- Lo mismo pero también para la cantidad de productos
 
 ¡Agrega las que a ti te parezcan útiles!
 
@@ -243,9 +238,9 @@ Esta metodología permite clasificar a los clientes en las tres variables mencio
 
 ![image33](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image33.png)
 
--   **Recencia**: Los clientes que han comprado recientemente tienen mayor tendencia a adquirir nuevos productos que aquellos que tienen tiempo sin hacer ninguna compra. Esta variable mide el tiempo que ha transcurrido desde la última compra. Para calcularla es necesario identificar la última compra que realizó el cliente y restarlo de la fecha de hoy. Esta puede estar en días, meses, etc.
--   **Frecuencia**: Los clientes que han comprado repetidas veces al ser comparados con aquellos que no, son más propensos a seguir haciendo compras. Está variable se puede calcular como el número de visitas del cliente, número de meses distintos que visitó el cliente, número de productos que compró.
--   **Monto**: Los clientes que en el pasado han sumado más dinero en todas sus compras, son mayoritariamente más propensos a seguir generando ingresos a una empresa. Para calcular esta variable, básicamente tendríamos que sumar todo el gasto del cliente en el periodo de análisis.
+- **Recencia**: Los clientes que han comprado recientemente tienen mayor tendencia a adquirir nuevos productos que aquellos que tienen tiempo sin hacer ninguna compra. Esta variable mide el tiempo que ha transcurrido desde la última compra. Para calcularla es necesario identificar la última compra que realizó el cliente y restarlo de la fecha de hoy. Esta puede estar en días, meses, etc.
+- **Frecuencia**: Los clientes que han comprado repetidas veces al ser comparados con aquellos que no, son más propensos a seguir haciendo compras. Está variable se puede calcular como el número de visitas del cliente, número de meses distintos que visitó el cliente, número de productos que compró.
+- **Monto**: Los clientes que en el pasado han sumado más dinero en todas sus compras, son mayoritariamente más propensos a seguir generando ingresos a una empresa. Para calcular esta variable, básicamente tendríamos que sumar todo el gasto del cliente en el periodo de análisis.
 
 Una vez que tenemos calculadas las 3 variables para todos los clientes, los categorizamos de acuerdo al **cuartil** en que se encuentra cada cliente para cada variable. Es importante notar que este análisis se puede hacer por cuartiles, como también por quintiles, tercios, percentiles, o la división que prefiera la analista de datos. Mientras más divisiones, más fino el análisis.
 
@@ -257,17 +252,17 @@ Entonces un buen cliente pertenece en recencia al cuartil 1 (ya que compró hace
 
 Miremos algunos ejemplos:
 
--   **El cliente 1 es un excelente cliente**, ya que ha comprado hace poco (pertenece al primer cuartil en recencia, Recencia=1), ha comprado varias veces (pertenece al cuarto cuartil en frecuencia, Frecuencia=4) y ha gastado montos grandes en sus compras (pertenece al cuarto cuartil en monto, Monto=4). A ellos los codificamos como 144 (Recencia=1, Frecuencia=4, Monto=4)
--   El cliente 4 es **un cliente que compró hace mucho tiempo** (cuarto cuartil en recencia, Recencia=4), pero ha hecho varias compras en su historia (cuarto cuartil Frecuencia, Frecuencia=4) y hace compras relativamente caras (tercer cuartil en monto, Monto=3). Si juntamos los números su codificación es 443.
+- **El cliente 1 es un excelente cliente**, ya que ha comprado hace poco (pertenece al primer cuartil en recencia, Recencia=1), ha comprado varias veces (pertenece al cuarto cuartil en frecuencia, Frecuencia=4) y ha gastado montos grandes en sus compras (pertenece al cuarto cuartil en monto, Monto=4). A ellos los codificamos como 144 (Recencia=1, Frecuencia=4, Monto=4)
+- El cliente 4 es **un cliente que compró hace mucho tiempo** (cuarto cuartil en recencia, Recencia=4), pero ha hecho varias compras en su historia (cuarto cuartil Frecuencia, Frecuencia=4) y hace compras relativamente caras (tercer cuartil en monto, Monto=3). Si juntamos los números su codificación es 443.
 
 Luego podemos ir creando distintas codificaciones con caracterizaciones de los clientes:
 
--   **Los mejores clientes (RFM=144)**: Clientes altamente comprometidos que han comprado lo más reciente, con mayor frecuencia, y han generado la mayor cantidad de ingresos.
--   **Los clientes leales (RFM=X4X)**: En este tipo de codificación la “X” hace referencia a que el cliente puede pertenecer a cualquier cuartil en Recencia, pertenece al cuartil 4 en Frecuencia y puede estar en cualquier cuartil en Monto. Esto quiere decir que el cliente codificado con 242 o 344 serán considerados dentro de la categoría “Más leales”. Estos clientes son los que compran más a menudo en UK Merch.
--   **Los clientes que más pagan (RFM=XX4)**: Los clientes que han hecho las compras más caras en UK Merch.
--   **Los clientes fieles (RFM=X41, RFM=X42)**: Son clientes que suelen volver a tu tienda pero no gastan mucho.
--   **Nuevos clientes (RFM=11X):** Compradores por primera vez en UK Merch
--   **Los durmientes (RFM=44X)**: Grandes clientes del pasado que no han comprado en un tiempo.
+- **Los mejores clientes (RFM=144)**: Clientes altamente comprometidos que han comprado lo más reciente, con mayor frecuencia, y han generado la mayor cantidad de ingresos.
+- **Los clientes leales (RFM=X4X)**: En este tipo de codificación la “X” hace referencia a que el cliente puede pertenecer a cualquier cuartil en Recencia, pertenece al cuartil 4 en Frecuencia y puede estar en cualquier cuartil en Monto. Esto quiere decir que el cliente codificado con 242 o 344 serán considerados dentro de la categoría “Más leales”. Estos clientes son los que compran más a menudo en UK Merch.
+- **Los clientes que más pagan (RFM=XX4)**: Los clientes que han hecho las compras más caras en UK Merch.
+- **Los clientes fieles (RFM=X41, RFM=X42)**: Son clientes que suelen volver a tu tienda pero no gastan mucho.
+- **Nuevos clientes (RFM=11X):** Compradores por primera vez en UK Merch
+- **Los durmientes (RFM=44X)**: Grandes clientes del pasado que no han comprado en un tiempo.
 
 > 👀 Según esta categorización es posible que **un cliente pueda pertenecer a más de un segmento**, en este caso se tendrá que priorizar a qué segmento asignarlo de acuerdo a la necesidad del negocio. Por otro lado, habrá clientes que no estén segmentados, podrías hacer una refactorización en las categorías (volver a pensar las categorías con más información) como por ejemplo tus clientes que más pagan pasarán a ser XX3 y XX4, de esta forma agregarás a los clientes que pertenecen al cuartil 3 y 4 de la dimensión Monto.
 
@@ -281,9 +276,9 @@ Para mantener el orden, vamos a volver a crear una nueva pestaña donde copiarem
 
 Con esta información crearemos una tabla dinámica en donde las filas sean los ID de todos los clientes y en las columnas podamos ver tres piezas de información importantes:
 
-1.  La última fecha de compra del cliente
-2.  La cantidad de facturas que están asociadas a cada cliente
-3.  La suma total del monto gastado por el cliente (aquí puedes ocupar el agregador SUM)
+1. La última fecha de compra del cliente
+2. La cantidad de facturas que están asociadas a cada cliente
+3. La suma total del monto gastado por el cliente (aquí puedes ocupar el agregador SUM)
 
 Te recomiendo volver a copiar esta información en otro lugar de la pestaña para poder agregarle columnas y hacer la categorización ahí (¡gracias función QUERY!)
 
@@ -320,10 +315,10 @@ Ocupemos esta fórmula para asignarle el cuartil correspondiente a cada cliente 
 ![image14.png](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image14.png)
 Esta fórmula puede interpretarse de la siguiente manera:
 
--   **Condición 1 (AG2<=AP34;AO34)**: Si AG2 es menor o igual a AP34 (que es el primer límite de rango del cuartil), entonces deja el valor de AO34 (que es el valor 1, para indicar que pertenece al primer cuartil).
--   **Condición 2 (AG2<=AP35;AO35)**: Si AG2 es menor o igual a AP35 (que es el segundo límite de rango del cuartil), y como ya sabemos que no pertenece al primer cuartil, entonces deja el valor de AO35 (que es el valor 2, para indicar que pertenece al segundo cuartil).
--   **Condición 3 (AG2<=AP36;AO36)**: Si AG2 es menor o igual a AP36 (que es el tercer límite de rango del cuartil), y como ya sabemos que no pertenece al segundo cuartil, entonces deja el valor de AO36 (que es el valor 3, para indicar que pertenece al tercer cuartil).
--   **Condición 4 (AG2<=AP37;AO37)**: Si AG2 es menor o igual a AP37 (que es el cuarto límite de rango del cuartil), y como ya sabemos que no pertenece al tercer cuartil, entonces deja el valor de AO37 (que es el valor 4, para indicar que pertenece al cuarto cuartil).
+- **Condición 1 (AG2<=AP34;AO34)**: Si AG2 es menor o igual a AP34 (que es el primer límite de rango del cuartil), entonces deja el valor de AO34 (que es el valor 1, para indicar que pertenece al primer cuartil).
+- **Condición 2 (AG2<=AP35;AO35)**: Si AG2 es menor o igual a AP35 (que es el segundo límite de rango del cuartil), y como ya sabemos que no pertenece al primer cuartil, entonces deja el valor de AO35 (que es el valor 2, para indicar que pertenece al segundo cuartil).
+- **Condición 3 (AG2<=AP36;AO36)**: Si AG2 es menor o igual a AP36 (que es el tercer límite de rango del cuartil), y como ya sabemos que no pertenece al segundo cuartil, entonces deja el valor de AO36 (que es el valor 3, para indicar que pertenece al tercer cuartil).
+- **Condición 4 (AG2<=AP37;AO37)**: Si AG2 es menor o igual a AP37 (que es el cuarto límite de rango del cuartil), y como ya sabemos que no pertenece al tercer cuartil, entonces deja el valor de AO37 (que es el valor 4, para indicar que pertenece al cuarto cuartil).
 
 En el ejemplo de la foto AG2=367 no se cumple la primera condición (porque no es menor o igual que 59). No se cumple la segunda condición (porque no es menor o igual que 92). Tampoco se cumple la tercera (porque no es menor o igual que 183.5), pero si se cumple la cuarta condición (si es menor o igual a 415), por lo que dejamos el valor de AO37=4. Es decir, ese valor pertenece al cuarto cuartil.
 
@@ -401,21 +396,21 @@ Han pasado muchos años desde nuestros antepasados cavernarios, pero nuestras es
 
 Si todavía no estás convencida, te dejo algunos datos:
 
--   Un estudio conducido por Chip Heath, autor de “Made to stick” y profesor de Stanford, demostró que en un ejercicio de **memoria**, un 63% de los participantes pudo recordar una historia, en contraste con solo un 5% que puso recordar una estadística.
--   En otro estudio, a un grupo de participantes se les mostró dos tipos de infográficas invitando a donar. La infografía que se estructuraba en torno a una narrativa recaudó el doble de fondos, mostrando el poder **persuasivo** de las historias.
--   Un tercer estudió demostró el efecto **cautivador** de las historias. Cuando escuchamos una narrativa, somos más propensas a bajar nuestra “guardia” intelectual, y tomamos una postura menos crítica y escéptica.
+- Un estudio conducido por Chip Heath, autor de “Made to stick” y profesor de Stanford, demostró que en un ejercicio de **memoria**, un 63% de los participantes pudo recordar una historia, en contraste con solo un 5% que puso recordar una estadística.
+- En otro estudio, a un grupo de participantes se les mostró dos tipos de infográficas invitando a donar. La infografía que se estructuraba en torno a una narrativa recaudó el doble de fondos, mostrando el poder **persuasivo** de las historias.
+- Un tercer estudió demostró el efecto **cautivador** de las historias. Cuando escuchamos una narrativa, somos más propensas a bajar nuestra “guardia” intelectual, y tomamos una postura menos crítica y escéptica.
 
 ### Los tres elementos claves
 
 El data storytelling reúne tres elementos que ya hemos mencionado: narrativa, visuales y datos.
 
--   Cuando tomas una **narrativa** apoyada en **datos**, entonces puedes ser capaz de **explicar** a tu audiencia rasgos generales de la data.
--   Si generas **visuales** a partir de tus **datos**, es probable que alguien se pueda **informar** de insights particulares que no podría ver sin gráficos.
--   Al combinar **narrativa** con **visuales**, puedes **cautivar** a tu audiencia. El ejemplo clásico son las películas que mezclan imágenes con narrativas para generar emociones en los espectadores.
+- Cuando tomas una **narrativa** apoyada en **datos**, entonces puedes ser capaz de **explicar** a tu audiencia rasgos generales de la data.
+- Si generas **visuales** a partir de tus **datos**, es probable que alguien se pueda **informar** de insights particulares que no podría ver sin gráficos.
+- Al combinar **narrativa** con **visuales**, puedes **cautivar** a tu audiencia. El ejemplo clásico son las películas que mezclan imágenes con narrativas para generar emociones en los espectadores.
 
 | ![image50](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image50.png) |
 |---|
-| *Imagen tomada de [este artículo](https://www.google.com/url?q=https://www.forbes.com/sites/brentdykes/2016/03/31/data-storytelling-the-essential-data-science-skill-everyone-needs/?sh%3D5750c5ca52ad&sa=D&source=editors&ust=1669290706037320&usg=AOvVaw1kaoxiKLpNn9glUmJctNG3) de Forbes* | 
+| *Imagen tomada de [este artículo](https://www.google.com/url?q=https://www.forbes.com/sites/brentdykes/2016/03/31/data-storytelling-the-essential-data-science-skill-everyone-needs/?sh%3D5750c5ca52ad&sa=D&source=editors&ust=1669290706037320&usg=AOvVaw1kaoxiKLpNn9glUmJctNG3) de Forbes* |
 
 La magia sucede combinas estos tres elementos. El data storytelling es una herramienta que puede influenciar y generar cambio.
 
@@ -431,15 +426,15 @@ Toda esta sección se basa en el excelente libro “[Storytelling with Data](htt
 
 Aquí debes ser capaz de responder tres preguntas
 
--   **¿Quién?**: Es muy importante pensar a quién le vas a presentar tus resultados porque así puedes definir si será una presentación más técnica mostrando, además de los resultados, cómo se desarrolló el análisis. O quizás es una presentación al CEO de la empresa, que necesita conocer directamente los resultados obtenidos y los próximos pasos.
--   **¿Qué?**: Esto es lo que quieres lograr con tu storytelling. Quizás quieres convencer a alguien que debe tomar una decisión sobre un producto digital, o un área de finanzas que debe subir el presupuesto de mercadeo. Esto es lo que descubriste en tu análisis y quieres contar.
--   **¿Cómo?**: Las herramientas, visualizaciones o datos que vas a utilizar para lograr tu objetivo. Puede ser un análisis descriptivo. O una predicción basada en datos históricos. Debes buscar la forma de lograr que tu audiencia (quien) entienda y actúe sobre el problema (qué).
+- **¿Quién?**: Es muy importante pensar a quién le vas a presentar tus resultados porque así puedes definir si será una presentación más técnica mostrando, además de los resultados, cómo se desarrolló el análisis. O quizás es una presentación al CEO de la empresa, que necesita conocer directamente los resultados obtenidos y los próximos pasos.
+- **¿Qué?**: Esto es lo que quieres lograr con tu storytelling. Quizás quieres convencer a alguien que debe tomar una decisión sobre un producto digital, o un área de finanzas que debe subir el presupuesto de mercadeo. Esto es lo que descubriste en tu análisis y quieres contar.
+- **¿Cómo?**: Las herramientas, visualizaciones o datos que vas a utilizar para lograr tu objetivo. Puede ser un análisis descriptivo. O una predicción basada en datos históricos. Debes buscar la forma de lograr que tu audiencia (quien) entienda y actúe sobre el problema (qué).
 
 Veamos un ejemplo. Supongamos que eres una profesora de ciencias que desarrolló un taller de verano con algunos estudiantes. El taller fue un éxito y ahora quieres hablar con el director de tu colegio para que apruebe mayor presupuesto para los talleres del próximo año. Estructuras tus elementos básicos de storytelling:
 
--   **¿Quién?**: El director del colegio, quien aprueba los aumentos de presupuesto.
--   **¿Qué?**: El taller de verano fue un éxito. Por favor, aprueba un aumento de $X del presupuesto para los talleres del próximo año.
--   **¿Cómo?**: Mostrar el éxito de taller comparando los resultados de una encuesta hecha antes y después del programa en donde se les pregunta a los niños sobre su interés en la ciencia.
+- **¿Quién?**: El director del colegio, quien aprueba los aumentos de presupuesto.
+- **¿Qué?**: El taller de verano fue un éxito. Por favor, aprueba un aumento de $X del presupuesto para los talleres del próximo año.
+- **¿Cómo?**: Mostrar el éxito de taller comparando los resultados de una encuesta hecha antes y después del programa en donde se les pregunta a los niños sobre su interés en la ciencia.
 
 #### 2. Elegir las visualizaciones correctas
 
@@ -605,18 +600,18 @@ Una simple adición a nuestro ejemplo anterior sería algo como esto:
 
 Esta nueva visualización agrega elementos de texto muy importantes:
 
--   Etiquetas de datos de los ejes para dar más contexto
--   La acción que quieres intencionar en tu audiencia en el título (“Por favor aprueba la contratación de 2 personas más”)
--   Un párrafo en la misma visualización que explica el punto en donde se van las dos personas de tu equipo y la consecuencia que eso tiene en la brecha entre tickets recibidos y tickets procesados
--   La fuente de los datos por si alguien quiere hacer un análisis en profundidad
+- Etiquetas de datos de los ejes para dar más contexto
+- La acción que quieres intencionar en tu audiencia en el título (“Por favor aprueba la contratación de 2 personas más”)
+- Un párrafo en la misma visualización que explica el punto en donde se van las dos personas de tu equipo y la consecuencia que eso tiene en la brecha entre tickets recibidos y tickets procesados
+- La fuente de los datos por si alguien quiere hacer un análisis en profundidad
 
 #### 6. Cuenta la historia
 
 ¿Qué es exactamente una historia? En su nivel más fundamental, una historia está compuesta de tres actos.
 
--   El **primer acto** establece el contexto de la historia. Se introduce el personaje principal, sus relaciones y el mundo donde vive. En general, en este acto se muestra que existe un cierto **equilibrio** en el mundo que luego es perturbado por algo.
--   El **segundo acto** constituye la mayor parte de la historia. Aquí se muestra como el protagonista intenta resolver el problema que se originó en el primer acto.
--   En el **tercer acto** resuelve el conflicto de la historia y da un sentido de completitud.
+- El **primer acto** establece el contexto de la historia. Se introduce el personaje principal, sus relaciones y el mundo donde vive. En general, en este acto se muestra que existe un cierto **equilibrio** en el mundo que luego es perturbado por algo.
+- El **segundo acto** constituye la mayor parte de la historia. Aquí se muestra como el protagonista intenta resolver el problema que se originó en el primer acto.
+- En el **tercer acto** resuelve el conflicto de la historia y da un sentido de completitud.
 
 La lucha, el conflicto y el suspenso son componentes críticos de las historias. Nuestro data storytelling también debe seguir esta secuencia narrativa.
 
@@ -628,13 +623,13 @@ Aquí configuramos los elementos esenciales de la historia, dándole a tu audien
 
 En esta sección debes convencer a tu audiencia de que tu solución es la correcta y que, al aplicarla, se soluciona el conflicto, se dispersa la tensión y se vuelve al equilibrio. Algunas ideas que podrías incluir en esta sección:
 
--   Entrega mayor información sobre el contexto
--   Incluye información externa y como esta se compara con la situación actual
--   Da ejemplos para ilustrar el problema
--   Comenta que sucedería si no se toma acción para solucionar el problema
--   Discute posibles soluciones para solucionar el problema
--   Muestra los beneficios de tu solución propuesta
--   Muestrale a tu audiencia porque están en un momento crítico e idóneo para tomar la decisión y solucionar el problema
+- Entrega mayor información sobre el contexto
+- Incluye información externa y como esta se compara con la situación actual
+- Da ejemplos para ilustrar el problema
+- Comenta que sucedería si no se toma acción para solucionar el problema
+- Discute posibles soluciones para solucionar el problema
+- Muestra los beneficios de tu solución propuesta
+- Muestrale a tu audiencia porque están en un momento crítico e idóneo para tomar la decisión y solucionar el problema
 
 ##### El final
 
@@ -660,19 +655,19 @@ A continuación te dejamos algunos videos y artículos adicionales que pueden se
 
 Para temas técnicos de spreadsheets, RFM y estadística:
 
--   Este [artículo](https://www.google.com/url?q=https://www.zendesk.com.mx/blog/segmentacion-de-clientes/&sa=D&source=editors&ust=1669290706062577&usg=AOvVaw0xEA452KNKmKRv8-RUic9D) para que aprendas sobre segmentación.
--   Este [podcast](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DCM0L1rftBfA&sa=D&source=editors&ust=1669290706062856&usg=AOvVaw0ULznJeJYMQvzO40n11D7_) que profundiza en la metodología de segmentación RFM.
--   Este [video](https://www.google.com/url?q=https://www.youtube.com/watch?v%3Dn3xpKz0SYlQ&sa=D&source=editors&ust=1669290706063104&usg=AOvVaw39audlKOvshLxH5Jms9tPK) que explica el concepto de pareto y como aplicarlo a los negocios.
--   Este [articulo](https://www.google.com/url?q=https://lasmatesfaciles.com/2021/06/21/cuartiles-deciles-y-percentiles-para-datos-agrupados/&sa=D&source=editors&ust=1669290706063391&usg=AOvVaw184H0pLYVKuiYRxI5F8hHS) sobre cuartiles.
--   Este [video](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DHjE4C4p7U2w&sa=D&source=editors&ust=1669290706063641&usg=AOvVaw3BuI_srvUl_SSOZJQ1lwor) de youtube que muestra como hacer reportes ordenados y con diseños modernos.
--   Este [artículo](https://www.google.com/url?q=https://medium.com/@miramontesayelen/claves-del-dise%25C3%25B1o-ux-para-visualizaci%25C3%25B3n-de-datos-8faeca47a709&sa=D&source=editors&ust=1669290706063976&usg=AOvVaw1oBV6ZETQAfE9dmrk8OxIn) que habla sobre buenas prácticas al momento de crear reportes con datos.
+- Este [artículo](https://www.google.com/url?q=https://www.zendesk.com.mx/blog/segmentacion-de-clientes/&sa=D&source=editors&ust=1669290706062577&usg=AOvVaw0xEA452KNKmKRv8-RUic9D) para que aprendas sobre segmentación.
+- Este [podcast](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DCM0L1rftBfA&sa=D&source=editors&ust=1669290706062856&usg=AOvVaw0ULznJeJYMQvzO40n11D7_) que profundiza en la metodología de segmentación RFM.
+- Este [video](https://www.google.com/url?q=https://www.youtube.com/watch?v%3Dn3xpKz0SYlQ&sa=D&source=editors&ust=1669290706063104&usg=AOvVaw39audlKOvshLxH5Jms9tPK) que explica el concepto de pareto y como aplicarlo a los negocios.
+- Este [articulo](https://www.google.com/url?q=https://lasmatesfaciles.com/2021/06/21/cuartiles-deciles-y-percentiles-para-datos-agrupados/&sa=D&source=editors&ust=1669290706063391&usg=AOvVaw184H0pLYVKuiYRxI5F8hHS) sobre cuartiles.
+- Este [video](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DHjE4C4p7U2w&sa=D&source=editors&ust=1669290706063641&usg=AOvVaw3BuI_srvUl_SSOZJQ1lwor) de youtube que muestra como hacer reportes ordenados y con diseños modernos.
+- Este [artículo](https://www.google.com/url?q=https://medium.com/@miramontesayelen/claves-del-dise%25C3%25B1o-ux-para-visualizaci%25C3%25B3n-de-datos-8faeca47a709&sa=D&source=editors&ust=1669290706063976&usg=AOvVaw1oBV6ZETQAfE9dmrk8OxIn) que habla sobre buenas prácticas al momento de crear reportes con datos.
 
 Para complementar tu conocimiento en data storytelling:
 
--   [How to tell a story with data](https://www.google.com/url?q=https://venngage.com/blog/data-storytelling/&sa=D&source=editors&ust=1669290706064403&usg=AOvVaw0kqmUmp8jJ9l_mDGK_LPfP)
--   [5 amazing ways to impact your audience with data storytelling](https://www.google.com/url?q=https://www.meltwater.com/en/blog/5-amazing-ways-to-impact-your-audience-with-data-storytelling&sa=D&source=editors&ust=1669290706064715&usg=AOvVaw3Q0yS2xnyzWto5SFTQk5Qm)
--   [Telling stories with data in 3 steps](https://www.google.com/url?q=https://www.youtube.com/watch?v%3Dr5_34YnCmMY&sa=D&source=editors&ust=1669290706064968&usg=AOvVaw35UzdI2yp1bhDEGxXXFxwy)
--   [Making data mean more through storytelling](https://www.google.com/url?q=https://www.youtube.com/watch?v%3D6xsvGYIxJok&sa=D&source=editors&ust=1669290706065218&usg=AOvVaw2bUcQIBTnMa_JcceGdovjI)
--   [Ejemplo de storytelling con datos - Netflix](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DihltOyKn9I0%26t%3D2s&sa=D&source=editors&ust=1669290706065460&usg=AOvVaw3fjT4_J8TRU7EKPwAmI7-v)
--   [Visualizar y comunicar datos](https://www.google.com/url?q=https://elartedemedir.com/blog/visualizar-comunicar-datos/&sa=D&source=editors&ust=1669290706065703&usg=AOvVaw0wTHzayezDUg3DPxS_7voJ)
--   [Consejos de Retórica para persuadir (con datos)](https://www.google.com/url?q=https://www.linkedin.com/pulse/consejos-de-la-ret%25C3%25B3rica-para-persuadir-con-datos-eduardo-valencia/?originalSubdomain%3Des&sa=D&source=editors&ust=1669290706065993&usg=AOvVaw2P9cqyI37F2MyrhDriPOzA)
+- [How to tell a story with data](https://www.google.com/url?q=https://venngage.com/blog/data-storytelling/&sa=D&source=editors&ust=1669290706064403&usg=AOvVaw0kqmUmp8jJ9l_mDGK_LPfP)
+- [5 amazing ways to impact your audience with data storytelling](https://www.google.com/url?q=https://www.meltwater.com/en/blog/5-amazing-ways-to-impact-your-audience-with-data-storytelling&sa=D&source=editors&ust=1669290706064715&usg=AOvVaw3Q0yS2xnyzWto5SFTQk5Qm)
+- [Telling stories with data in 3 steps](https://www.google.com/url?q=https://www.youtube.com/watch?v%3Dr5_34YnCmMY&sa=D&source=editors&ust=1669290706064968&usg=AOvVaw35UzdI2yp1bhDEGxXXFxwy)
+- [Making data mean more through storytelling](https://www.google.com/url?q=https://www.youtube.com/watch?v%3D6xsvGYIxJok&sa=D&source=editors&ust=1669290706065218&usg=AOvVaw2bUcQIBTnMa_JcceGdovjI)
+- [Ejemplo de storytelling con datos - Netflix](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DihltOyKn9I0%26t%3D2s&sa=D&source=editors&ust=1669290706065460&usg=AOvVaw3fjT4_J8TRU7EKPwAmI7-v)
+- [Visualizar y comunicar datos](https://www.google.com/url?q=https://elartedemedir.com/blog/visualizar-comunicar-datos/&sa=D&source=editors&ust=1669290706065703&usg=AOvVaw0wTHzayezDUg3DPxS_7voJ)
+- [Consejos de Retórica para persuadir (con datos)](https://www.google.com/url?q=https://www.linkedin.com/pulse/consejos-de-la-ret%25C3%25B3rica-para-persuadir-con-datos-eduardo-valencia/?originalSubdomain%3Des&sa=D&source=editors&ust=1669290706065993&usg=AOvVaw2P9cqyI37F2MyrhDriPOzA)

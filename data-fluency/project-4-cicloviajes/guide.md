@@ -10,9 +10,9 @@ Como todo nuevo lenguaje, harás frente a una pequeña dificultad inicial mientr
 
 Ésta es tu oportunidad para conjugar todas las estrategias que has desarrollado a lo largo de los proyectos anteriores. Recuerda que tu puedes:
 
--   Ser una analista de datos muy **organizada**, que estructura su trabajo dentro del tiempo que tiene disponible. Avanzas a paso firme y paulatino, siendo realista con los tiempos libres que manejas para avanzar en tu proyecto. Además, te apoyas de tecnología para facilitar tu organización a través del uso de Trello u alguna otra herramienta de productividad.
--   Cuestionar cada cálculo y visualización que haces en el camino de tu proyecto, empleando **pensamiento crítico** elaborado. Miras con detención las tablas que vas desarrollando y encuentras un sentido lógico en los números. Cuestionas tu propio trabajo y los datos con los que cuentas. Además, llegas a conclusiones que van más allá de lo obvio y básico. Complementas tus análisis con información externa.
--   Presentar tus resultados y conclusiones con técnicas de **data storytelling** para cautivar a tu audiencia y asegurarte de que tu mensaje resuene de la forma más clara posible en tu audiencia. Tus visualizaciones son eficientes, simples, modernas y conformadas por información útil. Empleas texto para complementar con conclusiones tus reportes y dashboards. Favoreces un diseño minimalista que permita enfocarse en el contenido.
+- Ser una analista de datos muy **organizada**, que estructura su trabajo dentro del tiempo que tiene disponible. Avanzas a paso firme y paulatino, siendo realista con los tiempos libres que manejas para avanzar en tu proyecto. Además, te apoyas de tecnología para facilitar tu organización a través del uso de Trello u alguna otra herramienta de productividad.
+- Cuestionar cada cálculo y visualización que haces en el camino de tu proyecto, empleando **pensamiento crítico** elaborado. Miras con detención las tablas que vas desarrollando y encuentras un sentido lógico en los números. Cuestionas tu propio trabajo y los datos con los que cuentas. Además, llegas a conclusiones que van más allá de lo obvio y básico. Complementas tus análisis con información externa.
+- Presentar tus resultados y conclusiones con técnicas de **data storytelling** para cautivar a tu audiencia y asegurarte de que tu mensaje resuene de la forma más clara posible en tu audiencia. Tus visualizaciones son eficientes, simples, modernas y conformadas por información útil. Empleas texto para complementar con conclusiones tus reportes y dashboards. Favoreces un diseño minimalista que permita enfocarse en el contenido.
 
 Aprovecha este proyecto electivo para seguir desarrollando estas habilidades importantísimas en el mundo del análisis de datos.
 
@@ -26,15 +26,15 @@ Para plantear correctamente la pregunta o las preguntas que guiarán tu análisi
 
 De la lectura del brief encontramos los siguientes puntos importantes:
 
--   Debemos presentar las conclusiones de nuestro análisis a la nueva CEO de la compañía. Independiente de las conclusiones a las que lleguemos, parece razonable sumar a nuestro análisis una **vista general de los datos** para que ella se pueda hacer una idea de la compañía. De hecho, la misma CEO nos pregunta por la calidad y antigüedad de los datos, por lo que deberíamos intentar **describir de alguna forma el estado del arte de los datos**.
--   La CEO tiene un particular interés en entender los perfiles de los clientes. Una pregunta central parece ser **¿cómo se diferencian los “customers” de los “subscribers”?**.  Para comprender mejor su comportamiento podemos generar distintas **métricas diferenciadas para cada perfil**. Como mínimo deberíamos ocupar las que la CEO propone en el brief:
+- Debemos presentar las conclusiones de nuestro análisis a la nueva CEO de la compañía. Independiente de las conclusiones a las que lleguemos, parece razonable sumar a nuestro análisis una **vista general de los datos** para que ella se pueda hacer una idea de la compañía. De hecho, la misma CEO nos pregunta por la calidad y antigüedad de los datos, por lo que deberíamos intentar **describir de alguna forma el estado del arte de los datos**.
+- La CEO tiene un particular interés en entender los perfiles de los clientes. Una pregunta central parece ser **¿cómo se diferencian los “customers” de los “subscribers”?**.  Para comprender mejor su comportamiento podemos generar distintas **métricas diferenciadas para cada perfil**. Como mínimo deberíamos ocupar las que la CEO propone en el brief:
 
-    -   Total de viajes
-    -   Evolución de los viajes en el tiempo
-    -   Duración de los viajes
-    -   Uso por horario
-    -   Uso por día de la semana
--   Finalmente, además de entender los perfiles, nuestra CEO parece querer que le entreguemos **recomendaciones para fidelizar ambos perfiles**.
+  - Total de viajes
+  - Evolución de los viajes en el tiempo
+  - Duración de los viajes
+  - Uso por horario
+  - Uso por día de la semana
+- Finalmente, además de entender los perfiles, nuestra CEO parece querer que le entreguemos **recomendaciones para fidelizar ambos perfiles**.
 
 Ahora que tenemos mayor claridad de lo que debemos lograr con nuestro análisis, vamos por los datos.
 
@@ -86,17 +86,17 @@ Te habrás dado cuenta de que tu dataset tiene una estructura anidada de tres ni
 
 Los niveles son:
 
--   **Primer nivel (Proyecto)**: El nombre del proyecto que almacena el dataset. Un proyecto puede tener muchos datasets. En este caso, el proyecto “bigquery-public-data” alberga todos los datasets publicos de la plataforma.
--   **Segundo nivel (Dataset)**: El dataset agrupa una o varias tablas.
--   **Tercer nivel (Tablas)**: Contiene la información almacenada de manera estructurada.
+- **Primer nivel (Proyecto)**: El nombre del proyecto que almacena el dataset. Un proyecto puede tener muchos datasets. En este caso, el proyecto “bigquery-public-data” alberga todos los datasets publicos de la plataforma.
+- **Segundo nivel (Dataset)**: El dataset agrupa una o varias tablas.
+- **Tercer nivel (Tablas)**: Contiene la información almacenada de manera estructurada.
 
 ### 2.3 Explorar el dataset
 
 Tal como viste en [el video del mini-curso](https://www.google.com/url?q=https://coda.io/d/Videos-BigQuery-Cicloviajes_dmIxCiY2-NQ/Explorando-tablas_sufEr?playModeWorkflowId%3D%23_luHYS&sa=D&source=editors&ust=1671545727657095&usg=AOvVaw2WsR24GVnySnSXR2JCfcbr), te recomendamos explorar las dos tablas del dataset. Algunas cosas que deberías tomar en cuenta en tu exploración:
 
--   En la pestaña “ESQUEMA” puedes encontrar los distintos campos de las tablas. Intenta entender que es lo que representa cada campo. Apóyate en la descripción que se proporciona. Una buena idea es revisar el video sobre [tipos de datos](https://www.google.com/url?q=https://coda.io/d/Videos-BigQuery-Cicloviajes_dmIxCiY2-NQ/Tipos-de-datos_sufb0?playModeWorkflowId%3D%23_lubka&sa=D&source=editors&ust=1671545727657430&usg=AOvVaw0pEg1yUheTkCD__qkHdJfo) para entender que tipo de valores almacena cada campo.
--   En la pestaña “DETALLES” intenta recordar el ID de la tabla, ya que lo utilizarás en tus consultas. Además, mira la cantidad de filas que tiene cada tabla. De esa forma te podrás hacer una idea del tamaño de las consultas que debes hacer, y la cantidad de filas que deberían tener tus resultados de consultas.
--   En la pestaña “VISTA PREVIA” puedes ver directamente los datos que están almacenados. Es una buena idea mirar rápidamente los datos para completar tu entendimiento de los campos. Te darás cuenta de que algunos campos son números negativos, otros son textos que se repiten y otros son únicos. Este entendimiento te ayudará al momento de hacer tus consultas.
+- En la pestaña “ESQUEMA” puedes encontrar los distintos campos de las tablas. Intenta entender que es lo que representa cada campo. Apóyate en la descripción que se proporciona. Una buena idea es revisar el video sobre [tipos de datos](https://www.google.com/url?q=https://coda.io/d/Videos-BigQuery-Cicloviajes_dmIxCiY2-NQ/Tipos-de-datos_sufb0?playModeWorkflowId%3D%23_lubka&sa=D&source=editors&ust=1671545727657430&usg=AOvVaw0pEg1yUheTkCD__qkHdJfo) para entender que tipo de valores almacena cada campo.
+- En la pestaña “DETALLES” intenta recordar el ID de la tabla, ya que lo utilizarás en tus consultas. Además, mira la cantidad de filas que tiene cada tabla. De esa forma te podrás hacer una idea del tamaño de las consultas que debes hacer, y la cantidad de filas que deberían tener tus resultados de consultas.
+- En la pestaña “VISTA PREVIA” puedes ver directamente los datos que están almacenados. Es una buena idea mirar rápidamente los datos para completar tu entendimiento de los campos. Te darás cuenta de que algunos campos son números negativos, otros son textos que se repiten y otros son únicos. Este entendimiento te ayudará al momento de hacer tus consultas.
 
 ## Paso 3: Procesa
 
@@ -122,6 +122,7 @@ FROM
 LIMIT
   100
 ```
+
 > 👩‍💻 Si no estás muy segura de cómo llegamos a esta consulta, vuelve a revisar [la sección 2 del mini curso](https://www.google.com/url?q=https://coda.io/d/Videos-BigQuery-Cicloviajes_dmIxCiY2-NQ/Seleccionar-una-o-varias-columnas_suXsN?playModeWorkflowId%3D%23_luJRX&sa=D&source=editors&ust=1671545727659109&usg=AOvVaw1--lqUqZrlDe5K3ciJUFUO).
 
 Muchas veces, en lugar de mostrar todas las columnas, queremos seleccionar solo algunas columnas. Este tipo de consultas son menos demandantes en términos de procesamiento de información y nos entregan solo las variables (columnas) que necesitamos. Para realizar esto tendrás que reemplazar el carácter asterisco (*) por los nombres de las columnas que te interesan, separadas por una coma (,).
@@ -133,23 +134,27 @@ Escribe una consulta que muestre los resultados de los primeros 100 registros, m
 Otra estrategia útil cuando estás haciendo un análisis exploratorio en SQL es conocer el “dominio” de las variables que tienen valores que se repiten. El “dominio” se refiere a todos los valores que adopta la columna.
 
 Por ejemplo, el campo “rental_methods” muestra el mismo valor para las primeras filtas: “KEY, CREDITCARD”. ¿Será este el único valor que adopta esa columna? ¿O tendrá otros valores? Para saberlo utilizamos la sentencia DISTINCT en SQL, que nos retorna solo los valores únicos de la columna que le digamos.
+
 ```SQL
 SELECT
   DISTINCT rental_methods
 FROM
   `bigquery-public-data.new_york_citibike.citibike_stations`
 ```
+
 Nos retornó solo una fila con un único valor: “KEY, CREDITCARD”. Eso nos dice que todas las 1798 filas de la tabla tienen ese mismo valor en ese campo. Por lo que podemos concluir que todas las estaciones aceptan dos tipos de pago que son “CREDITCARD” y “KEY”.
 
 > 👩‍💻 ¡Ahora es tu turno!, ¿Cuáles son los valores únicos de la variable “name” (nombre de la estación) y cuántos valores distintos hay?
 
 ¡Bien hecho! Otra forma útil de explorar los datos es contando registros. Por ejemplo, si quisiéramos contar cuantas filas tiene todo nuestro dataset podemos correr:
+
 ```SQL
 SELECT
   COUNT(*)
 FROM
   `bigquery-public-data.new_york_citibike.citibike_stations`
 ```
+
 Podemos observar que el conjunto de datos contiene un total de 1798 registros, que es la misma cantidad de nombres únicos que te retornó el DISTINCT anteriormente. La función COUNT la podemos ocupar en todas las columnas (y por eso el operador * ) como también en algunas columnas específicas. Para hacer eso escribimos el nombre de la columna dentro del paréntesis.
 
 > 🧐 Recuerda que siempre puedes consultar la historia de tus QUERIES o guardar consultas que te parezcan útiles en BigQuery. Para recordarlo revisa esta [sección](https://www.google.com/url?q=https://coda.io/d/Videos-BigQuery-Cicloviajes_dmIxCiY2-NQ/Historia-de-consultas-y-guardar-queries_suKnq?playModeWorkflowId%3D%23_luk3z&sa=D&source=editors&ust=1671545727660911&usg=AOvVaw1KLXqlCPnsT0DeP6AkoHdj) del curso.
@@ -157,6 +162,7 @@ Podemos observar que el conjunto de datos contiene un total de 1798 registros, q
 Hasta ahora hemos podido aprender comandos que nos permiten visualizar un número establecido de registros, conocer el dominio de nuestras variables y a su vez cuantificar el número de registros para cada variable. Pero cuando trabajamos un conjunto de datos no siempre necesitamos el 100% de los registros, gran parte de los análisis se requiere de filtros para trabajar con subconjuntos del conjunto de datos. El comando WHERE nos permitirá realizar los filtros necesarios para obtener el subconjunto requerido.
 
 Este filtro nos va a ayudar a resolver el problema con los valores null que encontramos en el paso 3 en la tabla “trips”. Veamos cómo podemos resolverlo.
+
 ```SQL
 SELECT
   *
@@ -165,6 +171,7 @@ FROM
 WHERE
   start_station_id IS  NOT  NULL
 ```
+
 El operador IS NOT nos permite filtrar el set de datos y dejar solo aquellos que cumplan que NO tienen un valor NULL en la columna start_station_id.
 
 ![Seleccionando columnas específicas](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-4-cicloviajes/images/image23.png)
@@ -176,6 +183,7 @@ También podemos filtrar registros haciendo [comparaciones con números](https:/
 ![Usando where](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-4-cicloviajes/images/image24.png)
 
 Puedes encadenar lo que has aprendido hasta ahora. Por ejemplo, si quisiéramos saber cuál es el porcentaje de viajes que tuvieron una duración mayor a 5 minutos, podemos aplicar un filtro con WHERE y luego contar ese resultado con COUNT. Para este primer caso realizaremos dos consultas.
+
 ```SQL
 -- Esta consulta retorna la cantidad total de viajes
 
@@ -186,6 +194,7 @@ FROM
 WHERE
   start_station_id IS NOT NULL
 ```
+
 ```SQL
 -- Esta consulta retorna solo aquellos que han durado más de 5 minutos
 
@@ -196,6 +205,7 @@ FROM
 WHERE
   tripduration >=  300
 ```
+
 > 🧐 ¿Qué son esos dos guiones en la consulta? En SQL puedes hacer comentarios, es decir, escribir texto sin que BigQuery piense que estás escribiendo una consulta. Los comentarios son útiles para guiar a otras personas en consultas muy complejas o para recordarte a ti misma (del futuro) porque hiciste algo en una consulta.
 
 La primera consulta te devuelve el número de registros en la tabla de viajes, esto representaría el total de viajes realizados por los usuarios. Por otro lado, la segunda consulta te devuelve el total de viajes que duraron 5 minutos o más. Por lo que el porcentaje de viajes que duraron 5 minutos o más es de 84,5%.
@@ -211,6 +221,7 @@ Supongamos que queremos filtrar los viajes que hicieron los clientes “Customer
 Muy bien. Supongamos que en nuestro análisis exploratorio nos gustaría conocer cuáles viajes fueron iniciados en alguna estación que está en la calle “Columbia St”. Si te fijas en la columna “start_station_name” te darás cuenta de que los nombres de las estaciones son las esquinas entre dos calles: “calle 1 & calle 2”. Por ejemplo, una estación que pasa por la calle “Columbia St” es la estación “Columbia St & Kane St”.
 
 Intentemos filtrar nuestra base de datos para que nos retorne los nombres de las estaciones que pasan por la calle “Columbia St”, o dicho de otra manera, filtremos la columna “start_station_name” por aquellas que comiencen con “Columbia St”. Para lograr eso ocupamos el operador LIKE (si no recuerdas cómo ocuparlo mira [esta](https://www.google.com/url?q=https://coda.io/d/Videos-BigQuery-Cicloviajes_dmIxCiY2-NQ/Usando-LIKE-con-Strings_su7gI?playModeWorkflowId%3D%23_lu8tq&sa=D&source=editors&ust=1671545727665476&usg=AOvVaw34Twi_hvV32YgHNP-1aeax) sección del mini curso.
+
 ```SQL
 SELECT
   DISTINCT start_station_name
@@ -219,6 +230,7 @@ FROM
 WHERE
   start_station_name LIKE  'Columbia St%'
 ```
+
 Gracias a esa consulta podemos ver todas las estaciones que comienzan con “Columbia St”.
 
 ¡Genial! Ya entiendes mejor cómo se componen los datos y además aprovechaste de refrescar tus habilidades de SQL mientras hacías tu análisis exploratorio. Pasemos ahora a generar la data que necesitaba la CEO para perfilar los distintos tipos de clientes.
@@ -228,6 +240,7 @@ En las siguientes secciones vamos a ir uno por uno resolviendo las métricas que
 ### 4.2 Total de viajes
 
 En nuestro análisis exploratorio ya revisamos como contar la cantidad de viajes totales que no son null.
+
 ```SQL
 SELECT
   COUNT(*)
@@ -236,7 +249,9 @@ FROM
 WHERE
   start_station_id IS NOT NULL
 ```
+
 Tratemos de ir un paso más allá y contar la cantidad de viajes totales por tipo de cliente (Customer y Subscriber). Para poder agrupar el conteo por tipo de usuario debemos ocupar la cláusula GROUP BY. Si no recuerdas cómo hacerlo, te recomendamos ver [la sección 5](https://www.google.com/url?q=https://coda.io/d/Videos-BigQuery-Cicloviajes_dmIxCiY2-NQ/Agrupando-datos-con-GROUP-BY_su5QT?playModeWorkflowId%3D%23_lut-A&sa=D&source=editors&ust=1671545727667277&usg=AOvVaw07B1NvtyupbBY3U-ue1EQ-) del mini curso.
+
 ```SQL
 SELECT
   usertype,
@@ -248,6 +263,7 @@ WHERE
 GROUP  BY
   usertype
 ```
+
 > 🧐 Ocupamos el operador AS para nombrar los campos que estamos creando con nombres que tengan sentido. Si no le ponemos “AS num_trips” entonces BigQuery va a pasar a llamar esa columna con algún nombre extraño como “f(0)”. Siempre es buena idea nombrar tus campos y tablas de forma de que tus consultas sean más legibles.
 
 Lo importante es tener en cuenta que debes agrupar (GROUP BY) por el tipo de usuario (usertype) y dentro de nuestro SELECT deben estar tanto el usertype como el conteo de cada uno (COUNT*).
@@ -263,6 +279,7 @@ La columna “starttime” se encuentra en un formato DATETIME, un ejemplo de es
 Para conocer como evolucionan los viajes a través del tiempo solo necesitas trabajar con la parte de la Fecha. Para esto ocuparemos la función DATE() de BigQuery, que acepta una columna DATETIME y retorna solo la parte de la fecha.
 
 Pruébala con la siguiente consulta:
+
 ```SQL
 SELECT
   *,
@@ -274,11 +291,13 @@ WHERE
 LIMIT  
   100
 ```
+
 Esta consulta retorna todas las columnas de la tabla original (por eso está el operador del asterisco *), pero le agrega al final una columna nueva que llamamos “starttime_date” con únicamente la fecha del campo starttime. Para conocer más sobre el tipo de datos DATETIME, DATE, puedes revisar el siguiente [artículo](https://www.google.com/url?q=https://cloud.google.com/bigquery/docs/reference/standard-sql/date_functions&sa=D&source=editors&ust=1671545727670291&usg=AOvVaw0LUY4l3KqlOrFebXmFKKqK).
 
 > 🧐 Hay otras formas de extraer la fecha de un campo DATETIME. La más común es la función CAST() que transforma el tipo de un campo en otro. Es útil para transformar DATETIME en DATE, pero también para transformar números en textos y muchas otras transformaciones. Te recomendamos leer [la documentación de Google](https://www.google.com/url?q=https://cloud.google.com/bigquery/docs/reference/standard-sql/conversion_functions&sa=D&source=editors&ust=1671545727670705&usg=AOvVaw2_lSC0dqITMJRK8M8WZHXu) sobre la función CAST.
 
 Bien, ahora que ya sabes cómo extraer u obtener solo la fecha de un campo datetime es momento de obtener la cantidad de viajes para cada fecha. Para realizar esto, necesitas agrupar los datos por esta fecha creada y pasar a contar la cantidad de viajes que tienes. Ocupa GROUP BY tal como lo hicimos en la sección anterior.
+
 ```SQL
 SELECT
   DATE(starttime)  AS starttime_date,
@@ -290,6 +309,7 @@ WHERE
 GROUP  BY
   starttime_date
 ```
+
 Si miras bien el resultado, observarás que las fechas no están ordenadas. Para forzar su orden ocupa la cláusula [ORDER BY](https://www.google.com/url?q=https://coda.io/d/Videos-BigQuery-Cicloviajes_dmIxCiY2-NQ/Ordenar-con-ORDER-BY_sudgX?playModeWorkflowId%3D%23_lu13l&sa=D&source=editors&ust=1671545727672145&usg=AOvVaw2wyfb2KYxkDqKmEn0ruqxD).
 
 Deberías llegar a un resultado similar a este:
@@ -301,6 +321,7 @@ Deberías llegar a un resultado similar a este:
 BigQuery tiene funciones que nos permite identificar de forma rápida un estadístico de una variable. Entre estas funciones tenemos AVG(), SUM(), COUNT(), MIN(), MAX(). Estas funciones también son conocidas como funciones de agregación. En [la sección 4](https://www.google.com/url?q=https://coda.io/d/Videos-BigQuery-Cicloviajes_dmIxCiY2-NQ/Contando-filas-con-COUNT_suKzJ?playModeWorkflowId%3D%23_luiQQ&sa=D&source=editors&ust=1671545727672778&usg=AOvVaw15cc1XYTHW737z8REeqnj0) del mini curso puedes encontrar información valiosa con respecto a estas funciones.
 
 En este caso nos interesa sacar el promedio de la duración del viaje para cada tipo de usuario. Al igual que con la función COUNT() para lograr esto tenemos que agrupar por usertype. Además, a la función AVG() tenemos que decirle que campo queremos que promedie.
+
 ```SQL
 SELECT
   usertype,
@@ -312,6 +333,7 @@ WHERE
 GROUP  BY
   usertype
 ```
+
 Recuerda que el campo “tripduration” almacena el tiempo en segundos, por lo que si quisieras conocer el resultado en minutos, tendrías que dividir lo obtenido por 60. Este tipo de operadores matemáticos los podemos aplicar directamente dentro de la sentencia SELECT.
 
 ```SQL
@@ -321,9 +343,11 @@ SELECT
   
 -- ...el resto de la consulta...
 ```
+
 ### 4.5 Desglose de uso por horario
 
 A nuestra CEO le gustaría saber cuáles son las horas del día en donde se utilizan más las bicicletas. Nuestro campo “starttime” es del tipo DATETIME, que reúne tanto la fecha como la hora. Para poder “extraer” únicamente la hora del viaje, que es lo que nos interesa, vamos a ocupar la función [EXTRACT](https://www.google.com/url?q=https://cloud.google.com/bigquery/docs/reference/standard-sql/timestamp_functions%23extract&sa=D&source=editors&ust=1671545727674773&usg=AOvVaw0pPQcQhFK8ew7jM_nsc-IB).
+
 ```SQL
 SELECT
   EXTRACT(HOUR FROM starttime) AS hour,
@@ -337,6 +361,7 @@ GROUP  BY
 ORDER  BY
   hour
 ```
+
 La función EXTRACT necesita dos cosas: lo que necesitamos que extraiga del DATETIME (día, hora, minuto, año, etc.) y el campo del cual queremos extraer eso. En nuestro caso queremos extraer la hora (HOUR) del campo “starttime”.
 
 Una vez hecho eso, aprovechamos de agrupar por ese campo y contar cuántos viajes se han hecho en cada hora.
@@ -478,6 +503,7 @@ En SQL se utiliza la sentencia JOIN para juntar dos tablas que tengan un campo e
 Si no sabes cómo hacer un JOIN en SQL, te recomendamos ver [la sección de hacker edition](https://www.google.com/url?q=https://coda.io/d/Videos-BigQuery-Cicloviajes_dmIxCiY2-NQ/Combinando-dos-tablas-con-JOIN_su2w9?playModeWorkflowId%3D%23_luxSy&sa=D&source=editors&ust=1671545727684630&usg=AOvVaw0V6SrnsdrOfafFXzieyKTw) del mini curso de SQL.
 
 Para aprender a hacer JOINS, vamos por parte. Primero intentemos unir ambas tablas y mostrar todos los campos:
+
 ```SQL
 SELECT
   *
@@ -492,11 +518,13 @@ WHERE
 LIMIT
   100
 ```
+
 Esta consulta nos retorna todos los campos de ambas tablas, en donde la tabla “trips” haya encontrado a algún par en la tabla “stations”, que compartan su “station_id”.
 
 > 🧐 Importante agregar el “LIMIT 100”, porque de otra forma el resultado sería gigantesco. Piensa que cada fila de la tabla “trips” busca todas las ocurrencias en la tabla “stations” que tengan el mismo id de estación. Esto hace un efecto multiplicador que deriva en un resultado de más de 40 millones de filas.
 
 Ahora que ya sabemos como juntar las dos tablas, quedémonos solo con la información que nos interesa: la latitud y la longitud. DataStudio recibe este parámetro como una cadena de caracteres del tipo “latitud,longitud”. Como tenemos esos dos campos separados, vamos a tener que unirlos de alguna forma. Para eso es útil la función CONCAT que, al igual que en spreadsheet, junta los campos que le pases en un solo campo.
+
 ```SQL
 SELECT
   CONCAT(stations.latitude, ',', stations.longitude)  AS lat_long,
@@ -512,6 +540,7 @@ WHERE
 LIMIT
   100
 ```
+
 Por último, nos gustaría contar cuantos viajes ha tenido cada “lat_long” ¿Recuerdas cómo logramos eso? Inténtalo tu misma usando una combinación de COUNT() y GROUP BY. Deberías llegar a una tabla como esta:
 
 ![Cantidad de viajes por latlong](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-4-cicloviajes/images/image28.png)

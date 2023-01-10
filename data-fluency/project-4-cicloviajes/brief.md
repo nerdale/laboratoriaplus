@@ -40,25 +40,25 @@ Adicionalmente, te recomendamos agregar un video de máximo 5 minutos en donde p
 
 Al resolver este proyecto serás capaz de:
 
--   **Preparar**
+- **Preparar**
 
-    1.  Distinguir entre los distintos tipos de datos de los campos de una tabla, tales como DATETIME, BOOLEAN, INTEGER, STRING.
-    2.  Manipular datos de fuentes de datos públicas utilizando consultas de SQL.
-    3.  Usar la función CAST para transformar el tipo de dato de un campo en otro.
+    1. Distinguir entre los distintos tipos de datos de los campos de una tabla, tales como DATETIME, BOOLEAN, INTEGER, STRING.
+    2. Manipular datos de fuentes de datos públicas utilizando consultas de SQL.
+    3. Usar la función CAST para transformar el tipo de dato de un campo en otro.
 
--   **Analizar**
+- **Analizar**
 
-    1.  Utilizar comandos básicos como SELECT y DISTINCT para llamar campos de datos específicos de una tabla.
-    2.  Filtrar datos desagrupados que cumplan una condición específica utilizando el comando WHERE.
-    3.  Emplear el comando GROUP BY para agrupar datos según uno o más campos.
-    4.  Usa fórmulas de agregación como COUNT, MIN, MAX y AVG para calcular estadísticas sobre agrupaciones de datos.
+    1. Utilizar comandos básicos como SELECT y DISTINCT para llamar campos de datos específicos de una tabla.
+    2. Filtrar datos desagrupados que cumplan una condición específica utilizando el comando WHERE.
+    3. Emplear el comando GROUP BY para agrupar datos según uno o más campos.
+    4. Usa fórmulas de agregación como COUNT, MIN, MAX y AVG para calcular estadísticas sobre agrupaciones de datos.
 
--   **Comunicación de hallazgos**
+- **Comunicación de hallazgos**
 
-    1.  Diseñar y desarrollar dashboards en línea en herramientas de visualización.
+    1. Diseñar y desarrollar dashboards en línea en herramientas de visualización.
 
 # Consideraciones generales
 
--   Tu reporte, con las visualizaciones, el análisis y las conclusiones necesarias, debe estar desplegado en la web. (por ejemplo, a través de un link de Data Studio)
--   Para construir el reporte utilizarás la información pública del programa [Citi Bike New York City](https://www.google.com/url?q=https://www.citibikenyc.com/homepage&sa=D&source=editors&ust=1671544629056799&usg=AOvVaw2gNmHmu_ZiMjHPKOQQVUJ9), el programa de bicicletas compartidas más grande de los Estados Unidos. Este conjunto de datos público está alojado en Google BigQuery y puedes acceder a él por medio del siguiente enlace: [NYC Citi Bike Trips](https://www.google.com/url?q=https://console.cloud.google.com/marketplace/product/city-of-new-york/nyc-citi-bike?project%3Ddata-sandbox-319716%26folder%3D%26organizationId%3D&sa=D&source=editors&ust=1671544629057152&usg=AOvVaw2LHUBt6_4yx1dUypynKsps). Para los propósitos de este proyecto, este conjunto de datos es apropiado y te permitirá construir el reporte solicitado.
+- Tu reporte, con las visualizaciones, el análisis y las conclusiones necesarias, debe estar desplegado en la web. (por ejemplo, a través de un link de Data Studio)
+- Para construir el reporte utilizarás la información pública del programa [Citi Bike New York City](https://www.google.com/url?q=https://www.citibikenyc.com/homepage&sa=D&source=editors&ust=1671544629056799&usg=AOvVaw2gNmHmu_ZiMjHPKOQQVUJ9), el programa de bicicletas compartidas más grande de los Estados Unidos. Este conjunto de datos público está alojado en Google BigQuery y puedes acceder a él por medio del siguiente enlace: [NYC Citi Bike Trips](https://www.google.com/url?q=https://console.cloud.google.com/marketplace/product/city-of-new-york/nyc-citi-bike?project%3Ddata-sandbox-319716%26folder%3D%26organizationId%3D&sa=D&source=editors&ust=1671544629057152&usg=AOvVaw2LHUBt6_4yx1dUypynKsps). Para los propósitos de este proyecto, este conjunto de datos es apropiado y te permitirá construir el reporte solicitado.
 - Dado que en este proyecto estarás trabajando en una herramienta y lenguaje completamente nuevos, hemos preparado [este mini curso](https://www.google.com/url?q=https://coda.io/d/Videos-BigQuery-Cicloviajes_dmIxCiY2-NQ/Introduccion_su3UO?playModeWorkflowId%3D%23_luO8s&sa=D&source=editors&ust=1671544629058089&usg=AOvVaw2i2TVxT3KKKxq--V6-nIxR) (1 hr y 15 min de videos) en donde puedes conocer lo básico de SQL y BigQuery.
