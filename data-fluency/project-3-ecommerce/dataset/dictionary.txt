@@ -1,0 +1,9 @@
+﻿Este set de datos agrupa 25.900 ventas de un negocio de ventas al por mayor. Cada fila representa una factura con los datos que se detallan en las columnas.
+
+
+N° de factura: Un número asignado de forma exclusiva a cada transacción. Si comienza con "c", indica una anulación.
+Fecha de factura: Fecha en que se generó la transacción.
+ID Cliente: Número de clientes. Un número integral de 5 dígitos asignado de forma exclusiva a cada cliente.
+País: Nombre del país. El nombre del país donde reside cada cliente.
+Cantidad: Las cantidades de cada producto (artículo) por transacción.
+Monto: Monto de la factura en libras esterlinas.
