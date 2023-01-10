@@ -154,7 +154,7 @@ Una buena idea para complementar un análisis exploratorio de un dataset es agre
 
 Para realizar análisis por mes, tendremos que hacer un procesamiento a la columna “Fecha de factura”. En esa columna se aloja la fecha de la factura pero con mucha información que no necesitamos. Para esto tenemos que crear una nueva columna "AÑO - MES" en donde nos gustaría que apareciera la fecha de la forma 2021-03 para cada fila.
 
-La fórmula que nos puede ayudar a lograr esto es [TEXTO](https://www.google.com/url?q=https://support.google.com/docs/answer/3094139?hl%3Des-419&sa=D&source=editors&ust=1669290706022819&usg=AOvVaw2T3ukWEGsi31MAsw8EIQvJ). Esta función transforma un número o fecha en texto con un formato establecido. En la documentación puedes encontrar algunos ejemplos de transformación de fecha a texto. Intenta dar con una fórmula que te permita crear una columna “AÑO-MES” con formato AAAA-MM
+La fórmula que nos puede ayudar a lograr esto es [TEXTO](https://support.google.com/docs/answer/3094139?hl%3Des-419). Esta función transforma un número o fecha en texto con un formato establecido. En la documentación puedes encontrar algunos ejemplos de transformación de fecha a texto. Intenta dar con una fórmula que te permita crear una columna “AÑO-MES” con formato AAAA-MM
 
 > 👀 Es importante que la variable creada siga el orden "AÑO - MES", porque estamos creando una variable de texto y de esta manera al hacer un gráfico o tabla dinámica la información estará en el orden correcto.
 
@@ -244,7 +244,7 @@ Esta metodología permite clasificar a los clientes en las tres variables mencio
 
 Una vez que tenemos calculadas las 3 variables para todos los clientes, los categorizamos de acuerdo al **cuartil** en que se encuentra cada cliente para cada variable. Es importante notar que este análisis se puede hacer por cuartiles, como también por quintiles, tercios, percentiles, o la división que prefiera la analista de datos. Mientras más divisiones, más fino el análisis.
 
-> 🤔 [¿Qué es un cuartil?](https://www.google.com/url?q=https://www.loom.com/share/6d80794b67d14d048dfbf112e67e4a79&sa=D&source=editors&ust=1669290706026524&usg=AOvVaw0wFJoRHrzYlkgiZzrzIH4F)  (📹) Si ordenas tus datos de menor a mayor y los divides en cuatro grupos, obtienes cuartiles, es decir, dividirá tus datos en cuatro grupos iguales que contendrán el 25% de tus datos en cada grupo. Cuando decimos que un cliente pertenece al primer cuartil de monto, quiere decir que está en el primer grupo de cuatro de los que menos gasta. Si por ejemplo, otro cliente está en el cuartil 3 en monto, quiere decir que está en el tercer grupo que más gasta, por sobre el primer y el segundo.
+> 🤔 [¿Qué es un cuartil?](https://www.loom.com/share/6d80794b67d14d048dfbf112e67e4a79)  (📹) Si ordenas tus datos de menor a mayor y los divides en cuatro grupos, obtienes cuartiles, es decir, dividirá tus datos en cuatro grupos iguales que contendrán el 25% de tus datos en cada grupo. Cuando decimos que un cliente pertenece al primer cuartil de monto, quiere decir que está en el primer grupo de cuatro de los que menos gasta. Si por ejemplo, otro cliente está en el cuartil 3 en monto, quiere decir que está en el tercer grupo que más gasta, por sobre el primer y el segundo.
 
 Entonces un buen cliente pertenece en recencia al cuartil 1 (ya que compró hace poco), en frecuencia al cuartil 4 (por qué compra muy frecuentemente) y en monto al cuartil 4 (porque es de los que más gasta). Para crear la codificación buscamos el cuartil de cada cliente en cada una de las variables y luego unimos esos valores en un "código" que resuma su perfil. Veamos un ejemplo:
 
@@ -284,13 +284,13 @@ Te recomiendo volver a copiar esta información en otro lugar de la pestaña par
 
 ![image27.png](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image27.png)
 
-Como ves hay varias columnas que debemos comenzar a calcular. La primera es Días, en donde queremos calcular la cantidad de días que han pasado desde la última compra del cliente y hoy (el día que estamos haciendo el análisis). Para esto es útil la función [DAYS](https://www.google.com/url?q=https://support.google.com/docs/answer/9061296?hl%3Des-419&sa=D&source=editors&ust=1669290706028942&usg=AOvVaw0CWQMdTjNwYRpUpZY7WTwA) que cuenta la cantidad de días entre dos fechas. Con esto vamos a poder ver hace cuantos días compró cada cliente y definir en qué nivel de Recencia se encuentra cada uno. Si ha comprado hace pocos días, probablemente lo categoricemos en el primer o segundo cuartil, pero si su última compra fue hace muchos días, puede que termine en el tercer o cuarto cuartil.
+Como ves hay varias columnas que debemos comenzar a calcular. La primera es Días, en donde queremos calcular la cantidad de días que han pasado desde la última compra del cliente y hoy (el día que estamos haciendo el análisis). Para esto es útil la función [DAYS](https://support.google.com/docs/answer/9061296?hl%3Des-419) que cuenta la cantidad de días entre dos fechas. Con esto vamos a poder ver hace cuantos días compró cada cliente y definir en qué nivel de Recencia se encuentra cada uno. Si ha comprado hace pocos días, probablemente lo categoricemos en el primer o segundo cuartil, pero si su última compra fue hace muchos días, puede que termine en el tercer o cuarto cuartil.
 
 > 👀 La fórmula DAYS cuenta la cantidad de días entre dos fechas. Tú eliges la fecha contra la que quieres que cuente los días. Puede ser hoy, o cualquier fecha. Esto no va a afectar tu cálculo de cuartiles. Los siguientes ejemplos se hicieron tomando como fecha de contraste el 20 de enero de 2022 (que fue la fecha en que se hizo por primera vez este análisis).
 
 #### 4.2.2 Calcular los límites de los cuartiles
 
-Antes de categorizar cada valor en su cuartil, necesitamos saber cuáles son los rangos de los cuartiles. Para esto, crearemos una nueva tabla en donde calcularemos los cuartiles para los días, frecuencia de facturas y monto total, utilizando la función [CUARTIL](https://www.google.com/url?q=https://support.google.com/docs/answer/3094041&sa=D&source=editors&ust=1669290706029545&usg=AOvVaw3hFppEkQnS38YZpXE8cfZO).
+Antes de categorizar cada valor en su cuartil, necesitamos saber cuáles son los rangos de los cuartiles. Para esto, crearemos una nueva tabla en donde calcularemos los cuartiles para los días, frecuencia de facturas y monto total, utilizando la función [CUARTIL](https://support.google.com/docs/answer/3094041).
 
 ![image4.png](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image4.png)
 
@@ -298,11 +298,11 @@ Estos valores que calculaste en la tabla son los límites entre cuartil y cuarti
 
 ![image17](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image17.png)
 
-Esto quiere decir que un cliente cuya última compra fue entre 42 y 59 días atrás, se encuentra en el cuartil 1 (los que han hecho compras más próximas). En contraste, un cliente cuya última compra fue entre 183.5 y 415 días atrás, se encuentra en el cuarto cuartil (los que han hecho compras más lejanas). De esa forma podemos categorizar a cada cliente en uno de los cuatro cuartiles para la recencia. Preparamos este [video](https://www.google.com/url?q=https://www.loom.com/share/e552c7d5d2b3444d8f7be544892e1721&sa=D&source=editors&ust=1669290706030060&usg=AOvVaw24b3YHIZdDVldrSSKg_TTE) sobre cómo usar la fórmula CUARTIL (QUARTILE) y cómo calcular el cuartil para cada cliente que es el siguiente paso.
+Esto quiere decir que un cliente cuya última compra fue entre 42 y 59 días atrás, se encuentra en el cuartil 1 (los que han hecho compras más próximas). En contraste, un cliente cuya última compra fue entre 183.5 y 415 días atrás, se encuentra en el cuarto cuartil (los que han hecho compras más lejanas). De esa forma podemos categorizar a cada cliente en uno de los cuatro cuartiles para la recencia. Preparamos este [video](https://www.loom.com/share/e552c7d5d2b3444d8f7be544892e1721) sobre cómo usar la fórmula CUARTIL (QUARTILE) y cómo calcular el cuartil para cada cliente que es el siguiente paso.
 
 #### 4.2.3 Calcular los cuartiles para cada cliente
 
-Una forma rápida de hacer esto es usando la fórmula [IFS](https://www.google.com/url?q=https://support.google.com/docs/answer/7014145?hl%3Den&sa=D&source=editors&ust=1669290706030467&usg=AOvVaw0eMNDu9jCSCdEJrm-xv4QV), que se comporta de forma similar a los IF encadenados que hemos utilizado en proyectos anteriores. Esta fórmula acepta varias condiciones y devuelve varios resultados dependiendo de esas condiciones:
+Una forma rápida de hacer esto es usando la fórmula [IFS](https://support.google.com/docs/answer/7014145?hl%3Den), que se comporta de forma similar a los IF encadenados que hemos utilizado en proyectos anteriores. Esta fórmula acepta varias condiciones y devuelve varios resultados dependiendo de esas condiciones:
 
 ```SQL
 =IFS(CONDICION_1,VALOR_SI_ SE_CUMPLE_1,CONDICION_2,VALOR_SI_ SE_CUMPLE_2...)
@@ -344,7 +344,7 @@ Por otro lado, debemos crear una columna “Código” en nuestra tabla de clien
 
 ![image56](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image56.png)
 
-Y ahora debemos “conectar” ambas tablas para que la tabla de cliente “busque” el código en la tabla que creamos con las combinaciones y recupere el nombre de la categoría. Esto es un caso de uso muy común en Google Sheets, y para eso utilizamos la función BUSCARV (o [VLOOKUP](https://www.google.com/url?q=https://support.google.com/docs/answer/3093318?hl%3Den&sa=D&source=editors&ust=1669290706032693&usg=AOvVaw0l_ZqpGoTCx4TmTkgONbIj)).
+Y ahora debemos “conectar” ambas tablas para que la tabla de cliente “busque” el código en la tabla que creamos con las combinaciones y recupere el nombre de la categoría. Esto es un caso de uso muy común en Google Sheets, y para eso utilizamos la función BUSCARV (o [VLOOKUP](https://support.google.com/docs/answer/3093318?hl%3Den)).
 
 ```SQL
 =VLOOKUP(search_key, range, index, [is_sorted])
@@ -364,7 +364,7 @@ Los argumentos de esta fórmula son:
 
 > Tip: si usas la fórmula CONCATENATE para crear los códigos, copia y pega (solo valores) los valores de esta columna para que la fórmula Vlookup funcione correctamente.
 
-Cuando tengas las categorías, puedes resumir la información en una tabla dinámica y hacer recomendaciones específicas a UK Merch. Por ejemplo, si el número de clientes durmientes es muy alto, una buena estrategia de marketing sería contactarlos y motivarlos a volver a comprar (por ejemplo, por medio de descuentos), ya que sabemos que son clientes que compran muy seguido, pero que hace tiempo no compran. Otro caso hipotético podría ser el lanzamiento de un nuevo producto. En este caso podría convenir apuntar las estrategias de marketing a tus clientes leales (los que compran más frecuentemente) para que así tu nuevo producto agarre tracción en el mercado. [Este artículo](https://www.google.com/url?q=https://blog.elogia.net/rfm-recency-frecuency-y-money-qu%25C3%25A9-valor-tiene-nuestro-cliente&sa=D&source=editors&ust=1669290706033723&usg=AOvVaw2Rxr8TG0gdT_1NDF75EujN) te puede dar algunas buenas ideas.
+Cuando tengas las categorías, puedes resumir la información en una tabla dinámica y hacer recomendaciones específicas a UK Merch. Por ejemplo, si el número de clientes durmientes es muy alto, una buena estrategia de marketing sería contactarlos y motivarlos a volver a comprar (por ejemplo, por medio de descuentos), ya que sabemos que son clientes que compran muy seguido, pero que hace tiempo no compran. Otro caso hipotético podría ser el lanzamiento de un nuevo producto. En este caso podría convenir apuntar las estrategias de marketing a tus clientes leales (los que compran más frecuentemente) para que así tu nuevo producto agarre tracción en el mercado. [Este artículo](https://blog.elogia.net/rfm-recency-frecuency-y-money-qu%25C3%25A9-valor-tiene-nuestro-cliente) te puede dar algunas buenas ideas.
 
 Otra estrategia inteligente sería agregar la variable de si pertenece o no a UK al análisis y ver cómo cambia la segmentación. Y de esa forma se pueden hacer recomendaciones de publicidad más enfocada en clientes de UK (con un lenguaje y modismos del país) si vemos que hay oportunidades ahí.
 
@@ -378,7 +378,7 @@ En este paso debes tomar toda la información que creas que sea relevante para e
 
 ![image58](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image58.png)
 
-Utiliza mapas, gráficos, métricas y texto para que tu dashboard de cuenta de tu análisis por si solo. Si necesitas algo de inspiración para tu diseño, una simple búsqueda de Google (“Templates de dashboards”) te puede arrojar [resultados muy útiles](https://www.google.com/url?q=https://colorlib.com/wp/free-dashboard-templates/&sa=D&source=editors&ust=1669290706034607&usg=AOvVaw2uFd2gZtu0ko9t-d7spL6B).
+Utiliza mapas, gráficos, métricas y texto para que tu dashboard de cuenta de tu análisis por si solo. Si necesitas algo de inspiración para tu diseño, una simple búsqueda de Google (“Templates de dashboards”) te puede arrojar [resultados muy útiles](https://colorlib.com/wp/free-dashboard-templates/).
 
 Complementa tu trabajo en esta sección con la siguiente en donde hablaremos de data storytelling y te entregaremos recomendaciones para crear un relato interesante en base a tu análisis de datos.
 
@@ -390,7 +390,7 @@ El data storytelling es la habilidad de comunicar hallazgos extraídos de un dat
 
 ### ¿Por qué utilizar data storytelling?
 
-Los seres humanos hemos contado historias desde la era del Cromañon para comunicarnos efectivamente con otros y mejorar nuestras posibilidades de supervivencia. [Algunos historiadores](https://www.google.com/url?q=https://www.youtube.com/watch?v%3Dnzj7Wg4DAbs&sa=D&source=editors&ust=1669290706035494&usg=AOvVaw0NsUVh-eKcW8NgdSGyDtmb) argumentan que nuestra capacidad de contar historias es la característica que nos llevó, como especie, a dominar el mundo.
+Los seres humanos hemos contado historias desde la era del Cromañon para comunicarnos efectivamente con otros y mejorar nuestras posibilidades de supervivencia. [Algunos historiadores](https://www.youtube.com/watch?v%3Dnzj7Wg4DAbs) argumentan que nuestra capacidad de contar historias es la característica que nos llevó, como especie, a dominar el mundo.
 
 Han pasado muchos años desde nuestros antepasados cavernarios, pero nuestras estructuras mentales se mantienen prácticamente idénticas. Cuando escuchamos historias se activan múltiples partes del cerebro que controlan la comprensión del lenguaje (el área de Wernicke), nuestras respuestas emocionales (la amígdala) y nuestra empatía hacia otros (neuronas espejo). Cuando múltiples áreas del cerebro se activan, el hipocampo se pone a trabajar. Esta estructura es la encargada de convertir una experiencia auditiva en una memoria de largo plazo. **Por lo tanto, desde una perspectiva neurobiológica, tiene sentido organizar nuestro análisis de datos en un relato si queremos que la audiencia recuerde nuestras conclusiones y recomendaciones**.
 
@@ -410,17 +410,17 @@ El data storytelling reúne tres elementos que ya hemos mencionado: narrativa, v
 
 | ![image50](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image50.png) |
 |---|
-| *Imagen tomada de [este artículo](https://www.google.com/url?q=https://www.forbes.com/sites/brentdykes/2016/03/31/data-storytelling-the-essential-data-science-skill-everyone-needs/?sh%3D5750c5ca52ad&sa=D&source=editors&ust=1669290706037320&usg=AOvVaw1kaoxiKLpNn9glUmJctNG3) de Forbes* |
+| *Imagen tomada de [este artículo](https://www.forbes.com/sites/brentdykes/2016/03/31/data-storytelling-the-essential-data-science-skill-everyone-needs/?sh%3D5750c5ca52ad) de Forbes* |
 
 La magia sucede combinas estos tres elementos. El data storytelling es una herramienta que puede influenciar y generar cambio.
 
 | ![image38](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image38.png) |
 |---|
-| *Imagen tomada de [este artículo](https://www.google.com/url?q=https://www.forbes.com/sites/brentdykes/2016/03/31/data-storytelling-the-essential-data-science-skill-everyone-needs/?sh%3D5750c5ca52ad&sa=D&source=editors&ust=1669290706037320&usg=AOvVaw1kaoxiKLpNn9glUmJctNG3) de Forbes* |
+| *Imagen tomada de [este artículo](https://www.forbes.com/sites/brentdykes/2016/03/31/data-storytelling-the-essential-data-science-skill-everyone-needs/?sh%3D5750c5ca52ad) de Forbes* |
 
 ### El proceso
 
-Toda esta sección se basa en el excelente libro “[Storytelling with Data](https://www.google.com/url?q=https://www.amazon.com/Storytelling-Data-Visualization-Business-Professionals-ebook/dp/B016DHQSM2/ref%3Dtmm_kin_swatch_0?_encoding%3DUTF8%26qid%3D%26sr%3D&sa=D&source=editors&ust=1669290706038488&usg=AOvVaw1mV3sM5iC7q1TQGsgeu77c)” de la científica de datos Cole Nussbaumer. Las imágenes e ideas contenidas aquí son de Cole y su libro. Si te interesa este tema, te recomendamos profundizar con su libro.
+Toda esta sección se basa en el excelente libro “[Storytelling with Data](https://www.amazon.com/Storytelling-Data-Visualization-Business-Professionals-ebook/dp/B016DHQSM2/ref%3Dtmm_kin_swatch_0?_encoding%3DUTF8%26qid%3D%26sr%3D)” de la científica de datos Cole Nussbaumer. Las imágenes e ideas contenidas aquí son de Cole y su libro. Si te interesa este tema, te recomendamos profundizar con su libro.
 
 #### 1. Entender el contexto
 
@@ -545,18 +545,18 @@ Veamos un ejemplo que nos puede ayudar a entender algunas recomendaciones. Supon
 | Visualización | Descripción |
 |---|---|
 | ![image43](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image43.png) | Este es el gráfico original. Cuando creamos gráficos con nuestras herramientas de hoja de cálculos (como excel o gsheets) obtenemos un gráfico como este. |
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image32.png) | Los bordes generalmente son innecesarios en las visualizaciones, por lo que los eliminamos. Una mejor forma de “separar” visualizaciones es con “espacio en blanco”. |
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image10.png) | Si sientes que puede ser útil para tu audiencia poder seguir las líneas de cuadrícula para ver el valor de cada punto, puedes dejarlas. En ese caso te recomendamos hacerlas muy finas y con colores grises. En caso contrario, es buena idea eliminarlas. |
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image49.png) | Misma idea con los marcadores de valores. Si sientes que agregan valor, los puedes dejar. En la mayoría de los casos, los “vértices” de las líneas son suficientes para marcar cada punto de dato. |
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image59.png) | Limpiamos las etiquetas de los ejes. Los números lo más simple posible. Abrevia las etiquetas de texto siempre cuando se pueda. |
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image31.png) | A veces es una mejor idea etiquetar directamente las líneas o barras de un gráfico que ocupar una leyenda. La leyenda implica “ir y volver” a leerla cada vez que se nos olvide cuál línea es cuál. Recuerda, el objetivo de esta sección es eliminar los excesos. |
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image44.png) | Mejor aún si podemos ocupar colores para apoyar el proceso de “etiquetado” de los datos. De esa forma, con un solo vistazo puedes entender cuál línea es cuál. |
+| ![image32](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image32.png) | Los bordes generalmente son innecesarios en las visualizaciones, por lo que los eliminamos. Una mejor forma de “separar” visualizaciones es con “espacio en blanco”. |
+| ![image10](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image10.png) | Si sientes que puede ser útil para tu audiencia poder seguir las líneas de cuadrícula para ver el valor de cada punto, puedes dejarlas. En ese caso te recomendamos hacerlas muy finas y con colores grises. En caso contrario, es buena idea eliminarlas. |
+| ![image49](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image49.png) | Misma idea con los marcadores de valores. Si sientes que agregan valor, los puedes dejar. En la mayoría de los casos, los “vértices” de las líneas son suficientes para marcar cada punto de dato. |
+| ![image59](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image59.png) | Limpiamos las etiquetas de los ejes. Los números lo más simple posible. Abrevia las etiquetas de texto siempre cuando se pueda. |
+| ![image31](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image31.png) | A veces es una mejor idea etiquetar directamente las líneas o barras de un gráfico que ocupar una leyenda. La leyenda implica “ir y volver” a leerla cada vez que se nos olvide cuál línea es cuál. Recuerda, el objetivo de esta sección es eliminar los excesos. |
+| ![image44](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image44.png) | Mejor aún si podemos ocupar colores para apoyar el proceso de “etiquetado” de los datos. De esa forma, con un solo vistazo puedes entender cuál línea es cuál. |
 
 Los datos en esta nueva visualización “light” son los mismos que el gráfico original, sin embargo, hemos ayudado a la audiencia (tu jefe) ponga foco en lo más importante (la diferencia entre las dos líneas), y hemos eliminado todo aquello que agregaba complejidad innecesaria.
 
 | Antes | Después |
 |---|---|
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image70.jpg) | ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image71.jpg) |
+| ![image70](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image70.jpg) | ![image71](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image71.jpg) |
 
 #### 4. Enfoca la atención de tu audiencia
 
@@ -568,25 +568,25 @@ Por ejemplo, en los siguientes párrafos tu cerebro ya identificó dónde están
 
 | Sin atributos preatentivos | Con negrita | Con color |
 |---|---|---|
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image72.jpg) | ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image73.jpg) | ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image74.jpg) |
+| ![image72](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image72.jpg) | ![image73](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image73.jpg) | ![image74](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image74.jpg) |
 
 Este efecto de “enganchar” a la audiencia en los lugares que a ti te interesa es algo que podemos lograr también con nuestras visualizaciones.
 
 | Visualización | Descripción |
 |---|---|
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image63.png) | Este gráfico muestra los 10 mayores problemas reportados por clientes de una marca de autos. Como CEO, si quisieras extraer algo de información útil para cambiar el diseño, tendrías que leer toda la tabla. |
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image19.png) | Con atributos preatentivos puedes enfocar su atención en los problemas que tienen 10 o más quejas por cada 1000. |
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image47.png) | Y si quisieras ir un paso más allá, podrías destacar aquellas que estén relacionadas. En el ejemplo se destacan tres problemas que están relacionados a “ruidos” en el auto. Con esta información el CEO si puede accionar cambios. |
+| ![image63](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image63.png) | Este gráfico muestra los 10 mayores problemas reportados por clientes de una marca de autos. Como CEO, si quisieras extraer algo de información útil para cambiar el diseño, tendrías que leer toda la tabla. |
+| ![image19](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image19.png) | Con atributos preatentivos puedes enfocar su atención en los problemas que tienen 10 o más quejas por cada 1000. |
+| ![image47](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image47.png) | Y si quisieras ir un paso más allá, podrías destacar aquellas que estén relacionadas. En el ejemplo se destacan tres problemas que están relacionados a “ruidos” en el auto. Con esta información el CEO si puede accionar cambios. |
 
 Para dejar claro el proceso de enfoque, podemos continuar nuestro ejemplo de la sección anterior.
 
 | Visualización | Descripción |
 |---|---|
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image15.png) | Habíamos quedado en este gráfico sin excesos |
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image62.png) | Una buena estrategia para comenzar a destacar cosas, es dejando toda la data “neutra” para luego ir selectivamente “activando” lo que creamos relevante. |
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image22.png) | Utilizamos color para destacar la curva de tickets procesados, para hacer notar que en algún punto esta comienza a ser menor a la cantidad de tickets recibidos. |
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image34.png) | Queremos llevar la atención de nuestra audiencia a esa brecha que se genera desde mayo. Una buena alternativa sería volver a poner las etiquetas de datos para que sea evidente la diferencia en cantidades entre ambas curvas. |
-| ![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image5.png) | Sin embargo, se ve muy desordenado y denso. Mejor eliminemos todas las etiquetas previas a la brecha y dejemos solo las que nos interesan. Mucho mejor. |
+| ![image15](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image15.png) | Habíamos quedado en este gráfico sin excesos |
+| ![image62](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image62.png) | Una buena estrategia para comenzar a destacar cosas, es dejando toda la data “neutra” para luego ir selectivamente “activando” lo que creamos relevante. |
+| ![image22](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image22.png) | Utilizamos color para destacar la curva de tickets procesados, para hacer notar que en algún punto esta comienza a ser menor a la cantidad de tickets recibidos. |
+| ![image34](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image34.png) | Queremos llevar la atención de nuestra audiencia a esa brecha que se genera desde mayo. Una buena alternativa sería volver a poner las etiquetas de datos para que sea evidente la diferencia en cantidades entre ambas curvas. |
+| ![image5](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image5.png) | Sin embargo, se ve muy desordenado y denso. Mejor eliminemos todas las etiquetas previas a la brecha y dejemos solo las que nos interesan. Mucho mejor. |
 
 Gracias a colores y etiquetas bien utilizadas podemos resaltar la información que queremos que la audiencia vea, incluso antes de que la “vean”.
 
@@ -596,7 +596,7 @@ Aun cuando nuestras visualizaciones estén libres de exceso y enfocando la atenc
 
 Una simple adición a nuestro ejemplo anterior sería algo como esto:
 
-![](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image53.png)
+![image53](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/image53.png)
 
 Esta nueva visualización agrega elementos de texto muy importantes:
 
@@ -639,13 +639,13 @@ Una forma clásica de cerrar la historia es volviendo al principio, mostrando nu
 
 # Hacker edition
 
-Si quieres ir al siguiente nivel y aprender una herramienta muy útil en el proceso, te desafiamos a que realices tu análisis y reporte en [Google Data Studio](https://www.google.com/url?q=https://datastudio.google.com/&sa=D&source=editors&ust=1669290706060864&usg=AOvVaw0Lmq4km9yQy8J0r-wV8d7d) 😱. Esta es una herramienta que te permite conectar diversas fuentes de datos y luego crear visualizaciones y reportes dinámicos. Este tipo de herramientas, llamadas visualizadores, son elementales en el que hacer de una Analista de Datos.
+Si quieres ir al siguiente nivel y aprender una herramienta muy útil en el proceso, te desafiamos a que realices tu análisis y reporte en [Google Data Studio](https://datastudio.google.com/) 😱. Esta es una herramienta que te permite conectar diversas fuentes de datos y luego crear visualizaciones y reportes dinámicos. Este tipo de herramientas, llamadas visualizadores, son elementales en el que hacer de una Analista de Datos.
 
-Primero comencemos importando tus datos desde Google Sheets a Data Studio, mire este [video](https://www.google.com/url?q=https://www.loom.com/share/0cce98d5bbc7482ea421444e2f850cc1&sa=D&source=editors&ust=1669290706061205&usg=AOvVaw3wbMxygPOduNa-5wB98xbJ) para aprender cómo importar datos de la spreadsheet.
+Primero comencemos importando tus datos desde Google Sheets a Data Studio, mire este [video](https://www.loom.com/share/0cce98d5bbc7482ea421444e2f850cc1) para aprender cómo importar datos de la spreadsheet.
 
-Ahora que hemos importado los datos a Data Studio, podemos comenzar a crear nuestros gráficos y elementos visuales. Mire [este video](https://www.google.com/url?q=https://www.loom.com/share/9c7505eb3c2a4612bdfb7c9d43c40051&sa=D&source=editors&ust=1669290706061477&usg=AOvVaw0zmLDwVlRxDHXFvqp_nr9S) para aprender cómo comenzar a crear sus gráficos.
+Ahora que hemos importado los datos a Data Studio, podemos comenzar a crear nuestros gráficos y elementos visuales. Mire [este video](https://www.loom.com/share/9c7505eb3c2a4612bdfb7c9d43c40051) para aprender cómo comenzar a crear sus gráficos.
 
-Si desea mejorar aún más su conocimiento de Data Studio, realice este [curso online](https://www.google.com/url?q=https://www.youtube.com/watch?v%3D6FTUpceqWnc%26list%3DPLI5YfMzCfRtag7tBfbVvA4_a6YZxWHEO4&sa=D&source=editors&ust=1669290706061758&usg=AOvVaw3vace80sMECbueNF7dI13V) gratuito de Google, con subtitulos en español (en el video de youtube seleccione configuración > subtítulos > español).
+Si desea mejorar aún más su conocimiento de Data Studio, realice este [curso online](https://www.youtube.com/watch?v%3D6FTUpceqWnc%26list%3DPLI5YfMzCfRtag7tBfbVvA4_a6YZxWHEO4) gratuito de Google, con subtitulos en español (en el video de youtube seleccione configuración > subtítulos > español).
 
 👩‍💻 Si has llegado hasta aquí, no olvides agregar tu dashboard en Data Studio a tu presentación y comparte el link de tu dashboard.
 
@@ -655,19 +655,19 @@ A continuación te dejamos algunos videos y artículos adicionales que pueden se
 
 Para temas técnicos de spreadsheets, RFM y estadística:
 
-- Este [artículo](https://www.google.com/url?q=https://www.zendesk.com.mx/blog/segmentacion-de-clientes/&sa=D&source=editors&ust=1669290706062577&usg=AOvVaw0xEA452KNKmKRv8-RUic9D) para que aprendas sobre segmentación.
-- Este [podcast](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DCM0L1rftBfA&sa=D&source=editors&ust=1669290706062856&usg=AOvVaw0ULznJeJYMQvzO40n11D7_) que profundiza en la metodología de segmentación RFM.
-- Este [video](https://www.google.com/url?q=https://www.youtube.com/watch?v%3Dn3xpKz0SYlQ&sa=D&source=editors&ust=1669290706063104&usg=AOvVaw39audlKOvshLxH5Jms9tPK) que explica el concepto de pareto y como aplicarlo a los negocios.
-- Este [articulo](https://www.google.com/url?q=https://lasmatesfaciles.com/2021/06/21/cuartiles-deciles-y-percentiles-para-datos-agrupados/&sa=D&source=editors&ust=1669290706063391&usg=AOvVaw184H0pLYVKuiYRxI5F8hHS) sobre cuartiles.
-- Este [video](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DHjE4C4p7U2w&sa=D&source=editors&ust=1669290706063641&usg=AOvVaw3BuI_srvUl_SSOZJQ1lwor) de youtube que muestra como hacer reportes ordenados y con diseños modernos.
-- Este [artículo](https://www.google.com/url?q=https://medium.com/@miramontesayelen/claves-del-dise%25C3%25B1o-ux-para-visualizaci%25C3%25B3n-de-datos-8faeca47a709&sa=D&source=editors&ust=1669290706063976&usg=AOvVaw1oBV6ZETQAfE9dmrk8OxIn) que habla sobre buenas prácticas al momento de crear reportes con datos.
+- Este [artículo](https://www.zendesk.com.mx/blog/segmentacion-de-clientes/) para que aprendas sobre segmentación.
+- Este [podcast](https://www.youtube.com/watch?v%3DCM0L1rftBfA) que profundiza en la metodología de segmentación RFM.
+- Este [video](https://www.youtube.com/watch?v%3Dn3xpKz0SYlQ) que explica el concepto de pareto y como aplicarlo a los negocios.
+- Este [articulo](https://lasmatesfaciles.com/2021/06/21/cuartiles-deciles-y-percentiles-para-datos-agrupados/) sobre cuartiles.
+- Este [video](https://www.youtube.com/watch?v%3DHjE4C4p7U2w) de youtube que muestra como hacer reportes ordenados y con diseños modernos.
+- Este [artículo](https://medium.com/@miramontesayelen/claves-del-dise%25C3%25B1o-ux-para-visualizaci%25C3%25B3n-de-datos-8faeca47a709) que habla sobre buenas prácticas al momento de crear reportes con datos.
 
 Para complementar tu conocimiento en data storytelling:
 
-- [How to tell a story with data](https://www.google.com/url?q=https://venngage.com/blog/data-storytelling/&sa=D&source=editors&ust=1669290706064403&usg=AOvVaw0kqmUmp8jJ9l_mDGK_LPfP)
-- [5 amazing ways to impact your audience with data storytelling](https://www.google.com/url?q=https://www.meltwater.com/en/blog/5-amazing-ways-to-impact-your-audience-with-data-storytelling&sa=D&source=editors&ust=1669290706064715&usg=AOvVaw3Q0yS2xnyzWto5SFTQk5Qm)
-- [Telling stories with data in 3 steps](https://www.google.com/url?q=https://www.youtube.com/watch?v%3Dr5_34YnCmMY&sa=D&source=editors&ust=1669290706064968&usg=AOvVaw35UzdI2yp1bhDEGxXXFxwy)
-- [Making data mean more through storytelling](https://www.google.com/url?q=https://www.youtube.com/watch?v%3D6xsvGYIxJok&sa=D&source=editors&ust=1669290706065218&usg=AOvVaw2bUcQIBTnMa_JcceGdovjI)
-- [Ejemplo de storytelling con datos - Netflix](https://www.google.com/url?q=https://www.youtube.com/watch?v%3DihltOyKn9I0%26t%3D2s&sa=D&source=editors&ust=1669290706065460&usg=AOvVaw3fjT4_J8TRU7EKPwAmI7-v)
-- [Visualizar y comunicar datos](https://www.google.com/url?q=https://elartedemedir.com/blog/visualizar-comunicar-datos/&sa=D&source=editors&ust=1669290706065703&usg=AOvVaw0wTHzayezDUg3DPxS_7voJ)
-- [Consejos de Retórica para persuadir (con datos)](https://www.google.com/url?q=https://www.linkedin.com/pulse/consejos-de-la-ret%25C3%25B3rica-para-persuadir-con-datos-eduardo-valencia/?originalSubdomain%3Des&sa=D&source=editors&ust=1669290706065993&usg=AOvVaw2P9cqyI37F2MyrhDriPOzA)
+- [How to tell a story with data](https://venngage.com/blog/data-storytelling/)
+- [5 amazing ways to impact your audience with data storytelling](https://www.meltwater.com/en/blog/5-amazing-ways-to-impact-your-audience-with-data-storytelling)
+- [Telling stories with data in 3 steps](https://www.youtube.com/watch?v%3Dr5_34YnCmMY)
+- [Making data mean more through storytelling](https://www.youtube.com/watch?v%3D6xsvGYIxJok)
+- [Ejemplo de storytelling con datos - Netflix](https://www.youtube.com/watch?v%3DihltOyKn9I0%26t%3D2s)
+- [Visualizar y comunicar datos](https://elartedemedir.com/blog/visualizar-comunicar-datos/)
+- [Consejos de Retórica para persuadir (con datos)](https://www.linkedin.com/pulse/consejos-de-la-ret%25C3%25B3rica-para-persuadir-con-datos-eduardo-valencia/?originalSubdomain%3Des)
