@@ -486,7 +486,7 @@ Además, si sientes que podría sumar valor a tu dashboard, agrupar los datos po
 
 ## Paso 6: Actúa
 
-Con tu dashboard construido, puedes pasar a dejarle las recomendaciones a tu CEO. Vuelve al [paso 1](#h.khfni8auy9wm) para asegurarte de que tomaste en cuenta todos los puntos que misma definiste como importantes para este proyecto.
+Con tu dashboard construido, puedes pasar a dejarle las recomendaciones a tu CEO. Vuelve al paso 1 para asegurarte de que tomaste en cuenta todos los puntos que misma definiste como importantes para este proyecto.
 
 # Hacker edition
 
