@@ -21,7 +21,7 @@ Angélica propone entonces que **un mejor indicador para analizar el impacto del
 
 Para ayudarte a entender, Angélica dibuja este gráfico en la pizarra:
 
-![esquema](http://drive.google.com/uc?export=view&id=1X-LAV51RAVcSkFj9CYvnn_RxIu47p2h5)
+![esquema](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-1-covid/images/covid_img01.png)
 
 La explicación de Angélica te hace sentido. Todos acuerdan, gracias a esta nueva pieza de información, que una mejor forma de medir el impacto real de la pandemia en cada país es con el **exceso de muertes por cada 100 mil habitantes**, más que solo basarse en las cifras oficiales reportadas. Dado que eres Latinoamericana, decides hacer un primer análisis con los datos de 4 países de la región: Perú, Chile, Colombia y México.  
 
