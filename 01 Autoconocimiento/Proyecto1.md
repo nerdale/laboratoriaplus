@@ -60,13 +60,14 @@ Primero, vamos a escoger 3 comportamientos que favorecen el desarrollo de nuestr
 
 Por ejemplo, si uno de tus valores es crecimiento, algunos de tus comportamientos quizá sea: "aprender algo nuevo cada año" o "leer un artículo relacionado con mi campo laboral semanalmente".
 
-\>Completa en el recuadro inferior los comportamientos que sustentan tu valor.
+Completa en el recuadro inferior los comportamientos que sustentan tu valor.
 
 
 ### Paso 2 (open question)
 
 ¿Cuáles son 3 comportamientos que soportan alguno de tus valores?
 
+<p>&nbsp;</p>
 Ahora es momento de pensar en 2 o 3 comportamientos que estén entorpeciendo el desarrollo de ese valor que es importante para nosotras. 
 
 Por ejemplo, si uno de tus valores es crecimiento, algunos de tus comportamientos quizá sea: "Leer siempre el mismo género de libros" o "no priorizar experiencias de aprendizaje en mi planeación anual".
