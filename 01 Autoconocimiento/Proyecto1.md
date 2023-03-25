@@ -49,7 +49,7 @@ Paso 1 (content)
 
 Vivir nuestros valores significa que no simplemente expresamos nuestros valores sino que verdaderamente los ejercemos. Hay congruencia entre nuestras palabras y nuestras acciones, tenemos claridad sobre lo que creemos y consideramos importante, asegurándonos de que nuestras intenciones, palabras, pensamientos y comportamientos se alinean con estas creencias.
 
-Los comportamientos que repetimos en nuestro cotidiano confirma esta expresión de nuestros valores. Para asegurarnos de que nos estamos alineando con la líder que queremos ser, te invitamos a realizar un análisis significativo de la expresión de tus valores en tus comportamientos cotidianos.
+Los comportamientos que repetimos en nuestro cotidiano confirman esta expresión de nuestros valores. Para asegurarnos de que nos estamos alineando con la líder que queremos ser, te invitamos a realizar un análisis significativo de la expresión de tus valores en tus comportamientos cotidianos.
 
  <h3>Actividad</h3>
 
@@ -67,7 +67,7 @@ Completa en el recuadro inferior los comportamientos que sustentan tu valor.
 <p>&nbsp;</p>
 Ahora es momento de pensar en 2 o 3 comportamientos que estén entorpeciendo el desarrollo de ese valor que es importante para nosotras. 
 
-Por ejemplo, si uno de tus valores es crecimiento, algunos de tus comportamientos quizá sea: "Leer siempre el mismo género de libros" o "no priorizar experiencias de aprendizaje en mi planeación anual".
+Por ejemplo, si uno de tus valores es crecimiento, algunos de tus comportamientos a evitar quizá sea: "Dejar pasar una oportunidad por miedo a fallar" o "no priorizar experiencias de aprendizaje en mi planeación anual".
 
 \>Completa en el recuadro inferior los comportamientos que ocurren en detrimento de tus valores.
 
@@ -78,14 +78,14 @@ Paso 1 (content)
 
 \# Mis fortalezas
 
-En ocasiones, nos enfocamos tanto en cómo podríamos desarrollar nuevas habilidades que olvidamos abrazar y desarrollar las fortalezas que ya tenemos. Si bien ambas son importantes, pensar en nuestras fortalezas nos ayuda a ser más conscientes de nosotras mismas y comprender nuestras capacidades. Aumentar nuestra confianza, nos permite delegar tareas con eficacia, crear un equipo fuerte e identificar las mejores oportunidades de crecimiento y desarrollo.
+Cuando queremos mejorar, es común que nuestra primera reacción sea trabajar en nuestras áreas de oportunidad, olvidando que también podemos mejorar abrazando y desarrollando aún más nuestras fortalezas. Si bien ambas son importantes, pensar en nuestras fortalezas nos ayuda a ser más conscientes de nosotras mismas y comprender nuestras capacidades.
 
-Esta actividad también está relacionada con los tres ejes del liderazgo. Es una oportunidad para reflexionar sobre tus propias fortalezas, entender cómo te ven los demás y revisar si tus acciones y creencias están alineadas. 
+Esta actividad también está relacionada con los tres ejes del liderazgo. Es una oportunidad para reflexionar sobre tus propias fortalezas, entender cómo te ven las demás personas y revisar si tus acciones y creencias están alineadas. 
 
  <h3>Actividad</h3>
-A continuación te invitamos a contestar el siguiente test para descubrir tus fortalezas profesionales desarrollado por el Instituto VIA sobre el Carácter. Esta organización sin fines de lucro se ha especializado en la investigación de los valores en acción (Values In Action) desde hace más de 20 años. Su herramienta es utilizada por instituciones como Harvard y empresas como IBM y Coca Cola para desarrollar sus equipo. 
+A continuación te invitamos a contestar el siguiente test para descubrir tus fortalezas profesionales, desarrollado por el Instituto VIA sobre el Carácter. Esta organización sin fines de lucro se ha especializado en la investigación de los valores en acción (Values In Action) desde hace más de 20 años. Su herramienta es utilizada por instituciones como Harvard y empresas como IBM y Coca Cola para desarrollar sus equipo. 
 
-¿Lista para comenzar?Asegúrate de seleccionar el idioma de tu conveniencia en la parte superior izquierda. El registro es gratuito.
+¿Lista para comenzar? Asegúrate de seleccionar el idioma de tu conveniencia en la parte superior izquierda. El registro es gratuito.
 
 >Completa el test de fortalezas antes de continuar:  
 👉 <a href="https://www.viacharacter.org/account/register" style="color:#FF50F5"target="_blank"> VIA Character</a>
@@ -120,9 +120,9 @@ Sparketype fue desarrollada por Jonathan Fields para ayudar a las personas a ide
 
 ![reflexion](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/01%20Autoconocimiento/header.jpg)
 
-Llegamos al cierre de tu proyecto. Es momento de detenernos a reflexionar. Te permitiste explorar, cuestionar y redefinir lo que para ti significa un liderazgo auténtico. Enunciaste con seguridad tus valores fundamentales, reconociste tus fortalezas, aquello que te permite brillar. Sobretodo, exploraste mecanismos para integrar más de ti en tu vida rutinaria y por ende, en el desarrollo de tu liderazgo.
+Llegamos al cierre de tu proyecto. Es momento de detenernos a reflexionar. Te permitiste explorar, cuestionar y redefinir lo que para ti significa un liderazgo auténtico. Identificaste tus valores fundamentales, reconociste tus fortalezas, aquello que te permite brillar. Sobretodo, exploraste mecanismos para integrar más de ti en tu vida rutinaria y por ende, en el desarrollo de tu liderazgo.
 
-Más allá de los resultados de tus tests, o las opciones que hayas elegido en las actividades de este proyecto, quien decide qué hacer con los aprendizajes y consejos emitidos eres tú. Te invitamos a responder las siguientes preguntas para encausar tu reflexión final sobre estos contenidos.
+Ahora te invitamos a realizar una reflexión final respondiendo algunas siguientes preguntas.
 
 ###Paso 2 (open question)
 ¿Cuál fue tu descubrimiento principal en este camino de autoconocimiento?
@@ -134,12 +134,12 @@ Más allá de los resultados de tus tests, o las opciones que hayas elegido en l
 
 #Cierre
 
-¡Felicidades! Haz completado tu proyecto 1: Liderando desde el autoconocimiento. Te invitamos a traer a la próxima sesión en vivo tus reflexiones y descubrimientos para compartirlos en comunidad.
+¡Felicidades! Has completado tu primer proyecto: Liderando desde el autoconocimiento. Te invitamos a traer a la próxima sesión en vivo tus reflexiones y descubrimientos para compartirlos en comunidad.
 
-Nos encantará que sigas profundizando en el tema del autoconocimiento y nuestra mirada interna, así que te invitamos a explorar:
+Nos encantará que sigas profundizando en el tema del autoconocimiento y nuestra mirada interna, así que te invitamos a explorar los siguientes recursos:
 
 >- <a href="https://hbr.org/2018/01/what-self-awareness-really-is-and-how-to-cultivate-it?language=es" style="color:#FF50F5" target="_blank">¿Qué es el autoconocimiento y por qué es importante cultivarlo?</a> Este artículo de Harvard Business Review (HBR), por Tasha Eurich, explica de forma concisa la importancia del autoconocimiento para el campo gerencial y cualquier persona en una posición de liderazgo. Si sólo vas a leer un artículo esta semana, que sea este.
 >
 >-  <a href="https://www.netflix.com/pe/title/81010166" style="color:#FF50F5" target="_blank">Brené Brown, la llamada de la valentía</a>. En este documental, Brené Brown, una de nuestras héroes que conociste en la sección de valores, reflexiona con humor y empatía sobre cómo elegir la valentía en lugar de la comodidad en una cultura marcada por la escasez, el miedo y la incertidumbre. Imperdible.
 
-También nos encontrarás en slack conversando y analizando estos materiales.
+También nos encontrarás en <a href="https://laboratoria-plus.slack.com/join/shared_invite/zt-1ok3cui7p-y5tA7XhBT4SlqvQHGdEFEA#/shared-invite/email" style="color:#FF50F5" target="_blank">Slack</a> conversando y analizando estos materiales.
