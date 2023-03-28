@@ -47,9 +47,9 @@ Actualmente, una de las principales investigadoras sobre el liderazgo es Brené 
 Paso 1 (content)
 #De valores a comportamientos
 
-Vivir nuestros valores significa que no simplemente expresamos nuestros valores sino que verdaderamente los ejercemos. Hay congruencia entre nuestras palabras y nuestras acciones, tenemos claridad sobre lo que creemos y consideramos importante, asegurándonos de que nuestras intenciones, palabras, pensamientos y comportamientos se alinean con estas creencias.
+Vivir nuestros valores significa que hay congruencia entre nuestras palabras y nuestras acciones, tenemos claridad sobre lo que creemos y consideramos importante, asegurándonos de que nuestros comportamientos se alinean con estas creencias.
 
-Los comportamientos que repetimos en nuestro cotidiano confirman esta expresión de nuestros valores. Para asegurarnos de que nos estamos alineando con la líder que queremos ser, te invitamos a realizar un análisis significativo de la expresión de tus valores en tus comportamientos cotidianos.
+ Para asegurarnos de que nos estamos alineando con la líder que queremos ser, te invitamos a realizar un análisis significativo de la expresión de tus valores en tus comportamientos cotidianos.
 
  <h3>Actividad</h3>
 
@@ -59,6 +59,9 @@ Por ejemplo, si uno de tus valores es crecimiento, algunos de tus comportamiento
 
 Completa en el recuadro inferior los comportamientos que sustentan tu valor.
 
+IMAGEN
+![comportamientos](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/01%20Autoconocimiento/digo.jpg)
+
 
 ### Paso 2 (open question)
 
@@ -67,7 +70,7 @@ Completa en el recuadro inferior los comportamientos que sustentan tu valor.
 <p>&nbsp;</p>
 Ahora es momento de pensar en 2 o 3 comportamientos que estén entorpeciendo el desarrollo de ese valor que es importante para nosotras. 
 
-Por ejemplo, si uno de tus valores es crecimiento, algunos de tus comportamientos a evitar quizá sea: "Dejar pasar una oportunidad por miedo a fallar" o "no priorizar experiencias de aprendizaje en mi planeación anual".
+Por ejemplo, si uno de tus valores es crecimiento, algunos de tus comportamientos a evitar quizá sean: "Dejar pasar una oportunidad por miedo a fallar" o "no priorizar experiencias de aprendizaje en mi planeación anual".
 
 \>Completa en el recuadro inferior los comportamientos que ocurren en detrimento de tus valores.
 
@@ -78,14 +81,12 @@ Paso 1 (content)
 
 \# Mis fortalezas
 
-Cuando queremos mejorar, es común que nuestra primera reacción sea trabajar en nuestras áreas de oportunidad, olvidando que también podemos mejorar abrazando y desarrollando aún más nuestras fortalezas. Si bien ambas son importantes, pensar en nuestras fortalezas nos ayuda a ser más conscientes de nosotras mismas y comprender nuestras capacidades.
-
-Esta actividad también está relacionada con los tres ejes del liderazgo. Es una oportunidad para reflexionar sobre tus propias fortalezas, entender cómo te ven las demás personas y revisar si tus acciones y creencias están alineadas. 
+Cuando buscamos mejorar, es común que nuestra primera reacción sea enfocarnos en nuestras áreas de oportunidad, olvidando que también podemos abrazar y potenciar las fortalezas que ya tenemos. Si bien ambas son importantes, pensar en nuestras fortalezas nos permite ser más conscientes de nosotras mismas y capitalizar nuestras capacidades.
 
  <h3>Actividad</h3>
-A continuación te invitamos a contestar el siguiente test para descubrir tus fortalezas profesionales, desarrollado por el Instituto VIA sobre el Carácter. Esta organización sin fines de lucro se ha especializado en la investigación de los valores en acción (Values In Action) desde hace más de 20 años. Su herramienta es utilizada por instituciones como Harvard y empresas como IBM y Coca Cola para desarrollar sus equipo. 
+A continuación te invitamos a contestar el siguiente test para descubrir tus fortalezas profesionales desarrollado por el Instituto VIA sobre el Carácter. Esta organización sin fines de lucro se ha especializado en la investigación de los valores en acción (Values In Action) desde hace más de 20 años. Su herramienta es utilizada por instituciones como Harvard y empresas como IBM y Coca Cola para desarrollar sus equipos. 
 
-¿Lista para comenzar? Asegúrate de seleccionar el idioma de tu conveniencia en la parte superior izquierda. El registro es gratuito.
+¿Lista para comenzar?Asegúrate de seleccionar el idioma de tu conveniencia en la parte superior izquierda. El registro es gratuito.
 
 >Completa el test de fortalezas antes de continuar:  
 👉 <a href="https://www.viacharacter.org/account/register" style="color:#FF50F5"target="_blank"> VIA Character</a>
