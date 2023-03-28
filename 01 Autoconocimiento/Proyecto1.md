@@ -142,4 +142,4 @@ Nos encantará que sigas profundizando en el tema del autoconocimiento y nuestra
 >
 >-  <a href="https://www.netflix.com/pe/title/81010166" style="color:#FF50F5" target="_blank">Brené Brown, la llamada de la valentía</a>. En este documental, Brené Brown, una de nuestras héroes que conociste en la sección de valores, reflexiona con humor y empatía sobre cómo elegir la valentía en lugar de la comodidad en una cultura marcada por la escasez, el miedo y la incertidumbre. Imperdible.
 
-También nos encontrarás en <a href="https://laboratoria-plus.slack.com/join/shared_invite/zt-1ok3cui7p-y5tA7XhBT4SlqvQHGdEFEA#/shared-invite/email" style="color:#FF50F5" target="_blank">Slack</a> conversando y analizando estos materiales.
+También nos encontrarás en <a href="https://laboratoria-plus.slack.com/archives/C04M4SX997F/"style="color:#FF50F5" target="_blank">slack</a> conversando y analizando estos materiales.
