@@ -10,11 +10,12 @@ SECCION 1
 El síndrome del impostor
 CONTENT
 # El síndrome del impostor
-# El síndrome del impostor
+El síndrome del impostor
+En este proyecto vamos a conocer, comprender y convivir con nuestro síndrome del impostor. Aprenderemos que este mecanismo de autosabotaje es una respuesta común en situaciones novedosas y que todas podemos experimentarlo y controlarlo.
 
-En este proyecto vamos a conocer, comprender y convivir con nuestro síndrome del impostor. Aprenderemos que este mecanismo de autosabotaje es una respuesta común en situaciones novedosas y que todas podemos experimentarlo y controlarlo. 
+Antes que nada, ¿Qué es el síndrome del impostor? Una desalineación entre nuestra percepción de nosotras mismas y las evidencias y percepciones externas del mismo hecho. Por eso la importancia de nuestro modelo de los 3 ejes y partir de tener claro cómo nos percibimos a nosotras mismas.
 
-Antes que nada, es importante que sepas que sí tú también te has sentido impostora te tenemos buenas noticias. Seguramente buscas retarte y mejorar constantemente, no eres propensa a incurrir en comportamientos riesgosos y te conduces con excelencia. Además, no estás sola, referentes como Michelle obama y Maya Angelou también han compartido sus experiencias aprendiendo a convivir con este síndrome
+Es importante que sepas que sí tú también te has sentido impostora no todo son malas noticias. Seguramente buscas retarte y mejorar constantemente, no eres propensa a incurrir en comportamientos riesgosos y te conduces con excelencia. Además, no estás sola, referentes como Michelle Obama y Maya Angelou también han compartido sus experiencias aprendiendo a convivir con este síndrome.
 
 <h3>Actividad</h3>
 La primera herramienta que queremos enseñarte para controlar al síndrome del impostor se denomina "Qué pasaría si? y nos ayuda a aceptar esos momentos de ansiedad negativa y a equilibrarlos con resultados positivos igualmente factibles.
@@ -22,6 +23,15 @@ La primera herramienta que queremos enseñarte para controlar al síndrome del i
 >Piensa en un reto próximo que te tenga ansiosa y acompáñanos a resolver las siguientes preguntas.
 
 OPEN QUESTION
+En relación a tu reto próximo, ¿Qué 5 escenarios negativos está alimentando tu síndrome del impostor?
+
+CONTENT
+
+ <p>&nbsp;</p>
+El ejercicio ¿qué pasaría si? nos obliga a pensar en escenarios tan posibles como aquellos con los que se obsesiona nuestro síndrome del impostor. A cada escenario negativo, le equipara con un positivo.
+
+OPEN QUESTION
+Para cada uno de los 5 escenarios negativos, redacta un escenario positivo igualmente posible.
 
 
 SECCION 2
@@ -29,12 +39,14 @@ Autosabotaje
 CONTENT
 #Autosabotaje
 
-El cuestionario de <a href="https://assessment.positiveintelligence.com/saboteur/overview/"style="color:#FF50F5" target="_blank">Positive Intelligence (PQ) Saboteur Assesment</a> nos ayuda a evaluar cómo nos autoaboteamos. Este acercamiento plantea que todos tenemos un “Gran Saboteador: El Juez” que nos agobia repetidamente con errores pasados y se obsesiona previniendonos futuros riesgos. Sin embargo, este saboteador no trabaja solo, El Juez activa a otros de nuestros mecanismos de sabotaje, causando estrés, reduciendo nuestra efectividad y lastimando nuestras relaciones. 
+El cuestionario de Positive Intelligence (PQ) Saboteur Assesment nos ayuda a evaluar cómo nos autoaboteamos. Este acercamiento plantea que todos tenemos un “Gran Saboteador: El Juez” que nos agobia repetidamente con errores pasados y se obsesiona previniendonos futuros riesgos. Sin embargo, este saboteador no trabaja solo, El Juez activa a otros de nuestros mecanismos de sabotaje, causando estrés, reduciendo nuestra efectividad y lastimando nuestras relaciones.
 
-Positive Intelligence nos muestra diferentes patrones de pensamiento en los que nos enfrascamos de forma dañina. Estos arquetipos se utilizan en cursos de liderazgo en la Escuela de Negocios de Stanford y en cursos de psicología positiva. 
+Positive Intelligence nos muestra diferentes patrones de pensamiento en los que nos enfrascamos de forma dañina. Estos arquetipos se utilizan en cursos de liderazgo en la Escuela de Negocios de Stanford y en cursos de psicología positiva.
 
- <h3>Actividad</h3>
-Observa el siguiente catálogo de saboteadoras e identifica los patrones en los que personalmente te has visto atrapada y después acompáñanos en las preguntas de reflexión.
+Actividad
+Realiza el siguiente cuestionario para identificar a tus saboteadoras. Este material está disponible solo en inglés. Si lo prefieres, te invitamos a observa el siguiente catálogo de saboteadoras en español e identificar los patrones en los que personalmente te has visto atrapada.
+
+Después de realizar el cuestionario u observar nuestro catálogo, acompáñanos en las preguntas de reflexión.
 
 ![saboteadoras](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/02%20Creencias%20limitantes/Frame%2070%20(1).jpg)
 OPEN QUESTION
