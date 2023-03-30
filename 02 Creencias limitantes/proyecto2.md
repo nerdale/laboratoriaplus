@@ -10,8 +10,17 @@ SECCION 1
 El síndrome del impostor
 CONTENT
 # El síndrome del impostor
+# El síndrome del impostor
 
-Reflexión relacionada con el síndrome del impostor en mujeres latinas en el espacio de trabajo
+En este proyecto vamos a conocer, comprender y convivir con nuestro síndrome del impostor. Aprenderemos que este mecanismo de autosabotaje es una respuesta común en situaciones novedosas y que todas podemos experimentarlo y controlarlo. 
+
+Antes que nada, es importante que sepas que sí tú también te has sentido impostora te tenemos buenas noticias. Seguramente buscas retarte y mejorar constantemente, no eres propensa a incurrir en comportamientos riesgosos y te conduces con excelencia. Además, no estás sola, referentes como Michelle obama y Maya Angelou también han compartido sus experiencias aprendiendo a convivir con este síndrome
+
+<h3>Actividad</h3>
+La primera herramienta que queremos enseñarte para controlar al síndrome del impostor se denomina "Qué pasaría si? y nos ayuda a aceptar esos momentos de ansiedad negativa y a equilibrarlos con resultados positivos igualmente factibles.
+
+>Piensa en un reto próximo que te tenga ansiosa y acompáñanos a resolver las siguientes preguntas.
+
 OPEN QUESTION
 
 
@@ -54,8 +63,23 @@ IMAGEN
 
 SECCION 4
 REFLEXION
-(tbd)
+Ahora es momento de realizar una reflexión personal sobre lo que hemos explorado en este segundo proyecto. Atreverte a reconocer tus temores, mecanismos de sabotaje y discursos autocríticos es incómodo y te felicitamos por permitirte ser vulnerable. 
+
+Contesta las siguientes preguntas de forma profunda, tras analizar lo que representan para ti. 
+
+¿Cuál ha sido tu relación con el síndrome del impostor hasta ahora?¿Cómo te gustaría navegar esa relación en lo futuro?
+En la sesión en vivo, exploraremos nuestra relación con nuestra crítica interna. Habiendo realizado la actividad de autosabotaje ¿Qué mecanismos de autocrítica consideras importante trabajar durante la sesión?
 
 SECCION 5
 CIERRE (cover)
-(tbd)
+#Cierre
+
+Ahora puedes enunciar y reconocer tus creencias limitantes. ¡Felicidades! Te invitamos a traer a la sesión en vivo tus reflexiones para realizar las actividades que te permitirán enfrentar a tu crítica interna y tener navegar mejor el síndrome del impostor.
+
+Sabemos que este tema es profundo y nos encantará que continues tu exploración con los siguientes recursos sugeridos:
+
+>- <a href="https://hbr.org/podcast/2019/12/seeing-ourselves-as-leaders" style="color:#FF50F5" target="_blank">Viéndonos a nosotras mismas como líderes</a> Este podcast de _Women at Work_ discute el proceso de convertirnos en líderes, desde convencernos a nosotras mismas hasta convencer a nuestros colegas. Una mirada que reconoce que los retos existentes en este campo desde lo femenino.
+>
+>-  <a href="https://hbr.org/podcast/2017/08/why-everyone-should-see-themselves-as-a-leader" style="color:#FF50F5" target="_blank">¿Por qué todas las personas deberían asumirse como líderes?</a>. En este podcast Sure Ashford, profesora de la Escuela de Negocios de la Universidad de Michigan, comparte el trabajo de investigación que ha realizado a lo largo de décadas sobre liderazgo. ¿Quién consigue desarrollar su liderazgo?
+
+También nos encontrarás en <a href="https://laboratoria-plus.slack.com/archives/C04M4SX997F/"style="color:#FF50F5" target="_blank">slack conversando y analizando estos materiales.
