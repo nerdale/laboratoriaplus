@@ -29,9 +29,9 @@ Tu hoja de cálculo deberá incluir, como mínimo, lo siguiente:
 - Estadísticas descriptivas relevantes como: cohorte con más usuarios, mes al cabo del cual hay más fuga, cohorte con mejor retención, cohorte con peor retención.
 - Un gráfico que muestre una línea de tendencia de la retención mes a mes.  
 
-Además, grabarás un video de máximo 5 minutos simulando una reunión con tu jefe, en donde le expliques tus conclusiones y recomendaciones. Para esto puedes apoyarte en tu spreadsheet o armar una presentación en Google Slides. Para grabarte te recomendamos la plataforma [Loom](https://www.youtube.com/watch?v=-8mwLqvNOPY).  
+Además, de manera opcional, grabarás un video de máximo 5 minutos simulando una reunión con tu jefe, en donde le expliques tus conclusiones y recomendaciones. Para esto puedes apoyarte en tu spreadsheet o armar una presentación en Google Slides. Para grabarte te recomendamos la plataforma [Loom](https://www.youtube.com/watch?v=-8mwLqvNOPY).  
 
-En particular, tu video debe responder las siguientes preguntas:  
+En particular, tu video deberá responder las siguientes preguntas:  
 
 - ¿Consideras que se debe invertir en triplicar la inversión de adquisición de usuarios?
 - ¿Por qué consideras eso? Argumenta claramente tus resultados apoyándote en tu spreadsheet o alguna presentación.
