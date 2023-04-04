@@ -44,8 +44,6 @@ Para considerar completado este proyecto deberás entregar, por medio de la [pla
 
 2. **Recomendado:** Además, de manera opcional, grabarás un video de máximo 5 minutos simulando una reunión con tu líder, en donde le expliques tus conclusiones y recomendaciones utilizando data storytelling (¡en la guía de resolución te contamos más al respecto!) Para presentar, apóyate en tu spreadsheet o arma una presentación en Google Slides. Para grabarte, te recomendamos la plataforma Loom. En particular, tu video debe presentar un diagnóstico de las ventas del negocio y recomendaciones concretas con base en tu análisis.
 
-> 👩‍💻 Recuerda que la lifeskill que desarrollaremos en este proyecto es la comunicación a través del datastorytelling, por lo que te recomendamos desafiarte haciendo la presentación y video.
-
 # Objetivos de aprendizaje
 
 Al resolver este proyecto serás capaz de:
@@ -62,7 +60,8 @@ Al resolver este proyecto serás capaz de:
 - **Comunicación de hallazgos**
 
   - **Visualizar datos en hojas de cálculo**: confeccionar gráficas de línea y barra para visualizar información con el fin de resumir hallazgos en un Dashboard, encontrar patrones o comparar distintas series de datos.
-  - **Comunicar ideas de manera efectiva utilizando técnicas de Data Storytelling**: organizar tu presentación tomando en cuenta a tu audiencia, el contexto y el objetivo ofreciendo respuestas a una serie de interrogantes del negocio y/o sugiriendo cursos de acción que impactan en el mismo.
+ 
+**Recomendado:** Comunicar ideas de manera efectiva utilizando técnicas de Data Storytelling. Organiza tu presentación tomando en cuenta a tu audiencia, el contexto y el objetivo ofreciendo respuestas a una serie de interrogantes del negocio y/o sugiriendo cursos de acción que impactan en el mismo.
 
 # Consideraciones generales
 
