@@ -32,7 +32,7 @@ Tu nueva CEO agrega; “Genial. Entonces por favor ayúdenme con un dashboard qu
 
 # Entregable
 
-Para que este proyecto optativo se dé por completado debes entregar a través de tu plataforma de aprendizaje, un dashboard de [Google Data Studio](https://www.google.com/url?q=https://support.google.com/datastudio/answer/6283323?hl%3Den&sa=D&source=editors&ust=1671544629053894&usg=AOvVaw15zJDyFRvgwoWJvePX6P9A)  que detalle las métricas más importantes de uso, tanto las que enumera tu CEO como otras que consideres relevantes para entender el negocio y responder las preguntas de tu CEO.
+Para que este proyecto optativo se dé por completado debes entregar a través de tu plataforma de aprendizaje, un dashboard de [Google Looker Studio](https://www.google.com/url?q=https://support.google.com/datastudio/answer/6283323?hl%3Den&sa=D&source=editors&ust=1671544629053894&usg=AOvVaw15zJDyFRvgwoWJvePX6P9A)  que detalle las métricas más importantes de uso, tanto las que enumera tu CEO como otras que consideres relevantes para entender el negocio y responder las preguntas de tu CEO.
 
 Adicionalmente, te recomendamos agregar un video de máximo 5 minutos en donde presentes tus hallazgos utilizando data storytelling, tal como aprendiste en el proyecto anterior. Resalta los aspectos más importantes de la data, los perfiles que hayas encontrado según el uso que le dan a las bicicletas, los usuarios y las recomendaciones que creas que puedan ser relevantes para tu CEO.
 
