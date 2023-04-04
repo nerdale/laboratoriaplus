@@ -1,4 +1,6 @@
-# Introducción
+# Introducción COVER
+En este proyecto realizarás un análisis utilizando hojas de cálculo a partir de un conjunto de datos sobre las muertes por COVID-19 en ciertos países de Latinoamérica. 
+
 
 ## Contexto
 
@@ -10,15 +12,35 @@ Esta guía será tu hoja de ruta para el desarrollo exitoso de este proyecto.
 
 ## Paso 1: Pregunta
 
-Como vimos en la sección anterior, este paso es fundamental. Aquí tenemos que definir el objetivo de nuestro estudio. Para este proyecto, convenientemente, el brief nos brinda el contexto del “ida y vuelta” que se tuvo sobre el problema en cuestión.  
+Como vimos en los seis pasos del análisis de datos, este momento es fundamental. Aquí tenemos que definir el objetivo de nuestro estudio. Para este proyecto, convenientemente, el brief nos brinda el contexto del “ida y vuelta” que se tuvo sobre el problema en cuestión.  
 
 En resumen, sabemos que el objetivo es entender **cuáles países han sido más afectados por la pandemia** y que, luego de evaluar diversos indicadores (muertes totales reportadas por COVID por país y muertes reportadas por COVID por cada 100,000 habitantes), se definió que la métrica pertinente para el análisis es calcular **el exceso de muertes por cada 100,000 habitantes**. Si aún tienes dudas sobre cómo se calcula este indicador o las razones por las que es el indicador más pertinente, te recomendamos regresar al brief y aclarar esto antes de continuar.  
 
-Este proceso de idas y venidas es un claro ejemplo de lo que sucede en la práctica. Como te diste cuenta, es clave cuestionar los indicadores, complementar con la experiencia de diversos stakeholders y traer información externa que pueda aportar al análisis.  
+Este proceso de idas y venidas es un claro ejemplo de lo que sucede en la práctica. Como te diste cuenta, es clave cuestionar los indicadores, complementar con la experiencia de diversos stakeholders y traer información externa que pueda aportar al análisis.
+Recuerda que algunas preguntas que te pueden ayudar en esta etapa son:
+- ¿Cuáles son los problemas que han sido mencionados por mis clientes y stakeholders?
+- ¿Cómo se pueden resolver las dudas de los clientes y stakeholders?
+- ¿Es el problema que dicen tener realmente la raíz del problema?
+- ¿Cuáles son las expectativas de los clientes y stakeholders en cuanto a una solución?”
+
+### Close Question 
+¿Cuál es el objetivo del proyecto? B
+Calcular las muertes totales de cada país. 
+Calcular las muertes por Covid por cada cien mil habitantes de cada país.
+Calcular las muertes por Covid de cada país.
+
+¿Cuál es la propuesta para reducir el impacto de la subestimación del reporte de muertes Covid? C
+Solicitar las fuentes reales a cada entidad correspondiente.
+La subestimación aplica para todos los países, no es necesario evitarla.
+Pronosticar el número de muertes a partir de años pasados y calcular el exceso de muertes.
+
+### Validación
+¡La tienes clara! Has identificado correctamente el objetivo del proyecto, y además has identificado la mejor propuesta para el problema de la subestimación. Mantener siempre en mente estas dos respuestas guiarán la posible solución que plantees. 
+
 
 ## Paso 2: Prepara
 
-Para este proyecto, convenientemente de nuevo, contamos con los datos que necesitamos en un archivo CSV esperando por ser analizado. Esta no es la realidad de todos los proyectos. En este caso en particular, probablemente hubiéramos tenido que ir a las bases de los distintos gobiernos y de las organizaciones centrales como la OMS para buscar los datos de cada país y luego unirlos. Como es tu primer proyecto, los recolectamos por ti 🙂.
+Para este proyecto, convenientemente de nuevo, contamos con los datos que necesitamos listos en un archivo CSV esperando por ser analizado. Ésta no es la realidad de todos los proyectos. En este caso en particular, probablemente hubiéramos tenido que ir a las bases de los distintos gobiernos y de las organizaciones centrales como la OMS para buscar los datos de cada país y luego unirlos. Como es tu primer proyecto, los recolectamos para ti 🙂.
 
 Si bien tenemos el archivo, todavía no hemos visto los datos. ¿Son confiables? ¿Están actualizados? ¿Se seguirán actualizando (en caso de que se requieran más adelante)? ¿Desde cuándo tenemos datos? También tendrás que determinar si la calidad es suficiente para responder las preguntas del negocio.  
 
@@ -65,6 +87,24 @@ Aquí podemos ver un ejemplo de cómo se ven los registros del archivo “Proyec
 
 - El primer registro muestra la cantidad de muertes en México del 2016-10-17 al 2016-10-23 (7 días en total). Ese rango de fechas representa la semana 42 del año 2016 (recuerda que un año tiene 52 o 53 semanas), y en la semana 42 se reportaron 12,365 muertes totales y cero muertes causadas por COVID-19. Esto tiene sentido, puesto que el COVID-19 inició en 2020.
 - El segundo registro muestra la cantidad de muertes en Perú durante el periodo del 2021-11-01 al 2021-11-07 (7 días), semana 44 del año, donde hubo un total de 2,834 muertes y 184 muertes causadas por COVID-19.  
+
+La etapa de preparación de los datos, es probablemente una de las etapas más importantes de nuestro flujo de trabajo. Si no garantizamos que los datos que tenemos son los correctos, es muy probable que terminemos teniendo resultados no concluyentes y/o llegar a conclusiones erróneas. Validemos cómo te fue con tu preparación de datos.
+
+### Closed Question B
+¿Cuáles son los países que tienen datos desde el 2014? 
+Chile y Perú
+México y Colombia
+México y Chile
+
+### Closed Question A
+¿Cuántos fallecidos hubo la semana 1 del 2016 en Colombia?
+4474
+4574
+4674
+
+### Validación
+Como parte de la preparación de los datos, necesitamos dominar los datos con los que estamos trabajando. ¡Muy buen trabajo! Ahora que tienes los datos correctamente cargados y preparados, empezarás a procesarlos para generar valor de los mismos.
+
 
 ## Paso 3: Procesa  
 
@@ -146,7 +186,26 @@ Para este caso la gráfica va a ir creciendo semana a semana. Muy parecida a est
   
 <img src="https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-1-covid/images/covid_img07.png" alt="grafico-07" width="600"/>  
 
-> 🎯 Si has llegado hasta aquí, significa que ya vas por la mitad de este proyecto. ¡Felicitaciones! De seguro ya has aprendido muchísimo y también has enfrentado algunos retos en el desarrollo de tu proyecto. Tranquila, esta guía seguirá siendo tu principal aliada en lo que viene. Sin embargo, este es un buen momento para que te detengas, hagas una pequeña reflexión sobre tu avance, y revises tu planificación. Pregúntate cómo te ha servido tu organización hasta ahora, ajusta tus prioridades de ser necesario y vuelve a ordenarte para continuar avanzando. Recuerda que puedes recurrir a tus compañeras y al equipo de Laboratoria+ ante cualquier dificultad. ¡Ánimo, vas por buen camino!  
+> 🎯 Si has llegado hasta aquí, significa que ya vas por la mitad de este proyecto. ¡Felicitaciones! De seguro ya has aprendido muchísimo y también has enfrentado algunos retos en el desarrollo de tu proyecto. Tranquila, esta guía seguirá siendo tu principal aliada en lo que viene. Sin embargo, este es un buen momento para que te detengas, hagas una pequeña reflexión sobre tu avance, y revises tu planificación. Pregúntate cómo te ha servido tu organización hasta ahora, ajusta tus prioridades de ser necesario y vuelve a ordenarte para continuar avanzando y terminar tu proyecto a tiempo. Échemos un vistazo a lo que hemos conseguido hasta ahora. 
+
+### Closed Question C
+En el periodo de análisis, ¿Cuántas muertes totales por Covid tuvo Perú?
+198,100
+210,125
+200,430
+
+### Closed Question B
+¿Cuántas muertes por Covid por cada 100k habitantes tuvo Chile la semana 33 del año 2020? 
+2,441
+1,952
+2,082
+
+
+### Validación
+¡Enhorabuena! Ya tienes efectuado el cálculo de muertes Covid por cada 100k habitantes, esto significa un gran avance. Ahora te toca pronosticar las muertes en épocas de Covid y calcular el exceso de muerte. ¡Ánimo, vas por buen camino!  
+
+>Recuerda que puedes recurrir a tus compañeras y al equipo de Laboratoria+ ante cualquier dificultad. 
+
 
 ### 4.5 Calcular el pronóstico de las muertes usando promedios simples  
 
@@ -238,6 +297,23 @@ Entonces, ahora calculemos cuántas semanas desde que inició la pandemia estuvi
 ¡Felicidades! Has completado el análisis para el caso de Perú, ahora solo queda replicar el mismo análisis para los 3 países restantes.  
 
 Si necesitas una guía para armar la tabla comparativa por país, te recomendamos revisar este [video](https://www.loom.com/share/419c8482e6b2463c863c9d17afe1d679)(📹).  
+Antes de pasar a compartir nuestros resultados, vamos a comparar los números que obtuviste.
+
+### Closed Question B
+¿Cuál fue el exceso de muertes por cada 100k habitantes en Perú la semana 44 del 2021?
+1.793
+1.886
+2.123
+
+### Closed Question A
+¿Cuál fue el porcentaje de semanas que tuvieron picos de muertes Covid en México?
+3.75%
+5.93%
+7.23%
+
+### Validación
+¡Excelente! Ya tienes los cálculos y los datos necesarios para poder obtener y compartir una conclusión. Ahora toca aprovechar estos datos y presentarlos de forma que sea entendible para tu audiencia específica. Recuerda que el objetivo es que la información sea fácil de visualizar para poder tomar decisiones basadas en los datos.
+
 
 ## Paso 5: Comparte
 
@@ -267,29 +343,16 @@ Te dejamos un ejemplo de cómo se deberían ver cada uno de los puntos solicitad
 
 <img src="https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-1-covid/images/covid_img020.png" alt="ejemplo-estructura-reporte" width="600"/>
 
-## Paso 6: Actúa  
+¡Ya lo tienes! Toca recordar la primera etapa del proyecto donde se identifica el objetivo por el cual realizaste todo este magnífico trabajo. Aprovecha las siguientes preguntas para validar que llegaste al objetivo del proyecto.
 
-El reporte por sí solo no genera acción. Es aquí donde se vuelve esencial el video que debes grabar simulando la reunión con tu jefe para explicarle tus hallazgos y entregar tus recomendaciones. Te recomiendo volver a leer el brief y volver a la pregunta inicial del análisis. Enfoca tu recomendación y conclusiones en ese contexto.  
+### Open Question
+¿Cuál de los 4 países consideras que fue el que tuvo mayor impacto a causa del Covid?¿Por qué?
 
-Para hacer el video te recomendamos utilizar [Loom](http://loom.com/signup). Para poder conocer cómo funciona esta plataforma Loom, revisa el siguiente [video](https://www.youtube.com/watch?v=-8mwLqvNOPY).  
+Según la gráfica de exceso de muertes por Covid acumuladas, ¿Qué país está más cerca de conseguir la estabilidad y por qué?
 
-Cuando estés lista sube el link de tu reporte y de tu video en la plataforma de aprendizaje.  
+### Validación
 
-Asegúrate que tu reporte sea visible públicamente. Aquí te explicamos cómo:  
-
-- En la parte superior derecha encontrarás un botón verde que dice “Share”/”Compartir”.  
-
-![screenshot-share-01](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-1-covid/images/covid_img021.png)  
-
-- Una vez dentro modifica el tipo de acceso que quieres brindar, en este caso usa el que dice “Cualquiera con el enlace”/”Anyone with the link”.  
-
-![screenshot-share-02](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-1-covid/images/covid_img022.png)
-
-- Finalmente da clic en el botón “Copiar enlace”/”Copy link” y pégalo donde te lo soliciten.  
-
-![screenshot-share-03](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-1-covid/images/covid_img023.png)  
-
-¡Ya estás lista! Felicitaciones por entregar tu proyecto. Sigue atenta a la comunidad online en Slack para ver si puedes apoyar a alguna de tus compañeras. Si todavía te queda algo de tiempo te recomendamos hacer la versión hacker de este proyecto, en donde podrás profundizar algunos objetivos de aprendizaje y llevarte algunas herramientas útiles para tu carrera.  
+¡Ya estás lista! Felicitaciones por entregar tu proyecto. Sigue atenta a la comunidad online en Slack para ver si puedes apoyar a alguna de tus compañeras. Si todavía te queda algo de tiempo te recomendamos hacer la versión hacker de este proyecto, presentada a continuación, en donde podrás profundizar algunos objetivos de aprendizaje y llevarte más herramientas útiles para tu carrera.  
 
 # Hacker Edition
 
@@ -381,11 +444,27 @@ Si necesitas una guía para armar este cálculo, te recomendamos revisar este [v
 
 Con esta nueva herramienta, te desafío a que vuelvas a calcular tu exceso de muertes y refines tus gráficos, análisis y conclusiones.  
 
-# Recursos adicionales
+### Closed Question B
+Usando la función Forecast, ¿Qué país es el que tuvo mayor exceso de muertes por cada 100k habitantes?
+México
+Perú
+Colombia
 
-A continuación te dejamos algunos videos y artículos adicionales que pueden servirte si deseas profundizar más en los temas que trabajarás en este proyecto.  
+### Open Question
+Argumenta tu respuesta anterior
 
-- [Perfeccionismo y productividad](https://hbr.org/2020/03/dont-let-perfection-be-the-enemy-of-productivity)
-- [Procrastinar no es un asunto de holgazanería, sino de manejo de las emociones](https://www.nytimes.com/es/2019/03/26/espanol/como-evitar-la-procrastinacion.html)
-- [Hábitos atómicos](https://open.spotify.com/episode/6nk1LGFOnM0lgRD6C5Kzjd?si=ab4ce28e53ae4b88&nd=1)
-- [Dormir es tu superpoder](https://www.youtube.com/watch?v=5MuIMqhT8DM)
+### Closed Question A
+Empleando la función Forecast ¿Qué país tiene mayor diferencia de exceso de muertes con respecto a las muertes Covid reportadas?
+México
+Perú
+Colombia
+
+### Open Question
+Argumenta tu respuesta anterior
+
+### Validación
+¡Eres de otro nivel!, felicidades por haber terminado el primer proyecto, incluyendo el Hacker Edition. 
+
+
+
+
