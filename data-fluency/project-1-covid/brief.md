@@ -59,9 +59,7 @@ Al resolver este proyecto serás capaz de:
 - **Comunicación de hallazgos:**
 
     1. Realizar un análisis utilizando hojas de cálculo y compartirlo con otros.
-    2. Comunicar tus hallazgos de una forma clara.
-
-- **Manejo del tiempo (planificación y organización):**
+    2. Comunicar tus hallazgos de una forma clara.- **Manejo del tiempo (planificación y organización):**
 
     1. Organizar el trabajo cotidiano de forma adaptativa, identificando y empleando una herramienta para este fin.
 
