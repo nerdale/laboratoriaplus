@@ -264,6 +264,7 @@ No es posible decir lo que paso
 Viendo este nuevo gráfico, ¿el éxito de noviembre se debe a que unos pocos clientes hicieron muchas compras?, ¿o a que también creció el número de clientes que hicieron compras ese mes?
 ![grafico-facturas_03](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-1-covid/images/validacionP3_03.png)
 
+### Validación
 ¡Súper! Ahora que conocemos bien los datos y que hay un patrón de crecimiento en ambos mercados, vemos una gran diferencia en el volumen de ventas en los dos mercados, podemos pasar a la segmentación de clientes y entender quiénes son nuestros clientes, quién compra con frecuencia y quién lleva mucho tiempo sin comprar.
 
 ### 4.2 Segmentación de clientes
@@ -405,6 +406,21 @@ Cuando tengas las categorías, puedes resumir la información en una tabla diná
 Otra estrategia inteligente sería agregar la variable de si pertenece o no a UK al análisis y ver cómo cambia la segmentación. Y de esa forma se pueden hacer recomendaciones de publicidad más enfocada en clientes de UK (con un lenguaje y modismos del país) si vemos que hay oportunidades ahí.
 
 De esta forma, UK Merch puede aplicar la ley de Pareto y enfocar sus esfuerzos para que sus mejores clientes le traigan la mayor cantidad de ganancias. Una campaña pequeña bien ejecutada a un segmento específico de clientes puede ser mucho más efectiva que una campaña publicitaria grande y cara sin un foco claro.
+
+Como vimos, la segmentación de clientes es una buena práctica para entender los perfiles de clientes que tenemos y saber dónde poner esfuerzos para hacer crecer el mercado o fortalecer la marca. Echemos un vistazo a lo que hemos visto hasta ahora.
+
+### Close Question
+¿Has podido llegar a una tabla de cuartiles similar a esta?
+![validacion_tabla](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/data-fluency/project-3-ecommerce/images/validacionP3_tabla.png)
+Sí
+No
+
+¿Cuántos clientes fueron clasificados como mejores clientes (código 144)? Elija la respuesta que aplica a su caso
+Aproximadamente 456
+No seguí la segmentación propuesta en la guía
+
+### Validación
+¡Súper! No existe una única forma de segmentar a los clientes, ni un número ideal de categorías, por lo que si decides seguir otro camino y complementar la segmentación con otras categorías o abarcar más perfiles en una misma, no es problema, nos encanta que lo hagas y que te desafíes a timisma buscando nuevas formas de completar una tarea.
 
 ## Paso 5: Comparte
 
