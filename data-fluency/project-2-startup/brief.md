@@ -52,8 +52,6 @@ Al resolver este proyecto serás capaz de:
 - **Comunicación de hallazgos:**
     1. Crear presentaciones básicas con la estructura correcta para resumir tus hallazgos centrada en el objetivo del análisis.
     2. Organizar y presentar tu análisis para tomar decisiones de negocio basadas en data.
-- **Pensamiento crítico:**
-    1. Analizar y evaluar los distintos factores que influyen en una situación y la evidencia disponible, buscando cuestionar más allá de lo evidente.  
 
 # Consideraciones generales
 
