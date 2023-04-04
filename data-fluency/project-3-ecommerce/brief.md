@@ -67,3 +67,4 @@ Al resolver este proyecto serás capaz de:
 
 - El trabajo completo de tu análisis debe estar desarrollado en Google Sheets y al finalizar es importante que compartas el link público con tu trabajo.
 - Este proyecto requiere que cada estudiante entregue su propio informe. Sin embargo, en Laboratoria fomentamos el trabajo colaborativo entre pares para que aprendan unas de otras, así que no dudes en colaborar con tus compañeras para resolver este desafío.
+- Puedes dejar tus dudas en el canal de slack #data-fluency-02-proyecto-ecommerce para que una coach o alguna compañera te pueda ayudar con tu pregunta.
