@@ -93,10 +93,10 @@ No es necesario que pases por todos los tipos de análisis. Muchas veces un simp
 - ¿Cómo podemos segmentar o agrupar los datos?
 - ¿Cómo varía X variable en el tiempo?
 
-###Closed Question
+### Closed Question
 ¿Una analista de datos experimentada puede evitar realizar la limpieza de los datos?
-Sí, puede distinguir las conclusiones de la observación a través de un análisis en crudo.
-No, sabe que una base de datos limpia es la base para una observación certera.
+- Sí, puede distinguir las conclusiones de la observación a través de un análisis en crudo.
+- No, sabe que una base de datos limpia es la base para una observación certera.
 
 ### 5. Comparte
 
@@ -116,11 +116,11 @@ Después de todos los pasos probablemente ya tienes una buena idea de cómo reso
 
 Es momento de entregar tus recomendaciones a tus *stakeholders* para que puedan tomar una decisión basada en datos. Este también es un buen momento para reflexionar sobre tu proceso. ¿Hubo otras fuentes de datos que podrías haber incluido? ¿Hay alguna parte del análisis que podrías haber hecho de forma más prolija? 
 
-###Open Question
+### Open Question
 ¿Cuál será  tu principal reto en la etapa de comunicar tus resultados con otras personas?
 
 Es momento de entregar tus recomendaciones a tus *stakeholders* para que puedan tomar una decisión basada en datos. Este también es un buen momento para reflexionar sobre tu proceso. ¿Hubo otras fuentes de datos que podrías haber incluido? ¿Hay alguna parte del análisis que podrías haber hecho de forma más prolija?  
 
-###Cierre COVER
+### Cierre COVER
 ¡Felicidades! Ya conoces los 6 pasos del análisis de datos que estaremos utilizando a lo largo de la resolución de tus proyectos. Preguntar, preparar, procesar, analizar, compartir y actuar serán tu guía para llevar cualquier análisis a buen puerto. Recuerda que tú ya utilizas estos seis pasos de forma intuitiva y ten la certeza de que en estas próximas semanas lo habrás integrado en tu rutina de forma exitosa. 
 Ahora sí, ¡estás lista para comenzar tu primer proyecto de análisis de datos!
