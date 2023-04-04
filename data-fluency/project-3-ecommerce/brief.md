@@ -42,7 +42,7 @@ Para considerar completado este proyecto deberás entregar, por medio de la [pla
    - Todos los datos, tablas y visualizaciones adicionales que te sumen en tu análisis.
    - **Importante**: Si hiciste el desafío del Hacker edition, comparte el link de tu dashboard en DataStudio.
 
-2. **Recomendado:** Un video de máximo 5 minutos simulando una reunión con tu líder, en donde le expliques tus conclusiones y recomendaciones utilizando data storytelling (¡en la guía de resolución te contamos más al respecto!) Para presentar, apóyate en tu spreadsheet o arma una presentación en Google Slides. Para grabarte, te recomendamos la plataforma Loom. En particular, tu video debe presentar un diagnóstico de las ventas del negocio y recomendaciones concretas con base en tu análisis.
+2. **Recomendado:** Además, de manera opcional, grabarás un video de máximo 5 minutos simulando una reunión con tu líder, en donde le expliques tus conclusiones y recomendaciones utilizando data storytelling (¡en la guía de resolución te contamos más al respecto!) Para presentar, apóyate en tu spreadsheet o arma una presentación en Google Slides. Para grabarte, te recomendamos la plataforma Loom. En particular, tu video debe presentar un diagnóstico de las ventas del negocio y recomendaciones concretas con base en tu análisis.
 
 > 👩‍💻 Recuerda que la lifeskill que desarrollaremos en este proyecto es la comunicación a través del datastorytelling, por lo que te recomendamos desafiarte haciendo la presentación y video.
 
