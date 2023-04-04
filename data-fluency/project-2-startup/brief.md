@@ -29,9 +29,9 @@ Tu hoja de cálculo deberá incluir, como mínimo, lo siguiente:
 - Estadísticas descriptivas relevantes como: cohorte con más usuarios, mes al cabo del cual hay más fuga, cohorte con mejor retención, cohorte con peor retención.
 - Un gráfico que muestre una línea de tendencia de la retención mes a mes.  
 
-Además, grabarás un video de máximo 5 minutos simulando una reunión con tu jefe, en donde le expliques tus conclusiones y recomendaciones. Para esto puedes apoyarte en tu spreadsheet o armar una presentación en Google Slides. Para grabarte te recomendamos la plataforma [Loom](https://www.youtube.com/watch?v=-8mwLqvNOPY).  
+Además, de manera opcional, grabarás un video de máximo 5 minutos simulando una reunión con tu jefe, en donde le expliques tus conclusiones y recomendaciones. Para esto puedes apoyarte en tu spreadsheet o armar una presentación en Google Slides. Para grabarte te recomendamos la plataforma [Loom](https://www.youtube.com/watch?v=-8mwLqvNOPY).  
 
-En particular, tu video debe responder las siguientes preguntas:  
+En particular, tu video deberá responder las siguientes preguntas:  
 
 - ¿Consideras que se debe invertir en triplicar la inversión de adquisición de usuarios?
 - ¿Por qué consideras eso? Argumenta claramente tus resultados apoyándote en tu spreadsheet o alguna presentación.
@@ -52,11 +52,9 @@ Al resolver este proyecto serás capaz de:
 - **Comunicación de hallazgos:**
     1. Crear presentaciones básicas con la estructura correcta para resumir tus hallazgos centrada en el objetivo del análisis.
     2. Organizar y presentar tu análisis para tomar decisiones de negocio basadas en data.
-- **Pensamiento crítico:**
-    1. Analizar y evaluar los distintos factores que influyen en una situación y la evidencia disponible, buscando cuestionar más allá de lo evidente.  
 
 # Consideraciones generales
 
 - El trabajo completo de tu análisis debe estar desarrollado en Google Sheet y al finalizar debes compartir el link público con tu trabajo.
 - Este proyecto requiere que cada participante entregue su propio informe. Sin embargo, en Laboratoria+ fomentamos el trabajo colaborativo entre pares para que aprendan unas de otras, así que no dudes en colaborar con tus compañeras para resolver este desafío.
-- Puedes dejar tus dudas en el canal de slack  #data-fluency-proyecto-startup para que una coach o alguna compañera te pueda ayudar con tu pregunta.
+- Puedes dejar tus dudas en el canal de slack  #data-fluency-02-proyecto-startup para que una coach o alguna compañera te pueda ayudar con tu pregunta.

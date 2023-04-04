@@ -42,9 +42,7 @@ Para considerar completado este proyecto deberás entregar, por medio de la [pla
    - Todos los datos, tablas y visualizaciones adicionales que te sumen en tu análisis.
    - **Importante**: Si hiciste el desafío del Hacker edition, comparte el link de tu dashboard en DataStudio.
 
-2. **Recomendado:** Un video de máximo 5 minutos simulando una reunión con tu líder, en donde le expliques tus conclusiones y recomendaciones utilizando data storytelling (¡en la guía de resolución te contamos más al respecto!) Para presentar, apóyate en tu spreadsheet o arma una presentación en Google Slides. Para grabarte, te recomendamos la plataforma Loom. En particular, tu video debe presentar un diagnóstico de las ventas del negocio y recomendaciones concretas con base en tu análisis.
-
-> 👩‍💻 Recuerda que la lifeskill que desarrollaremos en este proyecto es la comunicación a través del datastorytelling, por lo que te recomendamos desafiarte haciendo la presentación y video.
+2. **Recomendado:** Además, de manera opcional, grabarás un video de máximo 5 minutos simulando una reunión con tu líder, en donde le expliques tus conclusiones y recomendaciones utilizando data storytelling (¡en la guía de resolución te contamos más al respecto!) Para presentar, apóyate en tu spreadsheet o arma una presentación en Google Slides. Para grabarte, te recomendamos la plataforma Loom. En particular, tu video debe presentar un diagnóstico de las ventas del negocio y recomendaciones concretas con base en tu análisis.
 
 # Objetivos de aprendizaje
 
@@ -62,9 +60,11 @@ Al resolver este proyecto serás capaz de:
 - **Comunicación de hallazgos**
 
   - **Visualizar datos en hojas de cálculo**: confeccionar gráficas de línea y barra para visualizar información con el fin de resumir hallazgos en un Dashboard, encontrar patrones o comparar distintas series de datos.
-  - **Comunicar ideas de manera efectiva utilizando técnicas de Data Storytelling**: organizar tu presentación tomando en cuenta a tu audiencia, el contexto y el objetivo ofreciendo respuestas a una serie de interrogantes del negocio y/o sugiriendo cursos de acción que impactan en el mismo.
+ 
+**Recomendado:** Comunicar ideas de manera efectiva utilizando técnicas de Data Storytelling. Organiza tu presentación tomando en cuenta a tu audiencia, el contexto y el objetivo ofreciendo respuestas a una serie de interrogantes del negocio y/o sugiriendo cursos de acción que impactan en el mismo.
 
 # Consideraciones generales
 
 - El trabajo completo de tu análisis debe estar desarrollado en Google Sheets y al finalizar es importante que compartas el link público con tu trabajo.
 - Este proyecto requiere que cada estudiante entregue su propio informe. Sin embargo, en Laboratoria fomentamos el trabajo colaborativo entre pares para que aprendan unas de otras, así que no dudes en colaborar con tus compañeras para resolver este desafío.
+- Puedes dejar tus dudas en el canal de slack #data-fluency-02-proyecto-ecommerce para que una coach o alguna compañera te pueda ayudar con tu pregunta.

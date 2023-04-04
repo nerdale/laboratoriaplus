@@ -61,13 +61,10 @@ Al resolver este proyecto serás capaz de:
     1. Realizar un análisis utilizando hojas de cálculo y compartirlo con otros.
     2. Comunicar tus hallazgos de una forma clara.
 
-- **Manejo del tiempo (planificación y organización):**
-
-    1. Organizar el trabajo cotidiano de forma adaptativa, identificando y empleando una herramienta para este fin.
-
 # Consideraciones generales
 
 - Este proyecto debe ser realizado de forma individual. Sin embargo, como uno de los principios de este programa es la colaboración, fomentamos el apoyo entre compañeras.
+- Puedes dejar tus dudas en el canal de slack #data-fluency-02-proyecto-covid para que una coach o alguna compañera te pueda ayudar con tu pregunta.
 - **IMPORTANTE:** el objetivo de este proyecto es que desarrolles las habilidades descritas en los objetivos de aprendizaje. Bajo ninguna circunstancia busca ser un análisis profundo y conclusivo del impacto de la pandemia en América Latina. Tampoco buscamos que los cálculos aquí efectuados nos lleven a tomar conclusiones apresuradas, solo buscamos que aprendas. Al mismo tiempo, a pesar de que este proyecto nos recuerda lamentablemente las pérdidas de muchas personas queridas en el mundo a raíz de la pandemia, reconocemos que este tipo de análisis es el que emplean líderes mundiales para afrontar la crisis sanitaria, para por ejemplo, definir qué países requieren más asistencia en términos de donaciones de vacunas, oxígeno u otros recursos. También, es un análisis que se hace desde la ciudadanía para exigir una mejor gestión y transparencia a sus gobernantes. De hecho, este caso de estudio está inspirado en publicaciones reales como las siguientes:
   - [The Economist: Tracking covid-19 excess deaths across countries](https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker). La intervención de Angélica en la situación anterior es un extracto de este reporte.
   - [Financial Times: Coronavirus tracker: the latest figures as countries fight the Covid-19 resurgence](https://www.ft.com/content/a2901ce8-5eb7-4633-b89c-cbdf5b386938).

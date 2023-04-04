@@ -32,9 +32,9 @@ Tu nueva CEO agrega; “Genial. Entonces por favor ayúdenme con un dashboard qu
 
 # Entregable
 
-Para que este proyecto optativo se dé por completado debes entregar a través de tu plataforma de aprendizaje, un dashboard de [Google Data Studio](https://www.google.com/url?q=https://support.google.com/datastudio/answer/6283323?hl%3Den&sa=D&source=editors&ust=1671544629053894&usg=AOvVaw15zJDyFRvgwoWJvePX6P9A)  que detalle las métricas más importantes de uso, tanto las que enumera tu CEO como otras que consideres relevantes para entender el negocio y responder las preguntas de tu CEO.
+Para que este proyecto optativo se dé por completado debes entregar a través de tu plataforma de aprendizaje, un dashboard de [Google Looker Studio](https://www.google.com/url?q=https://support.google.com/datastudio/answer/6283323?hl%3Den&sa=D&source=editors&ust=1671544629053894&usg=AOvVaw15zJDyFRvgwoWJvePX6P9A)  que detalle las métricas más importantes de uso, tanto las que enumera tu CEO como otras que consideres relevantes para entender el negocio y responder las preguntas de tu CEO.
 
-Adicionalmente, te recomendamos agregar un video de máximo 5 minutos en donde presentes tus hallazgos utilizando data storytelling, tal como aprendiste en el proyecto anterior. Resalta los aspectos más importantes de la data, los perfiles que hayas encontrado según el uso que le dan a las bicicletas, los usuarios y las recomendaciones que creas que puedan ser relevantes para tu CEO.
+Además, de manera opcional, deberás entregar un video de máximo 5 minutos en donde presentes tus hallazgos utilizando data storytelling, tal como aprendiste en el proyecto anterior. Resalta los aspectos más importantes de la data, los perfiles que hayas encontrado según el uso que le dan a las bicicletas, los usuarios y las recomendaciones que creas que puedan ser relevantes para tu CEO.
 
 # Objetivos de aprendizaje
 
@@ -59,6 +59,7 @@ Al resolver este proyecto serás capaz de:
 
 # Consideraciones generales
 
+- Puedes dejar tus dudas en el canal de slack #data-fluency-02-proyecto-citibikes para que una coach o alguna compañera te pueda ayudar con tu pregunta.
 - Tu reporte, con las visualizaciones, el análisis y las conclusiones necesarias, debe estar desplegado en la web. (por ejemplo, a través de un link de Data Studio)
 - Para construir el reporte utilizarás la información pública del programa [Citi Bike New York City](https://www.google.com/url?q=https://www.citibikenyc.com/homepage&sa=D&source=editors&ust=1671544629056799&usg=AOvVaw2gNmHmu_ZiMjHPKOQQVUJ9), el programa de bicicletas compartidas más grande de los Estados Unidos. Este conjunto de datos público está alojado en Google BigQuery y puedes acceder a él por medio del siguiente enlace: [NYC Citi Bike Trips](https://www.google.com/url?q=https://console.cloud.google.com/marketplace/product/city-of-new-york/nyc-citi-bike?project%3Ddata-sandbox-319716%26folder%3D%26organizationId%3D&sa=D&source=editors&ust=1671544629057152&usg=AOvVaw2LHUBt6_4yx1dUypynKsps). Para los propósitos de este proyecto, este conjunto de datos es apropiado y te permitirá construir el reporte solicitado.
 - Dado que en este proyecto estarás trabajando en una herramienta y lenguaje completamente nuevos, hemos preparado [este mini curso](https://www.google.com/url?q=https://coda.io/d/Videos-BigQuery-Cicloviajes_dmIxCiY2-NQ/Introduccion_su3UO?playModeWorkflowId%3D%23_luO8s&sa=D&source=editors&ust=1671544629058089&usg=AOvVaw2i2TVxT3KKKxq--V6-nIxR) (1 hr y 15 min de videos) en donde puedes conocer lo básico de SQL y BigQuery.
