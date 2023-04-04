@@ -57,4 +57,4 @@ Al resolver este proyecto serás capaz de:
 
 - El trabajo completo de tu análisis debe estar desarrollado en Google Sheet y al finalizar debes compartir el link público con tu trabajo.
 - Este proyecto requiere que cada participante entregue su propio informe. Sin embargo, en Laboratoria+ fomentamos el trabajo colaborativo entre pares para que aprendan unas de otras, así que no dudes en colaborar con tus compañeras para resolver este desafío.
-- Puedes dejar tus dudas en el canal de slack  #data-fluency-proyecto-startup para que una coach o alguna compañera te pueda ayudar con tu pregunta.
+- Puedes dejar tus dudas en el canal de slack  #data-fluency-02-proyecto-startup para que una coach o alguna compañera te pueda ayudar con tu pregunta.
