@@ -1,7 +1,7 @@
 COVER
 Enfrentando mis creencias limitantes
 CONTENT
-Explora los retos que te presenta tu crítica interna y aprende a reconciliar las barreras psicológicas que te impiden ejercer tu liderazgo e influencia.
+Explora los retos que te presenta tu crítica interna y reconcilia las barreras psicológicas que impiden el crecimiento de tu influencia y liderazgo. En este proyecto vamos a conocer, comprender y navegar las distintas creencias limitantes que, desde la autopercepción, entorpecen nuestro desarrollo como líderes. 
 IMAGEN
 ![limitantes](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/02%20Creencias%20limitantes/creencias.jpg)
 
@@ -9,9 +9,7 @@ IMAGEN
 SECCION 1
 # Las creencias limitantes
 
-En este proyecto vamos a conocer, comprender y convivir con las distintas creencias limitantes que, desde la autopercepción, entorpecen nuestro desarrollo como líderes. Aprenderemos que estos mecanismos son más comunes de lo que creemos, ocurren con frecuencia al enfrentarnos a situaciones novedosas y ante todo, que podemos reconocerlos, enunciarlos y manejarlos.
-
-Para comenzar esta exploración, es importante que diferenciemos algunas de las creencias limitantes que trabajaremos a lo largo de este proyecto. Las definiremos y exploraremos a mayor profundidad más adelante, tu primer objetivo es distinguirlas entre sí.
+Explora los retos que te presenta tu crítica interna y reconcilia las barreras psicológicas que impiden el crecimiento de tu influencia y liderazgo. En este proyecto vamos a conocer, comprender y navegar las distintas creencias limitantes que, desde la autopercepción, entorpecen nuestro desarrollo como líderes. 
 
 > -  <a href="https://www.nytimes.com/es/2019/06/07/espanol/como-mejorar-tu-confianza.html"style="color:#FF50F5" target="_blank">Falta de confianza o inseguridad:</a>  Se refiere a tu visión de ti misma completando una meta. Va más allá de tu estimación con base en la experiencia y abarca por completo tu autopercepción.
 >
@@ -20,30 +18,37 @@ Para comenzar esta exploración, es importante que diferenciemos algunas de las 
 > - <a href="https://asana.com/es/resources/impostor-syndrome" style="color:#FF50F5" target="_blank">Síndrome del impostor:</a>  Definida a finales de los años 70, esta barrera psicológica se refiere específicamente a la sensación de estar en un rol para el que no eres suficiente y que, además, todos a tu alrededor están a punto de darse cuenta.
 
 <h3>Actividad</h3>
-Es bien sabido que las mujeres no nos voluntariamos a ninguna actividad a menos que creamos que contamos con todas las credenciales para conseguirlo. Sin embargo, el entorno profesional está colmado de incertidumbre, ambigüedad y riesgos constantes. Desarrollar la confianza en nosotras mismas es la primera creencia limitante a desarrollar. Te invitamos a reflexionar sobre tu autoconfianza utilizando el siguiente ejercicio de inversión.
+La primera creencia limitante que vamos a explorar es la falta de confianza en nosotras mismas. De acuerdo con la <a href="https://www.ilo.org/infostories/es-ES/Stories/Employment/barriers-women#persistent-barriers"style="color:#FF50F5" target="_blank">Organización Mundial del Trabajo</a>, las mujeres se postulan en un 70% de las vacantes laborales donde consideran que cumplen con todas las credenciales para conseguirlo. Sin embargo, el entorno profesional está colmado de incertidumbre, ambigüedad y riesgos constantes. Por eso, la falta de confianza en nosotras mismas es la primera creencia limitante a enfrentar. 
 
->Piensa en un reto próximo que te tenga ansiosa. 
+Te invitamos a reflexionar sobre tu autoconfianza utilizando el siguiente ejercicio de inversión denominado "¿Qué pasaría sí?".
+
+>Piensa en un reto o desafío que estés enfrentando actualmente. 
 >¿Ya lo tienes? Acompáñanos a resolver las siguientes preguntas.
+
+
 
 ![creo](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/02%20Creencias%20limitantes/limitantes.jpg)
 
 OPEN QUESTION
-En relación a tu reto próximo, ¿Qué 3 escenarios negativos está alimentando tu falta de confianza?
-
+En relación a tu reto o desafío, ¿puedes pensar en tres (3) escenarios negativos donde las cosas no salen como quisieras? ¿Cuáles son?
 
 CONTENT
 
  <p>&nbsp;</p>
-El ejercicio ¿qué pasaría si? nos obliga a pensar en escenarios tan posibles como aquellos negativos con los que nos obsesionamos. A cada escenario negativo, le equipara con un positivo igualmente posible.
+Seguramente pensar en esos escenarios negativos no fue tan difícil. Muchas veces cuando enfrentamos un reto o desafío complejo, nuestra mente rápidamente se vuelca a pensar en todas las cosas que podrían salir mal. Sin embargo, la realidad es que por cada escenario negativo posible que imaginemos, siempre podemos encontrar uno positivo.
+
+La tarea que nos toca ahora es intencionalmente balancear los escenarios negativos (que ocupan gran parte de nuestro espacio mental) con escenarios positivos que son igualmente posibles. 
+
 
 
 OPEN QUESTION
-Para cada uno de los 3 escenarios negativos previos, redacta un escenario positivo igualmente posible.
-
+Para cada uno de los tres (3) escenarios negativos previos, redacta un escenario positivo igualmente posible.
 
 SECCION 2
 Autosabotaje
 CONTENT
+#Autosabotaje
+
 #Autosabotaje
 
 #Autosabotaje
@@ -53,36 +58,45 @@ Nuestra segunda creencia limitante se presenta en la forma de las saboteadoras. 
 Positive Intelligence nos muestra diferentes patrones de pensamiento en los que nos enfrascamos de forma dañina. Estos arquetipos se utilizan en cursos de liderazgo en la Escuela de Negocios de Stanford, Columbia y Yale, además de ser utilizados por cientos de organizaciones en procesos de capacitación.
 
  <h3>Actividad</h3>
->Este material está disponible solo en inglés. Si no te representa un inconveniente, completa el <a href="https://assessment.positiveintelligence.com/saboteur/overview"style="color:#FF50F5" target="_blank">cuestionario </a> y completa las preguntas de reflexión a continuación.
+A continuación te invitamos a contestar el siguiente test para descubrir cuáles son las voces saboteadoras que generan emociones negativas en tu vida cotidiana.
+
+>Completa el cuestionario de autosabotaje antes de continuar: 
+👉 <a href="https://assessment.positiveintelligence.com/saboteur/overview"style="color:#FF50F5" target="_blank"> Cuestionario de autosabotaje</a>
 >
->Si prefieres no realizar el cuestionario en inglés, a continuación te presentamos un catálogo de saboteadoras en español para que identifiques los patrones en los que personalmente te has visto atrapada.
+>Importante: este material está disponible solo en inglés. Si no deseas completar el test en inglés, hemos desarrollado un catálogo en español con las 9 saboteadoras para puedan identificar los patrones en los que personalmente te has visto atrapada, sin tener que realizar el test.
 
-Después de realizar el cuestionario u observar nuestro catálogo, acompáñanos en las preguntas de reflexión.
+> Después de realizar el cuestionario u observar nuestro catálogo, acompáñanos en las preguntas de reflexión.
 
-![saboteadoras](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/02%20Creencias%20limitantes/Frame%2070%20(1).jpg)
+![saboteadoras](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/02%20Creencias%20limitantes/saboteurs.jpg)
 
-OPEN QUESTION
-¿Cuáles son las autosaboteadoras con las que debes lidiar? ¿Por qué crees que son esas?
-
-CONTENT
  <p>&nbsp;</p>
 Nuestras saboteadoras se sembraron en nosotras con la intención de protegernos. Nacieron como guardianas para navegar peligros físicos y emocionales a los que nos sentimos expuestas durante nuestra infancia. Con el pasar del tiempo, los riesgos disminuyeron y nuestras saboteadoras crecieron hasta convertirse en inquilinas de tiempo completo en nuestra mente.
 
 Estos patrones de pensamiento, sensación y reacción han sido utilizados tantas veces que cuando nos exponemos a un estímulo que podría detonarlos, nuestro cerebro los activa al 100% de forma instantánea.
 
+Acompáñanos a reflexionar con las siguientes preguntas.
+
+![saboteadoras](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/02%20Creencias%20limitantes/Frame%2070%20(1).jpg)
+
 OPEN QUESTION
-Recuerda un momento en el que sentiste que una de tus saboteadoras apareció. ¿Qué sucedió?¿Por qué... 
+Seguramente obtuviste resultados altos o te identificas con varias (o todas) las saboteadoras. Es normal. Ahora, lo importante es que, independientemente de los resultados del test, tú decidas trabajar con las que consideres más apremiantes. ¿Cuáles son las saboteadoras con las que debes lidiar en este momento? ¿Por qué crees que son esas?
+
+
+OPEN QUESTION
+Recuerda un momento en el que sentiste que una de tus saboteadoras apareció. ¿Qué sucedió?¿Por qué apareció?¿Qué ocasionó?
 
 
 SECCION 3
-Deja de repetir que las mujeres tienen síndrome del impostor
+HABLEMOS DEL SÍNDROME DEL IMPOSTOR
 CONTENT
-#Deja de repetir que las mujeres tienen síndrome del impostor
+# Hablemos del síndrome del impostor
 
-Todas tenemos una brutal crítica interior. Puede adoptar aspectos diferentes, vestir un nombre familiar o decir cosas que parecen objetivas. El propósito de esta reflexión es comprender mejor por qué aquello que nos decimos a nosotras mismas nos impide ser las líderes que queremos ser, y sobre todo, distinguir que esos discursos en muchas ocasiones no son síndrome del impostor, sino otra de las creencias limitantes que ya hemos analizado. 
+Ahora ya conoces algunas de las creencias limitantes con las que tienes que trabajar. Ser capaces de enunciar con claridad aquello que enfrentamos nos permite tomar acciones efectivas para manejarlo. Es por eso que es tan importante que dejemos de utilizar el síndrome del impostor para referirnos a todas nuestras creencias limitantes. ¿Te imaginas confundir un dolor de estómago con un cólico? Difícil de atender y disminuir el dolor si es que lo confundimos.
+
+El propósito de esta reflexión es comprender mejor por qué aquello que nos decimos a nosotras mismas nos impide ser las líderes que queremos ser, y sobre todo, distinguir que esos discursos en muchas ocasiones **no son síndrome del impostor**, sino otra de las creencias limitantes que ya hemos analizado. 
 
  <h3>Actividad</h3>
-Este artículo te acompaña a reflexiónar sobre el llamado que Ruchika Tulshyan y Jodi-Ann Burey declararon en el Harvard Business Review: ¡Dejen de decirle a las mujeres que tienen síndrome del impostor!  
+Para iniciarnos en el tema del síndrome del impostor, nos parece relevante empezar por un artículo de Harvard Business Review (HBR) donde Ruchika Tulshyan y Jodi-Ann Burey declararon: ¡Dejen de decirle a las mujeres que tienen síndrome del impostor!  
 >Haz click aquí para <a href="https://hbr.org/2021/02/stop-telling-women-they-have-imposter-syndrome?language=es"style="color:#FF50F5" target="_blank">consultar el artículo</a> y posteriormente acompáñanos a contestar las preguntas a continuación para guiar nuestra reflexión.
 
 
@@ -91,25 +105,31 @@ IMAGEN
 
 OPEN QUESTION
 ¿Qué fue lo que más te sorprendió de este artículo?
-¿Cuál es ahora tu percepción sobre las creencias limitantes?¿Son todas igualmente profundas?¿Todas tenemos las mismas?
+¿En qué medida consideras que las creencias limitantes (autosabotaje, falta de confianza, síndrome del impostor, etc.) que experimentas actualmente están influenciadas por tu contexto laboral?
 
 SECCION 4
 RECONOCIENDO EL SINDROME DEL IMPOSTOR
 
 # Reconociendo el síndrome del impostor
 
-Ahora que ya puedes reconocer otras creencias limitantes que erróneamente se etiquetan como síndrome del impostor es momento de definir lo que sí es.
+Ya habiendo reconocido el hecho de que para muchas mujeres el sentimiento de impostora no es una "ilusión" o percepción interna, sino el resultado de sesgos sistémicos y de factores externos, podemos proceder a reflexionar sobre las cosas que sí podemos hacer las mujeres para lidiar con este fenómeno. 
 
- <a href="https://mpowir.org/wp-content/uploads/2010/02/Download-IP-in-High-Achieving-Women.pdf"style="color:#FF50F5" target="_blank">Definido por las psicólogas Pauline Rose Clane y Suzanne Imes en la década de los 70</a>, el síndrome del impostor es una barrera psicológica que provoca que la persona dude de sus habilidades, logros y capacidades, sintiéndose como "una impostora" descalificada laboralmente que puede ser descubierta por todos en cualquier momento. Está ocasionada por una desalineación entre nuestra percepción de nosotras mismas y las evidencias y percepciones externas del mismo hecho. Por eso la importancia de nuestro modelo de los 3 ejes y partir de tener claro cómo nos percibimos a nosotras mismas. Reconocer los valores, fortalezas y habilidades que nos sustentan, pero también, las creencias limitantes que nos frenan. 
+<a href="https://mpowir.org/wp-content/uploads/2010/02/Download-IP-in-High-Achieving-Women.pdf"style="color:#FF50F5" target="_blank">Definido por las psicólogas Pauline Rose Clane y Suzanne Imes en la década de los 70</a>, el síndrome del impostor es una barrera psicológica que provoca que la persona dude de sus habilidades, logros y capacidades, sintiéndose como "una impostora" descalificada laboralmente que puede ser descubierta por todos en cualquier momento. Está ocasionada por una desalineación entre nuestra percepción de nosotras mismas y las evidencias y percepciones externas del mismo hecho. Por eso la importancia de nuestro modelo de los 3 ejes y partir de tener claro cómo nos percibimos a nosotras mismas. Reconocer los valores, fortalezas y habilidades que nos sustentan, pero también, las creencias limitantes que nos frenan. 
 
 Durante nuestra sesión en vivo aprenderemos herramientas no sólo para manejar el síndrome del impostor sino también para prevenirlo. En este primer acercamiento, explorarás tu relación con este síndrome.
 
-
 <h3>Actividad</h3>
 ¿Cómo puedo saber si estoy experimentando síndrome del impostor?¿Quizá es falta de confianza?¿Mis saboteadoras fuera de control?
-Acompáñanos confirmando las siguientes declaraciones de forma afirmativa o negativa para definirlo. 
 
-Recuerda ser honesta y evitar juzgarte. Cualquiera que sea el resultado, estarás preparada para afrontarlo y trabajarlo.
+Acompáñanos evaluando las siguientes declaraciones utilizando la siguiente escala:
+- Totalmente en desacuerdo.
+- En desacuerdo.
+- Ni acuerdo ni en desacuerdo.
+- De acuerdo.
+- Totalmente de acuerdo.
+
+ Recuerda ser honesta y evitar juzgarte. Cualquiera que sea el resultado, estarás preparada para afrontarlo y trabajarlo.
+
 
 IMAGEN
 ![impostor](https://raw.githubusercontent.com/Laboratoria/laboratoriaplus/main/02%20Creencias%20limitantes/impostor.jpg)
