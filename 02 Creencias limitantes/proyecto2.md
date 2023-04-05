@@ -75,7 +75,7 @@ IMAGEN
 
 SECCION 4
 REFLEXION
-Ahora es momento de realizar una reflexión personal sobre lo que hemos explorado en este segundo proyecto. Atreverte a reconocer tus temores, mecanismos de sabotaje y discursos autocríticos es incómodo y te felicitamos por permitirte ser vulnerable. 
+Ahora es momento de realizar una reflexión personal sobre lo que hemos explorado en este segundo proyecto. Atreverte a reconocer tus temores, mecanismos de sabotaje y discursos autocríticos es incómodo así que te felicitamos por permitirte ser vulnerable.
 
 Contesta las siguientes preguntas de forma profunda, tras analizar lo que representan para ti. 
 
@@ -86,10 +86,14 @@ SECCION 5
 CIERRE (cover)
 #Cierre
 
-Ahora puedes enunciar y reconocer tus creencias limitantes. ¡Felicidades! Te invitamos a traer a la sesión en vivo tus reflexiones para realizar las actividades que te permitirán enfrentar a tu crítica interna y tener navegar mejor el síndrome del impostor.
+#Cierre
+
+Ahora puedes enunciar y reconocer tus creencias limitantes. ¡Felicidades! Te invitamos a traer a la sesión en vivo tus reflexiones para realizar las actividades que te permitirán enfrentar a tu crítica interna para navegar mejor tu relación con tus creencias limitantes. Conoceremos y pondremos en práctica mecanismos de reformulación positiva para orientar nuestras inquietudes de forma objetiva.
 
 Sabemos que este tema es profundo y nos encantará que continues tu exploración con los siguientes recursos sugeridos:
 
+>-  <a href="https://asana.com/es/resources/impostor-syndrome" style="color:#FF50F5" target="_blank">¿Qué es el síndrome del impostor y cómo combatirlo?</a>. Asana, empresa líder en gestión de equipos de tecnología, nos comparte este artículo profundo y actualizado con información valiosa y accionable sobre el síndrome del impostor. Cómo superarlo tanto desde la perspectiva personal como la de la persona responsable de un equipo, así como pasos para su prevención.
+>
 >- <a href="https://hbr.org/podcast/2019/12/seeing-ourselves-as-leaders" style="color:#FF50F5" target="_blank">Viéndonos a nosotras mismas como líderes</a> Este podcast de _Women at Work_ discute el proceso de convertirnos en líderes, desde convencernos a nosotras mismas hasta convencer a nuestros colegas. Una mirada que reconoce que los retos existentes en este campo desde lo femenino.
 >
 >-  <a href="https://hbr.org/podcast/2017/08/why-everyone-should-see-themselves-as-a-leader" style="color:#FF50F5" target="_blank">¿Por qué todas las personas deberían asumirse como líderes?</a>. En este podcast Sure Ashford, profesora de la Escuela de Negocios de la Universidad de Michigan, comparte el trabajo de investigación que ha realizado a lo largo de décadas sobre liderazgo. ¿Quién consigue desarrollar su liderazgo?
